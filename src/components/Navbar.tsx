@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+upimport { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { navLinks, restaurant } from "@/data/restaurant";
 import { DecorativeDivider } from "./ui-kit";

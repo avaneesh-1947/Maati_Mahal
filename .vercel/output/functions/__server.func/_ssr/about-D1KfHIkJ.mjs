@@ -1,9 +1,9 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { c as ActionLink, d as PageHero, f as Section, l as ArchImage, p as SectionHeading, w as values, x as restaurant, y as milestones } from "./router-2U5FG5nL.mjs";
+import { c as ActionLink, d as PageHero, f as Section, l as ArchImage, p as SectionHeading, w as values, x as restaurant, y as milestones } from "./router-49-DB7f7.mjs";
 import { t as hero1_default } from "./hero1-dOPlff5Y.mjs";
 import { n as rajasthani_restaurant_interior_jharokha_arches_default, t as rajasthani_family_dining_celebration_default } from "./rajasthani-family-dining-celebration-BHi2V532.mjs";
-import { n as FeatureCard } from "./DishCard-C1WO00Ie.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-B9GKmyk-.js
+import { n as FeatureCard } from "./DishCard-BYmzI-H0.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-D1KfHIkJ.js
 var import_jsx_runtime = require_jsx_runtime();
 function About() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [

@@ -1,7 +1,6 @@
-import { t as supabase } from "./client-BKbXBB1u.mjs";
 import { n as createMiddleware, t as createCsrfMiddleware } from "./createCsrfMiddleware-B2To0gPJ.mjs";
 import { t as renderErrorPage } from "./ssr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/start-4pkX3XFr.js
+//#region node_modules/.nitro/vite/services/ssr/assets/start-RKGGYzjZ.js
 function dedupeSerializationAdapters(deduped, serializationAdapters) {
 	for (let i = 0, len = serializationAdapters.length; i < len; i++) {
 		const current = serializationAdapters[i];
@@ -25,11 +24,6 @@ var createStart = (getOptions) => {
 		createMiddleware
 	};
 };
-var attachSupabaseAuth = createMiddleware({ type: "function" }).client(async ({ next }) => {
-	const { data } = await supabase.auth.getSession();
-	const token = data.session?.access_token;
-	return next({ headers: token ? { Authorization: `Bearer ${token}` } : {} });
-});
 var errorMiddleware = createMiddleware().server(async ({ next }) => {
 	try {
 		return await next();
@@ -43,9 +37,6 @@ var errorMiddleware = createMiddleware().server(async ({ next }) => {
 	}
 });
 var csrfMiddleware = createCsrfMiddleware({ filter: (ctx) => ctx.handlerType === "serverFn" });
-var startInstance = createStart(() => ({
-	functionMiddleware: [attachSupabaseAuth],
-	requestMiddleware: [errorMiddleware, csrfMiddleware]
-}));
+var startInstance = createStart(() => ({ requestMiddleware: [errorMiddleware, csrfMiddleware] }));
 //#endregion
 export { startInstance };

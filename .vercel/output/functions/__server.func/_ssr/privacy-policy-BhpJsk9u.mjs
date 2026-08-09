@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { d as PageHero, f as Section, v as fullAddress, x as restaurant } from "./router-2U5FG5nL.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/privacy-policy-BSUapeVe.js
+import { d as PageHero, f as Section, v as fullAddress, x as restaurant } from "./router-49-DB7f7.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/privacy-policy-BhpJsk9u.js
 var import_jsx_runtime = require_jsx_runtime();
 var sections = [
 	{
