@@ -4,7 +4,15 @@ import tailwindcss from "@tailwindcss/vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 
 export default defineConfig({
-  plugins: [tanstackStart(), tailwindcss(), react()],
+  plugins: [
+    tanstackStart({
+      server: {
+        preset: "vercel",
+      },
+    }),
+    tailwindcss(),
+    react(),
+  ],
   resolve: {
     tsconfigPaths: true,
   },
