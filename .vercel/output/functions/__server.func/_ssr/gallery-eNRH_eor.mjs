@@ -1,11 +1,11 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { d as PageHero, f as Section, n as galleryImages } from "./router-49-DB7f7.mjs";
+import { d as PageHero, f as Section, n as galleryImages } from "./router-DUV4NYHj.mjs";
 import { t as hero1_default } from "./hero1-dOPlff5Y.mjs";
 import { n as rajasthani_restaurant_interior_jharokha_arches_default, t as rajasthani_family_dining_celebration_default } from "./rajasthani-family-dining-celebration-BHi2V532.mjs";
 import { t as rajasthani_catering_event_setup_default } from "./rajasthani-catering-event-setup-C7JNT9xg.mjs";
 import { n as image_default, r as rajasthani_chef_traditional_cooking_default, t as hero2_default } from "./image-0hi0KbN5.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/gallery-Z9UoY9au.js
+//#region node_modules/.nitro/vite/services/ssr/assets/gallery-eNRH_eor.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var allImages = [

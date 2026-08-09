@@ -1,8 +1,8 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { c as ActionLink, d as PageHero, f as Section, i as menuCategories, r as menu, x as restaurant } from "./router-49-DB7f7.mjs";
-import { r as MenuRow } from "./DishCard-BYmzI-H0.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/menu-BtLcAuQj.js
+import { c as ActionLink, d as PageHero, f as Section, i as menuCategories, r as menu, x as restaurant } from "./router-DUV4NYHj.mjs";
+import { r as MenuRow } from "./DishCard-5isaNWwB.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/menu-CYRUJ1nv.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function MenuPage() {

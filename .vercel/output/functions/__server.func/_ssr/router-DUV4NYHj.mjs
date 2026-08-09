@@ -6,7 +6,7 @@ import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 var rajasthani_vegetarian_thali_brass_plate_default = "/assets/rajasthani-vegetarian-thali-brass-plate-DG2QHqgl.jpg";
 var rajasthani_folk_culture_performance_default = "/assets/rajasthani-folk-culture-performance-CNNKgBkP.jpg";
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-49-DB7f7.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DUV4NYHj.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -19,7 +19,7 @@ var __exportAll = (all, no_symbols) => {
 	if (!no_symbols) __defProp(target, Symbol.toStringTag, { value: "Module" });
 	return target;
 };
-var styles_default = "/assets/styles-fvPXhxve.css";
+var styles_default = "/assets/styles-BP6b3Aqr.css";
 /**
 * Centralised restaurant configuration.
 * Replace these values with the client's confirmed details — they are used across
@@ -1140,7 +1140,7 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$9 = () => import("./routes-BFtq9d3o.mjs");
+var $$splitComponentImporter$9 = () => import("./routes-BoExUv-Y.mjs");
 var Route$10 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$9, "component"),
 	head: () => ({
@@ -1169,7 +1169,7 @@ var Route$10 = createFileRoute("/")({
 		}]
 	})
 });
-var $$splitComponentImporter$8 = () => import("./about-D1KfHIkJ.mjs");
+var $$splitComponentImporter$8 = () => import("./about-6s0-9gwm.mjs");
 var Route$9 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component"),
 	head: () => ({
@@ -1206,7 +1206,7 @@ var Route$9 = createFileRoute("/about")({
 		}]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./catering-events-Uw1VfMwP.mjs");
+var $$splitComponentImporter$7 = () => import("./catering-events-DMSQbZrz.mjs");
 var Route$8 = createFileRoute("/catering-events")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component"),
 	head: () => ({
@@ -1239,7 +1239,7 @@ var Route$8 = createFileRoute("/catering-events")({
 		}]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./contact-BREZC_Lx.mjs");
+var $$splitComponentImporter$6 = () => import("./contact-Y5ceDOLb.mjs");
 var Route$7 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({
@@ -1272,7 +1272,7 @@ var Route$7 = createFileRoute("/contact")({
 		}]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./dining-experience-gZ6xF0Ij.mjs");
+var $$splitComponentImporter$5 = () => import("./dining-experience-Dr8xC0P3.mjs");
 var Route$6 = createFileRoute("/dining-experience")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({
@@ -1305,7 +1305,7 @@ var Route$6 = createFileRoute("/dining-experience")({
 		}]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./feedback-CJIgaGjx.mjs");
+var $$splitComponentImporter$4 = () => import("./feedback-CfTGThi0.mjs");
 var Route$5 = createFileRoute("/feedback")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({
@@ -1338,7 +1338,7 @@ var Route$5 = createFileRoute("/feedback")({
 		}]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./gallery-Z9UoY9au.mjs");
+var $$splitComponentImporter$3 = () => import("./gallery-eNRH_eor.mjs");
 var Route$4 = createFileRoute("/gallery")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({
@@ -1371,7 +1371,7 @@ var Route$4 = createFileRoute("/gallery")({
 		}]
 	})
 });
-var $$splitComponentImporter$2 = () => import("./menu-BtLcAuQj.mjs");
+var $$splitComponentImporter$2 = () => import("./menu-CYRUJ1nv.mjs");
 var Route$3 = createFileRoute("/menu")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({
@@ -1407,7 +1407,7 @@ var Route$3 = createFileRoute("/menu")({
 		}]
 	})
 });
-var $$splitComponentImporter$1 = () => import("./privacy-policy-BhpJsk9u.mjs");
+var $$splitComponentImporter$1 = () => import("./privacy-policy-DfF4q_F-.mjs");
 var Route$2 = createFileRoute("/privacy-policy")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({
@@ -1436,7 +1436,7 @@ var Route$2 = createFileRoute("/privacy-policy")({
 		}]
 	})
 });
-var $$splitComponentImporter = () => import("./reservations-BfN6DBh2.mjs");
+var $$splitComponentImporter = () => import("./reservations-NT3xfzBt.mjs");
 var Route$1 = createFileRoute("/reservations")({
 	component: lazyRouteComponent($$splitComponentImporter, "component"),
 	head: () => ({

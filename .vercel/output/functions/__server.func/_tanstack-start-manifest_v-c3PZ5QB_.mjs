@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-CPpcKYqT.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-c3PZ5QB_.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/__root.tsx",
@@ -15,21 +15,21 @@ var tsrStartManifest = () => ({ routes: {
 			"/reservations",
 			"/sitemap.xml"
 		],
-		preloads: ["/assets/index-kID0PdKv.js"],
+		preloads: ["/assets/index-CU5_qiMz.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-kID0PdKv.js"
+			src: "/assets/index-CU5_qiMz.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-CMAkErqw.js",
+			"/assets/routes-DVsTaorT.js",
 			"/assets/hero1-DX95siDc.js",
 			"/assets/rajasthani-family-dining-celebration-DBmKFSyk.js",
-			"/assets/DishCard-DZTBMdad.js",
+			"/assets/DishCard-DheNz7rr.js",
 			"/assets/image-C3PA1F6k.js"
 		]
 	},
@@ -37,42 +37,42 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/about.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-CCsvsrgW.js",
+			"/assets/about-DM7DvjLI.js",
 			"/assets/hero1-DX95siDc.js",
 			"/assets/rajasthani-family-dining-celebration-DBmKFSyk.js",
-			"/assets/DishCard-DZTBMdad.js"
+			"/assets/DishCard-DheNz7rr.js"
 		]
 	},
 	"/catering-events": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/catering-events.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/catering-events-B3F1k8DP.js",
-			"/assets/DishCard-DZTBMdad.js",
+			"/assets/catering-events-D-OuEu_o.js",
+			"/assets/DishCard-DheNz7rr.js",
 			"/assets/rajasthani-catering-event-setup-CVaKV6xt.js",
-			"/assets/validation-9VwFElF3.js"
+			"/assets/validation-DgLeiI3n.js"
 		]
 	},
 	"/contact": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/contact.tsx",
 		children: void 0,
-		preloads: ["/assets/contact-2E2UTucF.js", "/assets/validation-9VwFElF3.js"]
+		preloads: ["/assets/contact-DVfjsPLw.js", "/assets/validation-DgLeiI3n.js"]
 	},
 	"/dining-experience": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/dining-experience.tsx",
 		children: void 0,
-		preloads: ["/assets/dining-experience-Blo76bDN.js", "/assets/rajasthani-family-dining-celebration-DBmKFSyk.js"]
+		preloads: ["/assets/dining-experience-VLYqw-xb.js", "/assets/rajasthani-family-dining-celebration-DBmKFSyk.js"]
 	},
 	"/feedback": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/feedback.tsx",
 		children: void 0,
-		preloads: ["/assets/feedback-J46pHPfn.js", "/assets/validation-9VwFElF3.js"]
+		preloads: ["/assets/feedback-DGZicRmK.js", "/assets/validation-DgLeiI3n.js"]
 	},
 	"/gallery": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/gallery.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/gallery-CfVICcaT.js",
+			"/assets/gallery-CSkdCtxS.js",
 			"/assets/hero1-DX95siDc.js",
 			"/assets/rajasthani-family-dining-celebration-DBmKFSyk.js",
 			"/assets/rajasthani-catering-event-setup-CVaKV6xt.js",
@@ -82,17 +82,17 @@ var tsrStartManifest = () => ({ routes: {
 	"/menu": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/menu.tsx",
 		children: void 0,
-		preloads: ["/assets/menu-CjyPJA_c.js", "/assets/DishCard-DZTBMdad.js"]
+		preloads: ["/assets/menu-CIEscjqU.js", "/assets/DishCard-DheNz7rr.js"]
 	},
 	"/privacy-policy": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/privacy-policy.tsx",
 		children: void 0,
-		preloads: ["/assets/privacy-policy-C9ti_KRe.js"]
+		preloads: ["/assets/privacy-policy-Dg7E9VQZ.js"]
 	},
 	"/reservations": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/reservations.tsx",
 		children: void 0,
-		preloads: ["/assets/reservations-gg-L6bs5.js", "/assets/validation-9VwFElF3.js"]
+		preloads: ["/assets/reservations-DoLezhkE.js", "/assets/validation-DgLeiI3n.js"]
 	}
 } });
 //#endregion

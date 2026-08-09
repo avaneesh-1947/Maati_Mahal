@@ -1,16 +1,16 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { C as trustHighlights, E as rajasthani_vegetarian_thali_brass_plate_default, T as rajasthani_folk_culture_performance_default, a as signatureDishes, c as ActionLink, f as Section, i as menuCategories, o as rajasthani_sweets_ghevar_malpua_default, p as SectionHeading, u as DecorativeDivider, v as fullAddress, x as restaurant } from "./router-49-DB7f7.mjs";
+import { C as trustHighlights, E as rajasthani_vegetarian_thali_brass_plate_default, T as rajasthani_folk_culture_performance_default, a as signatureDishes, c as ActionLink, f as Section, i as menuCategories, o as rajasthani_sweets_ghevar_malpua_default, p as SectionHeading, u as DecorativeDivider, v as fullAddress, x as restaurant } from "./router-DUV4NYHj.mjs";
 import { t as hero1_default } from "./hero1-dOPlff5Y.mjs";
 import { n as rajasthani_restaurant_interior_jharokha_arches_default, t as rajasthani_family_dining_celebration_default } from "./rajasthani-family-dining-celebration-BHi2V532.mjs";
-import { t as DishCard } from "./DishCard-BYmzI-H0.mjs";
+import { t as DishCard } from "./DishCard-5isaNWwB.mjs";
 import { n as image_default, r as rajasthani_chef_traditional_cooking_default, t as hero2_default } from "./image-0hi0KbN5.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BFtq9d3o.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BoExUv-Y.js
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-			className: "relative min-h-[400px] overflow-hidden sm:min-h-[45vh] lg:min-h-[30vh]",
+			className: "relative min-h-[600px] overflow-hidden sm:min-h-[45vh] lg:min-h-[30vh]",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 					src: rajasthani_vegetarian_thali_brass_plate_default,
@@ -22,7 +22,7 @@ function Home() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-[linear-gradient(180deg,rgba(15,5,5,0.5)_0%,rgba(15,5,5,0.75)_50%,rgba(15,5,5,0.95)_100%)] sm:bg-[linear-gradient(90deg,rgba(15,5,5,0.85)_0%,rgba(15,5,5,0.65)_35%,rgba(15,5,5,0.25)_70%,rgba(15,5,5,0.05)_100%)]" }),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "relative z-10 flex min-h-[400px] flex-col justify-center px-5 pb-6 pt-20 sm:min-h-[45vh] sm:px-8 sm:pb-8 sm:pt-24 lg:min-h-[35vh] lg:pb-12 lg:pt-16",
+					className: "relative z-10 flex min-h-[600px] flex-col justify-center px-5 pb-6 pt-20 sm:min-h-[45vh] sm:px-8 sm:pb-8 sm:pt-24 lg:min-h-[35vh] lg:pb-12 lg:pt-16",
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "mx-auto w-full max-w-6xl fade-up",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
