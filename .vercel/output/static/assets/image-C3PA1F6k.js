@@ -1,0 +1,1 @@
+var e=`/assets/rajasthani-chef-traditional-cooking-DtauAAZF.jpg`,t=`/assets/hero2-2dARshuO.png`,n=`/assets/image-JFSMUKpH.png`;export{t as n,e as r,n as t};
