@@ -14,6 +14,6 @@ export default defineConfig({
     react(),
   ],
   resolve: {
-    tsconfigPaths: true,
+    tsconfigPaths:  true,
   },
 });
