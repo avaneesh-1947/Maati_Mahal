@@ -44,7 +44,7 @@ function Home() {
       {/* ═══════════════════════════════════════════
           1. PHOTOGRAPHY-FIRST HERO
           ═══════════════════════════════════════════ */}
-      <section className="relative min-h-[400px] overflow-hidden sm:min-h-[45vh] lg:min-h-[30vh]">
+      <section className="relative min-h-[600px] overflow-hidden sm:min-h-[45vh] lg:min-h-[30vh]">
         {/* Background image */}
         <img
           src={heroThali}
@@ -58,7 +58,7 @@ function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,5,5,0.5)_0%,rgba(15,5,5,0.75)_50%,rgba(15,5,5,0.95)_100%)] sm:bg-[linear-gradient(90deg,rgba(15,5,5,0.85)_0%,rgba(15,5,5,0.65)_35%,rgba(15,5,5,0.25)_70%,rgba(15,5,5,0.05)_100%)]" />
 
         {/* Content */}
-        <div className="relative z-10 flex min-h-[400px] flex-col justify-center px-5 pb-6 pt-20 sm:min-h-[45vh] sm:px-8 sm:pb-8 sm:pt-24 lg:min-h-[35vh] lg:pb-12 lg:pt-16">
+        <div className="relative z-10 flex min-h-[600px] flex-col justify-center px-5 pb-6 pt-20 sm:min-h-[45vh] sm:px-8 sm:pb-8 sm:pt-24 lg:min-h-[35vh] lg:pb-12 lg:pt-16">
           <div className="mx-auto w-full max-w-6xl fade-up">
             <div className="max-w-[650px]">
               <p className="text-[11px] font-semibold uppercase tracking-[2px] text-[#E0B876] sm:text-[13px] sm:tracking-[3px] drop-shadow-md">
