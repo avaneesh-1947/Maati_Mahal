@@ -6,7 +6,7 @@ import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 var rajasthani_vegetarian_thali_brass_plate_default = "/assets/rajasthani-vegetarian-thali-brass-plate-DG2QHqgl.jpg";
 var rajasthani_folk_culture_performance_default = "/assets/rajasthani-folk-culture-performance-CNNKgBkP.jpg";
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DUV4NYHj.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-BQ3-oml7.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -19,7 +19,7 @@ var __exportAll = (all, no_symbols) => {
 	if (!no_symbols) __defProp(target, Symbol.toStringTag, { value: "Module" });
 	return target;
 };
-var styles_default = "/assets/styles-BP6b3Aqr.css";
+var styles_default = "/assets/styles-BnJrblmY.css";
 /**
 * Centralised restaurant configuration.
 * Replace these values with the client's confirmed details — they are used across
@@ -30,12 +30,12 @@ var restaurant = {
 	tagline: "A Taste Rooted in the Village",
 	shortDescription: "Pure vegetarian village inspired kitchen serving traditional thalis, timeless recipes and warm hospitality.",
 	story: "Maati Mahal began as a family kitchen where recipes travelled from one generation to the next — written down by hand, tasted by memory. Rooted in village culinary traditions, our kitchen celebrates timeless vegetarian recipes prepared with stone-ground spices, slow-simmered dals and pure ghee.",
-	phone: "+91 98290 00000",
-	phoneHref: "+919829000000",
+	phone: "6390278657, 8960107779",
+	phoneHref: "+916390278657",
 	email: "hello@maatimahal.example",
-	whatsapp: "+919829000000",
-	addressLine: "Main Road",
-	landmark: "Near Main Market",
+	whatsapp: "+916390278657",
+	addressLine: "Varanasi - lucknow Highway, NH56",
+	landmark: "",
 	city: "Singramau",
 	state: "Uttar Pradesh",
 	pin: "222175",
@@ -82,7 +82,7 @@ var restaurant = {
 		closes: "23:00"
 	}]
 };
-var fullAddress = `${restaurant.addressLine}, ${restaurant.city}, ${restaurant.state} ${restaurant.pin}`;
+var fullAddress = `${restaurant.city}, ${restaurant.addressLine}, ${restaurant.pin}`;
 var navLinks = [
 	{
 		to: "/",
@@ -147,24 +147,20 @@ var values = [
 ];
 var milestones = [
 	{
-		year: "1998",
-		body: "The family kitchen begins serving neighbours from a small courtyard."
+		year: "2016",
+		body: "Mughal Sarai\nSudha Desi Bati Chokha Restaurant"
 	},
 	{
-		year: "2007",
-		body: "Our first dining room opens with twelve tables and one wood-fired chulha."
+		year: "2019",
+		body: "Civil Lines, Prayagraj\nBati Chokha Wala\nNear Max Mall"
 	},
 	{
-		year: "2015",
-		body: "The traditional village thali becomes our signature."
+		year: "2020",
+		body: "Gomti Nagar, Lucknow\nManglesia Bati Chokha Wala\nNear SRS Mall, Vishal Khand"
 	},
 	{
-		year: "2021",
-		body: "A dedicated Jain kitchen with separate vessels is added."
-	},
-	{
-		year: "2024",
-		body: "Catering for weddings, family gatherings and corporate events begins."
+		year: "2022",
+		body: "Govind Pur, Prayagraj\nBati Chokha Wala\nNear Tempo Stand"
 	}
 ];
 var eventServices = [
@@ -399,6 +395,7 @@ function PageHero({ eyebrow, title, intro, breadcrumb }) {
 	});
 }
 var logo_default = "/assets/logo-CQ4WEttI.jpeg";
+var finalLogo_default = "/assets/finalLogo-CP_voAKY.png";
 function Navbar() {
 	const [open, setOpen] = (0, import_react.useState)(false);
 	const panelRef = (0, import_react.useRef)(null);
@@ -426,18 +423,13 @@ function Navbar() {
 							className: "size-10 shrink-0 rounded-full border border-gold/60 object-cover"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "min-w-0",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "block truncate text-3xl leading-tight sm:text-4xl",
-								style: {
-									fontFamily: "\"Yatra One\", serif",
-									color: "#e4003f",
-									WebkitTextStroke: "2px white",
-									paintOrder: "stroke fill",
-									textShadow: "2px 2px 4px rgba(0,0,0,0.4), 0px 4px 10px rgba(0,0,0,0.2)"
-								},
-								children: "माटी महल"
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+								src: finalLogo_default,
+								alt: restaurant.name,
+								className: "h-8 w-auto object-contain sm:h-10 lg:h-11 block",
+								style: { filter: "drop-shadow(0 0 1.5px white) drop-shadow(1px 1px 2px rgba(0,0,0,0.3))" }
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "hidden text-[0.65rem] tracking-[0.18em] text-muted-foreground uppercase sm:block",
+								className: "hidden text-[0.65rem] tracking-[0.18em] text-muted-foreground uppercase sm:block mt-0.5",
 								children: "Family  Restaurant"
 							})]
 						})]
@@ -647,6 +639,62 @@ var menuCategories = [
 	"Jain Specials"
 ];
 var menu = [
+	{
+		id: "bati-chokha",
+		name: "Bati Chokha",
+		description: "Traditional roasted wheat baati served with spiced mashed vegetables.",
+		price: 250,
+		category: "Rajasthani Specials"
+	},
+	{
+		id: "tilkahru-thali",
+		name: "Tilkahru Thali (Unlimited thali - 25)",
+		description: "Our special unlimited traditional thali experience.",
+		price: 25,
+		category: "Thalis"
+	},
+	{
+		id: "matka-daal",
+		name: "Matka Daal",
+		description: "Slow-cooked lentils prepared authentically in an earthen pot.",
+		price: 200,
+		category: "Main Course"
+	},
+	{
+		id: "sawan-kheer",
+		name: "Sawan Kheer",
+		description: "Festive milk and rice pudding enriched with dry fruits.",
+		price: 150,
+		category: "Desserts"
+	},
+	{
+		id: "desi-lassi",
+		name: "Desi Lassi",
+		description: "Traditional hand-churned thick sweet yoghurt drink.",
+		price: 80,
+		category: "Beverages"
+	},
+	{
+		id: "laal-dahi",
+		name: "Laal Dahi",
+		description: "Signature spiced red yoghurt preparation.",
+		price: 100,
+		category: "Rajasthani Specials"
+	},
+	{
+		id: "fara",
+		name: "Fara",
+		description: "Steamed rice flour dumplings stuffed with spiced lentils.",
+		price: 120,
+		category: "Starters"
+	},
+	{
+		id: "seasoning-food",
+		name: "Seasoning Food",
+		description: "A special variety of seasonal preparations.",
+		price: 100,
+		category: "Main Course"
+	},
 	{
 		id: "dal-baati-churma",
 		name: "Dal Baati Churma",
@@ -974,6 +1022,83 @@ var breadcrumbSchema = (name, path) => ({
 		item: path
 	}]
 });
+function ReservationPrompt() {
+	const [isVisible, setIsVisible] = (0, import_react.useState)(false);
+	const [isClosing, setIsClosing] = (0, import_react.useState)(false);
+	(0, import_react.useEffect)(() => {
+		if (sessionStorage.getItem("matiMahalReservationPopupDismissed")) return;
+		const timer = setTimeout(() => {
+			setIsVisible(true);
+		}, 5e3);
+		return () => clearTimeout(timer);
+	}, []);
+	const handleDismiss = () => {
+		setIsClosing(true);
+		setTimeout(() => {
+			setIsVisible(false);
+			sessionStorage.setItem("matiMahalReservationPopupDismissed", "true");
+		}, 400);
+	};
+	const handleReserveClick = () => {
+		sessionStorage.setItem("matiMahalReservationPopupDismissed", "true");
+		setIsVisible(false);
+	};
+	if (!isVisible) return null;
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		role: "dialog",
+		"aria-labelledby": "reservation-prompt-title",
+		className: `fixed bottom-3 left-3 right-3 z-[100] rounded-[1.25rem] border bg-[#F8F0E3] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-400 ease-out md:bottom-6 md:left-auto md:right-6 md:w-[380px] ${isClosing ? "translate-y-4 opacity-0" : "fade-up opacity-100"}`,
+		style: { borderColor: "#DCC6A5" },
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			onClick: handleDismiss,
+			"aria-label": "Close",
+			className: "absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full text-[#5F554F] transition-colors hover:bg-black/5 hover:text-primary",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "text-2xl leading-none",
+				"aria-hidden": "true",
+				children: "×"
+			})
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "text-center",
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "eyebrow mb-2 text-[#76232E]",
+					children: "PLAN YOUR VISIT"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					"aria-hidden": "true",
+					className: "mx-auto mb-3 text-[10px] tracking-widest text-[#C79A5B]",
+					children: "──── ◆ ────"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+					id: "reservation-prompt-title",
+					className: "font-display text-[1.75rem] font-semibold leading-tight text-[#76232E]",
+					children: "Your Table Awaits"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "mx-auto mt-3 max-w-[280px] text-sm leading-relaxed text-[#5F554F]",
+					children: "Join us for an authentic dining experience, warm hospitality and the flavours of Rajasthan."
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mt-7 flex flex-col items-center gap-2",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						onClick: handleReserveClick,
+						className: "w-full",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ActionLink, {
+							to: "/reservations",
+							className: "w-full bg-[#76232E] hover:bg-[#5C1A23] text-[#F8F0E3]",
+							children: "Reserve a Table"
+						})
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						onClick: handleDismiss,
+						className: "px-4 py-2 text-sm font-medium text-[#5F554F] transition-colors hover:text-[#76232E]",
+						children: "Not now"
+					})]
+				})
+			]
+		})]
+	});
+}
 function NotFoundComponent() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
 		className: "flex min-h-[70vh] items-center justify-center px-5 py-20",
@@ -1136,11 +1261,12 @@ function RootComponent() {
 				id: "main",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ReservationPrompt, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Footer, {})
 		]
 	});
 }
-var $$splitComponentImporter$9 = () => import("./routes-BoExUv-Y.mjs");
+var $$splitComponentImporter$9 = () => import("./routes-D_gAJMoC.mjs");
 var Route$10 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$9, "component"),
 	head: () => ({
@@ -1169,7 +1295,7 @@ var Route$10 = createFileRoute("/")({
 		}]
 	})
 });
-var $$splitComponentImporter$8 = () => import("./about-6s0-9gwm.mjs");
+var $$splitComponentImporter$8 = () => import("./about-BiJ-XBqM.mjs");
 var Route$9 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component"),
 	head: () => ({
@@ -1206,7 +1332,7 @@ var Route$9 = createFileRoute("/about")({
 		}]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./catering-events-DMSQbZrz.mjs");
+var $$splitComponentImporter$7 = () => import("./catering-events-IhCzPmYq.mjs");
 var Route$8 = createFileRoute("/catering-events")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component"),
 	head: () => ({
@@ -1239,7 +1365,7 @@ var Route$8 = createFileRoute("/catering-events")({
 		}]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./contact-Y5ceDOLb.mjs");
+var $$splitComponentImporter$6 = () => import("./contact-D-aKt6aO.mjs");
 var Route$7 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({
@@ -1272,7 +1398,7 @@ var Route$7 = createFileRoute("/contact")({
 		}]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./dining-experience-Dr8xC0P3.mjs");
+var $$splitComponentImporter$5 = () => import("./dining-experience-9PZNnHYb.mjs");
 var Route$6 = createFileRoute("/dining-experience")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({
@@ -1305,7 +1431,7 @@ var Route$6 = createFileRoute("/dining-experience")({
 		}]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./feedback-CfTGThi0.mjs");
+var $$splitComponentImporter$4 = () => import("./feedback-Db5i-f-p.mjs");
 var Route$5 = createFileRoute("/feedback")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({
@@ -1338,7 +1464,7 @@ var Route$5 = createFileRoute("/feedback")({
 		}]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./gallery-eNRH_eor.mjs");
+var $$splitComponentImporter$3 = () => import("./gallery-D-5OJl67.mjs");
 var Route$4 = createFileRoute("/gallery")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({
@@ -1371,7 +1497,7 @@ var Route$4 = createFileRoute("/gallery")({
 		}]
 	})
 });
-var $$splitComponentImporter$2 = () => import("./menu-CYRUJ1nv.mjs");
+var $$splitComponentImporter$2 = () => import("./menu-5HKMOQSz.mjs");
 var Route$3 = createFileRoute("/menu")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({
@@ -1407,7 +1533,7 @@ var Route$3 = createFileRoute("/menu")({
 		}]
 	})
 });
-var $$splitComponentImporter$1 = () => import("./privacy-policy-DfF4q_F-.mjs");
+var $$splitComponentImporter$1 = () => import("./privacy-policy-CYo6gF43.mjs");
 var Route$2 = createFileRoute("/privacy-policy")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({
@@ -1436,7 +1562,7 @@ var Route$2 = createFileRoute("/privacy-policy")({
 		}]
 	})
 });
-var $$splitComponentImporter = () => import("./reservations-NT3xfzBt.mjs");
+var $$splitComponentImporter = () => import("./reservations-BK8N1rCb.mjs");
 var Route$1 = createFileRoute("/reservations")({
 	component: lazyRouteComponent($$splitComponentImporter, "component"),
 	head: () => ({

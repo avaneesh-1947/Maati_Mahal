@@ -1,9 +1,9 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { c as ActionLink, d as PageHero, f as Section, l as ArchImage, p as SectionHeading, w as values, x as restaurant, y as milestones } from "./router-DUV4NYHj.mjs";
+import { c as ActionLink, d as PageHero, f as Section, l as ArchImage, p as SectionHeading, w as values, x as restaurant, y as milestones } from "./router-BQ3-oml7.mjs";
 import { t as hero1_default } from "./hero1-dOPlff5Y.mjs";
 import { n as rajasthani_restaurant_interior_jharokha_arches_default, t as rajasthani_family_dining_celebration_default } from "./rajasthani-family-dining-celebration-BHi2V532.mjs";
-import { n as FeatureCard } from "./DishCard-5isaNWwB.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-6s0-9gwm.js
+import { n as FeatureCard } from "./DishCard-DAPoHFHE.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-BiJ-XBqM.js
 var import_jsx_runtime = require_jsx_runtime();
 function About() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [
@@ -97,22 +97,39 @@ function About() {
 		}) }),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
 			className: "surface-sandstone",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
-				eyebrow: "Along the Way",
-				title: "Milestones"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
-				className: "mx-auto mt-12 max-w-2xl space-y-6",
-				children: milestones.map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-					className: "flex gap-5",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "font-display text-2xl font-semibold text-terracotta",
-						children: m.year
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "border-l border-gold/50 pl-5 text-sm leading-relaxed text-muted-foreground",
-						children: m.body
-					})]
-				}, m.year))
-			})]
+			children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
+					eyebrow: "OUR JOURNEY",
+					title: "Growing Across Cities"
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+					className: "mx-auto mt-12 max-w-2xl space-y-8 sm:space-y-6",
+					children: milestones.map((m) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+						className: "flex flex-col sm:flex-row sm:gap-5 gap-2",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "font-display text-2xl font-semibold text-terracotta shrink-0 sm:w-20",
+							children: m.year
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "border-l border-gold/50 pl-4 sm:pl-5 text-sm leading-relaxed text-muted-foreground whitespace-pre-line",
+							children: m.body
+						})]
+					}, m.year))
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mx-auto mt-20 max-w-2xl text-center",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+							className: "font-display text-xl font-semibold text-terracotta mb-4",
+							children: "ATITHI DEVO BHAVA"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "mx-auto h-px w-12 bg-gold/50 mb-4" }),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "text-sm leading-relaxed text-muted-foreground",
+							children: "\"Every guest is welcomed with warmth and treated like family.\""
+						})
+					]
+				})
+			]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
 			className: "surface-royal text-center",
