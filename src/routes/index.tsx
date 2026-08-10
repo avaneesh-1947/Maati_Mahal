@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroThali from "@/assets/rajasthani-vegetarian-thali-brass-plate.jpg";
+import heroThali from "@/assets/veg-thali.jpg";
 import interior from "@/assets/rajasthani-restaurant-interior-jharokha-arches.jpg";
 import chef from "@/assets/rajasthani-chef-traditional-cooking.jpg";
 import family from "@/assets/rajasthani-family-dining-celebration.jpg";
@@ -8,6 +8,7 @@ import sweets from "@/assets/rajasthani-sweets-ghevar-malpua.jpg";
 import heroMobile from "@/assets/hero1.png";
 import exteriorExp from "@/assets/hero2.png";
 import signboard from "@/assets/image.png";
+import atithi from "@/assets/atithidevobhavah-removebg-preview.png";
 import { ActionLink, DecorativeDivider, Section, SectionHeading } from "@/components/ui-kit";
 import { DishCard } from "@/components/DishCard";
 import { menuCategories, signatureDishes } from "@/data/menu";
@@ -64,7 +65,7 @@ function Home() {
               <p className="text-[11px] font-semibold uppercase tracking-[2px] text-[#E0B876] sm:text-[13px] sm:tracking-[3px] drop-shadow-md">
                 Authentic · Pure Vegetarian · VILLAGE INSPIRED
               </p>
-              <h1 
+              <h1
                 className="mt-3 font-display text-[42px] leading-[1.1] text-white sm:mt-4 sm:text-[64px] lg:text-[76px]"
                 style={{ textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}
               >
@@ -72,13 +73,13 @@ function Home() {
               </h1>
 
               <div className="mt-5 sm:mt-6">
-                <h2 
+                <h2
                   className="text-[26px] leading-tight text-[#F3D085] sm:text-[34px]"
                   style={{ fontFamily: '"Yatra One", serif', textShadow: '0 4px 16px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.8)' }}
                 >
                   गाँव की माटी, गाँव का स्वाद
                 </h2>
-                <p 
+                <p
                   className="mt-1 text-lg text-white sm:mt-2 sm:text-[22px]"
                   style={{ fontFamily: '"Yatra One", serif', textShadow: '0 4px 12px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.8)' }}
                 >
@@ -87,18 +88,18 @@ function Home() {
               </div>
 
               <DecorativeDivider className="mt-6 sm:mt-8" />
-              
+
               {/* Desktop Description */}
               <p className="mt-5 hidden max-w-[620px] text-[17px] leading-[1.6] text-white sm:block lg:text-[19px]">
                 Experience timeless vegetarian recipes, traditional flavours and warm village
                 hospitality — served in brass, cooked with patience, in the heart of {restaurant.city}.
               </p>
-              
+
               {/* Mobile Description */}
               <p className="mt-5 max-w-[320px] text-[16px] leading-[1.6] text-white sm:hidden">
                 Traditional village flavours, pure vegetarian recipes, and warm family hospitality.
               </p>
-              
+
               <div className="mt-7 flex flex-wrap gap-3 sm:mt-8">
                 <ActionLink to="/menu" variant="primary" className="flex-1 !text-white sm:flex-none">
                   Explore Menu
@@ -146,14 +147,16 @@ function Home() {
           ═══════════════════════════════════════════ */}
       <Section>
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
-          <div className="overflow-hidden rounded-2xl">
-            <img
-              src={heroMobile}
-              alt="Padmini Rasoi restaurant exterior"
-              loading="lazy"
-              decoding="async"
-              className="w-full h-auto object-contain rounded-2xl"
-            />
+          <div className="relative p-2 sm:p-3 rounded-2xl bg-white/50 border border-gold/20 shadow-sm backdrop-blur-sm">
+            <div className="overflow-hidden rounded-xl border border-gold/10">
+              <img
+                src={heroMobile}
+                alt="Padmini Rasoi restaurant exterior"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-auto object-cover aspect-video sm:aspect-auto hover:scale-105 transition-transform duration-700"
+              />
+            </div>
           </div>
           <div>
             <SectionHeading
@@ -182,7 +185,7 @@ function Home() {
           title="Traditional Flavours, Prepared with Patience"
           intro="A handful of preparations that guests return for, season after season."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {signatureDishes.map((dish) => (
             <DishCard key={dish.id} dish={dish} />
           ))}
@@ -245,14 +248,16 @@ function Home() {
               Step Inside
             </ActionLink>
           </div>
-          <div className="overflow-hidden rounded-2xl">
-            <img
-              src={exteriorExp}
-              alt="Padmini Rasoi dining experience and exterior"
-              loading="lazy"
-              decoding="async"
-              className="aspect-4/3 w-full object-cover"
-            />
+          <div className="relative p-2 sm:p-3 rounded-2xl bg-white/10 border border-gold/20 shadow-sm backdrop-blur-sm">
+            <div className="overflow-hidden rounded-xl border border-gold/10">
+              <img
+                src={exteriorExp}
+                alt="Padmini Rasoi dining experience and exterior"
+                loading="lazy"
+                decoding="async"
+                className="aspect-4/3 w-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
           </div>
         </div>
       </Section>
@@ -283,14 +288,16 @@ function Home() {
           ═══════════════════════════════════════════ */}
       <Section className="surface-sandstone">
         <div className="grid items-center gap-10 md:grid-cols-[1.1fr_1fr] md:gap-14">
-          <div className="overflow-hidden rounded-2xl">
-            <img
-              src={signboard}
-              alt="Padmini Rasoi facilities signboard: Pure Veg, Breakfast, Multi Cuisine, Rest Room, Banquet, Marriage Lawn"
-              loading="lazy"
-              decoding="async"
-              className="aspect-4/5 w-full object-cover md:aspect-[3/4]"
-            />
+          <div className="relative p-2 sm:p-3 rounded-2xl bg-white/50 border border-gold/20 shadow-sm backdrop-blur-sm">
+            <div className="overflow-hidden rounded-xl border border-gold/10">
+              <img
+                src={signboard}
+                alt="Padmini Rasoi facilities signboard: Pure Veg, Breakfast, Multi Cuisine, Rest Room, Banquet, Marriage Lawn"
+                loading="lazy"
+                decoding="async"
+                className="aspect-4/5 w-full object-cover md:aspect-[3/4] hover:scale-105 transition-transform duration-700"
+              />
+            </div>
           </div>
           <div>
             <SectionHeading
@@ -348,100 +355,20 @@ function Home() {
       </Section>
 
       {/* ═══════════════════════════════════════════
-          9. GUEST REVIEWS
+          9. ATITHI DEVO BHAVAH
           ═══════════════════════════════════════════ */}
-      <Section className="surface-sandstone">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="eyebrow">What Our Guests Say</p>
-          <h2 className="mt-3 font-display text-3xl leading-tight text-primary sm:text-4xl">
-            Warm Words, Honest Feedback
-          </h2>
-          <DecorativeDivider className="mx-auto mt-6" />
-          <div className="mt-10 space-y-8">
-            {[
-              {
-                quote: "Authentic food and a wonderful family dining experience. The thali took us straight back to the village.",
-                name: "A Happy Family",
-                stars: 5,
-              },
-              {
-                quote: "The best pure vegetarian restaurant we have visited. Honest flavours, warm service, and the food is unforgettable.",
-                name: "A Returning Guest",
-                stars: 5,
-              },
-            ].map((review) => (
-              <blockquote key={review.name} className="mx-auto max-w-xl">
-                <p className="text-lg text-gold" aria-label={`${review.stars} out of 5 stars`}>
-                  {"★".repeat(review.stars)}
-                </p>
-                <p className="mt-3 font-display text-lg leading-relaxed text-primary italic sm:text-xl">
-                  "{review.quote}"
-                </p>
-                <footer className="mt-3 text-sm font-semibold text-muted-foreground">
-                  — {review.name}
-                </footer>
-              </blockquote>
-            ))}
-          </div>
-          <ActionLink href={restaurant.googleReviewUrl} variant="outline" className="mt-10">
-            See Reviews on Google
-          </ActionLink>
-        </div>
-      </Section>
-
-      {/* ═══════════════════════════════════════════
-          10. VISIT US — location + map
-          ═══════════════════════════════════════════ */}
-      <Section id="location">
-        <div className="grid gap-10 md:grid-cols-2 md:gap-14">
-          <div>
-            <SectionHeading
-              align="left"
-              eyebrow="Visit Us"
-              title={`Pure Veg Dining in ${restaurant.city}`}
-              intro={`${restaurant.landmark} — easy to reach, easy to park, and always worth the visit.`}
-            />
-            <dl className="mt-8 space-y-4 text-sm">
-              <div>
-                <dt className="font-semibold text-primary">Address</dt>
-                <dd className="mt-1 text-muted-foreground">{fullAddress}</dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-primary">Opening Hours</dt>
-                <dd className="mt-1 space-y-1 text-muted-foreground">
-                  {restaurant.hours.map((h) => (
-                    <p key={h.days}>
-                      {h.days}: {h.time}
-                    </p>
-                  ))}
-                </dd>
-              </div>
-              <div>
-                <dt className="font-semibold text-primary">Phone</dt>
-                <dd className="mt-1">
-                  <a href={`tel:${restaurant.phoneHref}`} className="link-underline text-terracotta">
-                    {restaurant.phone}
-                  </a>
-                </dd>
-              </div>
-            </dl>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <ActionLink href={restaurant.directionsUrl} variant="outline">
-                Get Directions
-              </ActionLink>
-              <ActionLink to="/contact" variant="outline">
-                Contact Details
-              </ActionLink>
-            </div>
-          </div>
-          <iframe
-            title={`Map showing ${restaurant.name} in ${restaurant.city}`}
-            src={restaurant.mapEmbedUrl}
+      <Section className="pt-8 pb-8 md:pt-12 md:pb-12">
+        <div className="mx-auto flex justify-center w-full max-w-5xl">
+          <img
+            src={atithi}
+            alt="Atithi Devo Bhavah - The guest is equivalent to God"
             loading="lazy"
-            className="hairline-gold h-80 w-full rounded-lg md:h-full"
+            decoding="async"
+            className="w-full h-32 sm:h-40 md:h-48 object-contain drop-shadow-md"
           />
         </div>
       </Section>
+
 
       {/* ═══════════════════════════════════════════
           11. RESERVATION CTA

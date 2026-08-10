@@ -16,10 +16,11 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as DiningExperienceRouteImport } from './routes/dining-experience'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as MenuRouteImport } from './routes/menu'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as ReservationsRouteImport } from './routes/reservations'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as MenuIndexRouteImport } from './routes/menu.index'
+import { Route as MenuDishIdRouteImport } from './routes/menu_.$dishId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -56,11 +57,6 @@ const GalleryRoute = GalleryRouteImport.update({
   path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
-const MenuRoute = MenuRouteImport.update({
-  id: '/menu',
-  path: '/menu',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
@@ -76,6 +72,16 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MenuIndexRoute = MenuIndexRouteImport.update({
+  id: '/menu/',
+  path: '/menu/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MenuDishIdRoute = MenuDishIdRouteImport.update({
+  id: '/menu_/$dishId',
+  path: '/menu/$dishId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -85,10 +91,11 @@ export interface FileRoutesByFullPath {
   '/dining-experience': typeof DiningExperienceRoute
   '/feedback': typeof FeedbackRoute
   '/gallery': typeof GalleryRoute
-  '/menu': typeof MenuRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reservations': typeof ReservationsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/menu/$dishId': typeof MenuDishIdRoute
+  '/menu/': typeof MenuIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -98,10 +105,11 @@ export interface FileRoutesByTo {
   '/dining-experience': typeof DiningExperienceRoute
   '/feedback': typeof FeedbackRoute
   '/gallery': typeof GalleryRoute
-  '/menu': typeof MenuRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reservations': typeof ReservationsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/menu/$dishId': typeof MenuDishIdRoute
+  '/menu': typeof MenuIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -112,10 +120,11 @@ export interface FileRoutesById {
   '/dining-experience': typeof DiningExperienceRoute
   '/feedback': typeof FeedbackRoute
   '/gallery': typeof GalleryRoute
-  '/menu': typeof MenuRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/reservations': typeof ReservationsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/menu_/$dishId': typeof MenuDishIdRoute
+  '/menu/': typeof MenuIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -127,10 +136,11 @@ export interface FileRouteTypes {
     | '/dining-experience'
     | '/feedback'
     | '/gallery'
-    | '/menu'
     | '/privacy-policy'
     | '/reservations'
     | '/sitemap.xml'
+    | '/menu/$dishId'
+    | '/menu/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -140,10 +150,11 @@ export interface FileRouteTypes {
     | '/dining-experience'
     | '/feedback'
     | '/gallery'
-    | '/menu'
     | '/privacy-policy'
     | '/reservations'
     | '/sitemap.xml'
+    | '/menu/$dishId'
+    | '/menu'
   id:
     | '__root__'
     | '/'
@@ -153,10 +164,11 @@ export interface FileRouteTypes {
     | '/dining-experience'
     | '/feedback'
     | '/gallery'
-    | '/menu'
     | '/privacy-policy'
     | '/reservations'
     | '/sitemap.xml'
+    | '/menu_/$dishId'
+    | '/menu/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -167,10 +179,11 @@ export interface RootRouteChildren {
   DiningExperienceRoute: typeof DiningExperienceRoute
   FeedbackRoute: typeof FeedbackRoute
   GalleryRoute: typeof GalleryRoute
-  MenuRoute: typeof MenuRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ReservationsRoute: typeof ReservationsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  MenuDishIdRoute: typeof MenuDishIdRoute
+  MenuIndexRoute: typeof MenuIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -224,13 +237,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/menu': {
-      id: '/menu'
-      path: '/menu'
-      fullPath: '/menu'
-      preLoaderRoute: typeof MenuRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/privacy-policy': {
       id: '/privacy-policy'
       path: '/privacy-policy'
@@ -252,6 +258,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/menu/': {
+      id: '/menu/'
+      path: '/menu'
+      fullPath: '/menu/'
+      preLoaderRoute: typeof MenuIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/menu_/$dishId': {
+      id: '/menu_/$dishId'
+      path: '/menu/$dishId'
+      fullPath: '/menu/$dishId'
+      preLoaderRoute: typeof MenuDishIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -263,10 +283,11 @@ const rootRouteChildren: RootRouteChildren = {
   DiningExperienceRoute: DiningExperienceRoute,
   FeedbackRoute: FeedbackRoute,
   GalleryRoute: GalleryRoute,
-  MenuRoute: MenuRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ReservationsRoute: ReservationsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  MenuDishIdRoute: MenuDishIdRoute,
+  MenuIndexRoute: MenuIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

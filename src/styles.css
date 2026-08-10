@@ -37,7 +37,7 @@
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
-  --radius-arch: 14rem 14rem 0.75rem 0.75rem;
+  --radius-arch: 0.75rem;
 
   --shadow-soft: 0 1px 2px oklch(0.25 0.008 60 / 0.06), 0 8px 24px -12px oklch(0.25 0.008 60 / 0.18);
   --shadow-lift: 0 2px 4px oklch(0.25 0.008 60 / 0.08), 0 18px 40px -18px oklch(0.36 0.11 18 / 0.28);

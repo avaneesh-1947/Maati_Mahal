@@ -31,13 +31,11 @@ export const restaurant = {
   priceRange: "₹₹",
   cuisine: ["Village Inspired", "North Indian", "Vegetarian"],
   hours: [
-    { days: "Monday – Thursday", time: "11:00 AM – 10:30 PM" },
-    { days: "Friday – Sunday", time: "10:30 AM – 11:00 PM" },
+    { days: "Monday – Sunday", time: "8:00 AM – 11:30 PM" },
   ],
   /** Schema.org openingHoursSpecification source of truth */
   hoursSpec: [
-    { days: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "11:00", closes: "22:30" },
-    { days: ["Friday", "Saturday", "Sunday"], opens: "10:30", closes: "23:00" },
+    { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "08:00", closes: "23:30" },
   ],
 } as const;
 

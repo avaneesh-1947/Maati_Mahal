@@ -4,6 +4,7 @@ import { navLinks, restaurant } from "@/data/restaurant";
 import { DecorativeDivider } from "./ui-kit";
 import logo from "@/assets/logo.jpeg";
 import finalLogo from "@/assets/finalLogo.png";
+import vegSymbol from "@/assets/vegsymbol.jpg";
 
 export function  Navbar() {
   const [open, setOpen] = useState(false);
@@ -22,18 +23,21 @@ export function  Navbar() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="mx-auto grid w-full max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-5 py-3 sm:px-8 lg:gap-6">
         <Link to="/" className="flex min-w-0 items-center gap-3" aria-label={`${restaurant.name} home`}>
-          <img src={logo} alt={restaurant.name} className="size-10 shrink-0 rounded-full border border-gold/60 object-cover" />
+          <img src={logo} alt={restaurant.name} className="size-10 shrink-0 rounded-full border border-gold/60 object-cover mix-blend-multiply" />
           <span className="min-w-0">
             <img
               src={finalLogo}
               alt={restaurant.name}
-              className="h-8 w-auto object-contain sm:h-10 lg:h-11 block"
+              className="h-8 w-auto object-contain sm:h-10 lg:h-11 block mix-blend-multiply"
               style={{
-                filter: 'drop-shadow(0 0 1.5px white) drop-shadow(1px 1px 2px rgba(0,0,0,0.3))'
+                filter: 'drop-shadow(1px 1px 2px rgba(0,0,0,0.15))'
               }}
             />
-            <span className="hidden text-[0.65rem] tracking-[0.18em] text-muted-foreground uppercase sm:block mt-0.5">
-              Family  Restaurant
+            <span className="flex items-center gap-1.5 mt-0.5">
+              <span className="text-[0.55rem] sm:text-[0.65rem] tracking-[0.18em] text-muted-foreground uppercase">
+                Family  Restaurant
+              </span>
+              <img src={vegSymbol} alt="Pure Veg" className="h-4 w-auto sm:h-5 object-contain mix-blend-multiply" />
             </span>
           </span>
         </Link>

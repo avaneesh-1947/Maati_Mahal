@@ -1,11 +1,12 @@
 import { Tag } from "./ui-kit";
+import { Link } from "@tanstack/react-router";
 import type { Dish } from "@/data/menu";
 
 export function DishCard({ dish }: { dish: Dish }) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card shadow-[var(--shadow-soft)] transition-shadow duration-300 hover:shadow-[var(--shadow-lift)]">
+    <Link to="/menu/$dishId" params={{ dishId: dish.id }} className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card shadow-[var(--shadow-soft)] transition-all duration-300 hover:shadow-[var(--shadow-lift)] hover:-translate-y-1">
       {dish.image ? (
-        <div className="aspect-4/3 overflow-hidden bg-secondary">
+        <div className="aspect-[2/1] sm:aspect-4/3 overflow-hidden bg-secondary">
           <img
             src={dish.image}
             alt={dish.imageAlt ?? dish.name}
@@ -17,26 +18,25 @@ export function DishCard({ dish }: { dish: Dish }) {
           />
         </div>
       ) : null}
-      <div className="flex flex-1 flex-col p-5">
-        <div className="flex flex-wrap items-center gap-2">
-          <Tag tone="green">Pure Veg</Tag>
-          {dish.jain ? <Tag tone="gold">Jain Available</Tag> : null}
-          {dish.bestseller ? <Tag tone="terracotta">Bestseller</Tag> : null}
+      <div className="flex flex-1 flex-col p-2 sm:p-5">
+        <div className="flex flex-wrap items-center gap-1 sm:gap-2">
+          <Tag tone="green" className="text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1">Pure Veg</Tag>
+          {dish.jain ? <Tag tone="gold" className="text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1">Jain Available</Tag> : null}
+          {dish.bestseller ? <Tag tone="terracotta" className="text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1">Bestseller</Tag> : null}
         </div>
-        <h3 className="mt-3 font-display text-xl text-primary">{dish.name}</h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{dish.description}</p>
-        <p className="mt-4 font-display text-lg font-semibold text-terracotta">₹{dish.price}</p>
+        <h3 className="mt-1 sm:mt-3 font-display text-sm sm:text-xl text-primary transition-colors group-hover:text-terracotta line-clamp-1 sm:line-clamp-none">{dish.name}</h3>
+        <p className="mt-1 sm:mt-2 flex-1 text-[10px] sm:text-sm leading-snug sm:leading-relaxed text-muted-foreground line-clamp-2 sm:line-clamp-none">{dish.description}</p>
       </div>
-    </article>
+    </Link>
   );
 }
 
 export function MenuRow({ dish }: { dish: Dish }) {
   return (
     <li className="flex flex-col gap-1 border-b border-border/70 py-5 sm:flex-row sm:items-start sm:gap-6">
-      <div className="min-w-0 flex-1">
+      <Link to="/menu/$dishId" params={{ dishId: dish.id }} className="group block min-w-0 flex-1 hover:bg-muted/50 p-3 -mx-3 rounded-lg transition-colors">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <h3 className="font-display text-lg font-semibold text-primary">{dish.name}</h3>
+          <h3 className="font-display text-lg font-semibold text-primary transition-colors group-hover:text-terracotta">{dish.name}</h3>
           <span className="text-forest text-xs font-semibold" aria-label="Pure vegetarian">
             ● Pure Veg
           </span>
@@ -45,9 +45,7 @@ export function MenuRow({ dish }: { dish: Dish }) {
           {dish.spice ? <span className="text-xs text-muted-foreground">Spice: {dish.spice}</span> : null}
         </div>
         <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{dish.description}</p>
-      </div>
-      <p className="shrink-0 font-display text-lg font-semibold text-terracotta sm:pt-0.5">₹{dish.price}</p>
-    </li>
+      </Link>    </li>
   );
 }
 

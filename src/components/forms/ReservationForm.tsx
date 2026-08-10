@@ -51,6 +51,19 @@ export function ReservationForm() {
       return;
     }
 
+    const messageText = `*New Table Reservation Request*
+
+*Name:* ${values.name.trim()}
+*Phone:* ${values.phone.trim()}
+${values.email ? `*Email:* ${values.email.trim()}\n` : ""}*Guests:* ${guests}
+*Date:* ${values.date}
+*Time:* ${values.time}
+${values.occasion ? `*Occasion:* ${values.occasion.trim()}\n` : ""}${values.request ? `*Special Request:* ${values.request.trim()}\n` : ""}`;
+
+    const encodedMessage = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/919794293788?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+
     setStatus("loading");
     const { error } = await supabase.from("reservations").insert({
       name: values.name.trim(),

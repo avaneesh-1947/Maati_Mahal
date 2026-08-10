@@ -5,7 +5,7 @@ import { DecorativeDivider } from "./ui-kit";
 export function Footer() {
   return (
     <footer className="surface-royal px-5 pt-14 pb-8 sm:px-8">
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto w-full max-w-7xl">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <h2 className="font-display text-2xl">{restaurant.name}</h2>
@@ -26,34 +26,12 @@ export function Footer() {
             </div>
           </div>
 
-          <nav aria-label="Footer">
-            <h3 className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">Explore</h3>
-            <ul className="mt-4 grid grid-cols-2 gap-y-2 text-sm text-primary-foreground/80">
-              {navLinks.map((l) => (
-                <li key={l.to}>
-                  <Link to={l.to} className="link-underline">
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link to="/reservations" className="link-underline">
-                  Reservations
-                </Link>
-              </li>
-              <li>
-                <Link to="/privacy-policy" className="link-underline">
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-          </nav>
+
 
           <div>
             <h3 className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">Visit Us</h3>
             <address className="mt-4 space-y-2 text-sm leading-relaxed text-primary-foreground/80 not-italic">
               <p>{fullAddress}</p>
-              <p>{restaurant.landmark}</p>
               <p>
                 <a href={`tel:${restaurant.phoneHref}`} className="link-underline">
                   {restaurant.phone}
@@ -73,12 +51,37 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          <div>
+            <h3 className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">Location</h3>
+            <div className="mt-4 w-full h-48 rounded-lg overflow-hidden opacity-90 hover:opacity-100 transition-opacity">
+              <iframe
+                title={`Map showing ${restaurant.name} in ${restaurant.city}`}
+                src={restaurant.mapEmbedUrl}
+                loading="lazy"
+                className="w-full h-full border-0"
+              />
+            </div>
+          </div>
         </div>
 
-        <p className="mt-12 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/60">
-          © {new Date().getFullYear()} {restaurant.name}, {restaurant.city}. Pure vegetarian kitchen. All rights
-          reserved.
-        </p>
+        <div className="mt-12 flex flex-col items-center justify-center gap-3 border-t border-primary-foreground/15 pt-6 text-center text-xs text-primary-foreground/60">
+          <p>
+            © {new Date().getFullYear()} {restaurant.name}, {restaurant.city}. Pure vegetarian kitchen. All rights
+            reserved.
+          </p>
+          <p>
+            Made with love by{" "}
+            <a
+              href="https://www.needysolutions.info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary-foreground font-medium underline underline-offset-2 transition-colors"
+            >
+              needysolutions
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

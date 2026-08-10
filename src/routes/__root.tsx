@@ -16,6 +16,7 @@ import { ActionLink } from "@/components/ui-kit";
 import { restaurant } from "@/data/restaurant";
 import { restaurantSchema } from "@/lib/schema";
 import { ReservationPrompt } from "@/components/ReservationPrompt";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 function NotFoundComponent() {
   return (
@@ -141,6 +142,7 @@ function RootComponent() {
         <Outlet />
       </div>
       <ReservationPrompt />
+      <WhatsAppButton />
       <Footer />
     </QueryClientProvider>
   );
