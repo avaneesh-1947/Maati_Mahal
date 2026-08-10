@@ -15,6 +15,7 @@ import { Footer } from "@/components/Footer";
 import { ActionLink } from "@/components/ui-kit";
 import { restaurant } from "@/data/restaurant";
 import { restaurantSchema } from "@/lib/schema";
+import { ReservationPrompt } from "@/components/ReservationPrompt";
 
 function NotFoundComponent() {
   return (
@@ -139,6 +140,7 @@ function RootComponent() {
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
       </div>
+      <ReservationPrompt />
       <Footer />
     </QueryClientProvider>
   );

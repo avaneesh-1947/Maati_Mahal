@@ -152,7 +152,7 @@ function Home() {
               alt="Padmini Rasoi restaurant exterior"
               loading="lazy"
               decoding="async"
-              className="aspect-[4/5] w-full object-cover md:aspect-square"
+              className="w-full h-auto object-contain rounded-2xl"
             />
           </div>
           <div>

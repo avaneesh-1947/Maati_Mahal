@@ -11,12 +11,12 @@ export const restaurant = {
     "Pure vegetarian village inspired kitchen serving traditional thalis, timeless recipes and warm hospitality.",
   story:
     "Maati Mahal began as a family kitchen where recipes travelled from one generation to the next — written down by hand, tasted by memory. Rooted in village culinary traditions, our kitchen celebrates timeless vegetarian recipes prepared with stone-ground spices, slow-simmered dals and pure ghee.",
-  phone: "+91 98290 00000",
-  phoneHref: "+919829000000",
+  phone: "6390278657, 8960107779",
+  phoneHref: "+916390278657",
   email: "hello@maatimahal.example",
-  whatsapp: "+919829000000",
-  addressLine: "Main Road",
-  landmark: "Near Main Market",
+  whatsapp: "+916390278657",
+  addressLine: "Varanasi - lucknow Highway, NH56",
+  landmark: "",
   city: "Singramau",
   state: "Uttar Pradesh",
   pin: "222175",
@@ -41,7 +41,7 @@ export const restaurant = {
   ],
 } as const;
 
-export const fullAddress = `${restaurant.addressLine}, ${restaurant.city}, ${restaurant.state} ${restaurant.pin}`;
+export const fullAddress = `${restaurant.city}, ${restaurant.addressLine}, ${restaurant.pin}`;
 
 export const navLinks = [
   { to: "/", label: "Home" },
@@ -97,11 +97,10 @@ export const values = [
 ] as const;
 
 export const milestones = [
-  { year: "1998", body: "The family kitchen begins serving neighbours from a small courtyard." },
-  { year: "2007", body: "Our first dining room opens with twelve tables and one wood-fired chulha." },
-  { year: "2015", body: "The traditional village thali becomes our signature." },
-  { year: "2021", body: "A dedicated Jain kitchen with separate vessels is added." },
-  { year: "2024", body: "Catering for weddings, family gatherings and corporate events begins." },
+  { year: "2016", body: "Mughal Sarai\nSudha Desi Bati Chokha Restaurant" },
+  { year: "2019", body: "Civil Lines, Prayagraj\nBati Chokha Wala\nNear Max Mall" },
+  { year: "2020", body: "Gomti Nagar, Lucknow\nManglesia Bati Chokha Wala\nNear SRS Mall, Vishal Khand" },
+  { year: "2022", body: "Govind Pur, Prayagraj\nBati Chokha Wala\nNear Tempo Stand" },
 ] as const;
 
 export const eventServices = [

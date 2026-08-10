@@ -108,17 +108,25 @@ function About() {
       </Section>
 
       <Section className="surface-sandstone">
-        <SectionHeading eyebrow="Along the Way" title="Milestones" />
-        <ol className="mx-auto mt-12 max-w-2xl space-y-6">
+        <SectionHeading eyebrow="OUR JOURNEY" title="Growing Across Cities" />
+        <ol className="mx-auto mt-12 max-w-2xl space-y-8 sm:space-y-6">
           {milestones.map((m) => (
-            <li key={m.year} className="flex gap-5">
-              <span className="font-display text-2xl font-semibold text-terracotta">{m.year}</span>
-              <p className="border-l border-gold/50 pl-5 text-sm leading-relaxed text-muted-foreground">
+            <li key={m.year} className="flex flex-col sm:flex-row sm:gap-5 gap-2">
+              <span className="font-display text-2xl font-semibold text-terracotta shrink-0 sm:w-20">{m.year}</span>
+              <p className="border-l border-gold/50 pl-4 sm:pl-5 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">
                 {m.body}
               </p>
             </li>
           ))}
         </ol>
+
+        <div className="mx-auto mt-20 max-w-2xl text-center">
+          <h3 className="font-display text-xl font-semibold text-terracotta mb-4">ATITHI DEVO BHAVA</h3>
+          <div className="mx-auto h-px w-12 bg-gold/50 mb-4"></div>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            &quot;Every guest is welcomed with warmth and treated like family.&quot;
+          </p>
+        </div>
       </Section>
 
       <Section className="surface-royal text-center">

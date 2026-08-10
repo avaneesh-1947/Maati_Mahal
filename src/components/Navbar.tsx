@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { navLinks, restaurant } from "@/data/restaurant";
 import { DecorativeDivider } from "./ui-kit";
 import logo from "@/assets/logo.jpeg";
+import finalLogo from "@/assets/finalLogo.png";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,19 +24,15 @@ export function Navbar() {
         <Link to="/" className="flex min-w-0 items-center gap-3" aria-label={`${restaurant.name} home`}>
           <img src={logo} alt={restaurant.name} className="size-10 shrink-0 rounded-full border border-gold/60 object-cover" />
           <span className="min-w-0">
-            <span 
-              className="block truncate text-3xl leading-tight sm:text-4xl"
+            <img
+              src={finalLogo}
+              alt={restaurant.name}
+              className="h-8 w-auto object-contain sm:h-10 lg:h-11 block"
               style={{
-                fontFamily: '"Yatra One", serif',
-                color: '#e4003f',
-                WebkitTextStroke: '2px white',
-                paintOrder: 'stroke fill',
-                textShadow: '2px 2px 4px rgba(0,0,0,0.4), 0px 4px 10px rgba(0,0,0,0.2)'
+                filter: 'drop-shadow(0 0 1.5px white) drop-shadow(1px 1px 2px rgba(0,0,0,0.3))'
               }}
-            >
-              माटी महल
-            </span>
-            <span className="hidden text-[0.65rem] tracking-[0.18em] text-muted-foreground uppercase sm:block">
+            />
+            <span className="hidden text-[0.65rem] tracking-[0.18em] text-muted-foreground uppercase sm:block mt-0.5">
               Family  Restaurant
             </span>
           </span>

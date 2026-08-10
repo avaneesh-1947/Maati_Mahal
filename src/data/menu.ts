@@ -33,6 +33,62 @@ export const menuCategories = [
 
 export const menu: Dish[] = [
   {
+    id: "bati-chokha",
+    name: "Bati Chokha",
+    description: "Traditional roasted wheat baati served with spiced mashed vegetables.",
+    price: 250,
+    category: "Rajasthani Specials",
+  },
+  {
+    id: "tilkahru-thali",
+    name: "Tilkahru Thali (Unlimited thali - 25)",
+    description: "Our special unlimited traditional thali experience.",
+    price: 25,
+    category: "Thalis",
+  },
+  {
+    id: "matka-daal",
+    name: "Matka Daal",
+    description: "Slow-cooked lentils prepared authentically in an earthen pot.",
+    price: 200,
+    category: "Main Course",
+  },
+  {
+    id: "sawan-kheer",
+    name: "Sawan Kheer",
+    description: "Festive milk and rice pudding enriched with dry fruits.",
+    price: 150,
+    category: "Desserts",
+  },
+  {
+    id: "desi-lassi",
+    name: "Desi Lassi",
+    description: "Traditional hand-churned thick sweet yoghurt drink.",
+    price: 80,
+    category: "Beverages",
+  },
+  {
+    id: "laal-dahi",
+    name: "Laal Dahi",
+    description: "Signature spiced red yoghurt preparation.",
+    price: 100,
+    category: "Rajasthani Specials",
+  },
+  {
+    id: "fara",
+    name: "Fara",
+    description: "Steamed rice flour dumplings stuffed with spiced lentils.",
+    price: 120,
+    category: "Starters",
+  },
+  {
+    id: "seasoning-food",
+    name: "Seasoning Food",
+    description: "A special variety of seasonal preparations.",
+    price: 100,
+    category: "Main Course",
+  },
+  {
     id: "dal-baati-churma",
     name: "Dal Baati Churma",
     description:
@@ -240,6 +296,7 @@ export const menu: Dish[] = [
     jain: true,
     spice: "Medium",
   },
+
 ];
 
 export const signatureDishes = menu.filter((d) =>
