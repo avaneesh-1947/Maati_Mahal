@@ -5,7 +5,7 @@ import { DecorativeDivider } from "./ui-kit";
 import logo from "@/assets/logo.jpeg";
 import finalLogo from "@/assets/finalLogo.png";
 
-export function Navbar() {
+export function  Navbar() {
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement | null>(null);
 
