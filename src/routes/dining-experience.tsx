@@ -1,11 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
-import interior from "@/assets/rajasthani-restaurant-interior-jharokha-arches.jpg";
-import family from "@/assets/rajasthani-family-dining-celebration.jpg";
-import thali from "@/assets/rajasthani-vegetarian-thali-brass-plate.jpg";
-import culture from "@/assets/rajasthani-folk-culture-performance.jpg";
+import { createFileRoute } from '@tanstack/react-router'
+import interior from "@/assets/interior1.webp";
+import thali from "@/assets/tilkahru_thali.webp";
+import diningArea from "@/assets/hero2.webp";
+import hospitality from "@/assets/matke_wali_lassi.webp";
 import { ActionLink, ArchImage, PageHero, Section, SectionHeading } from "@/components/ui-kit";
 import { restaurant } from "@/data/restaurant";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/dining-experience")({
   component: DiningExperience,
@@ -14,16 +14,17 @@ export const Route = createFileRoute("/dining-experience")({
       { title: `Dining Experience | Family Veg Restaurant in ${restaurant.city}` },
       {
         name: "description",
-        content: `Step inside ${restaurant.name} in ${restaurant.city} — carved arches, brass thali service, family seating and traditional Rajasthani hospitality.`,
+        content: `Step inside ${restaurant.name} in ${restaurant.city} — authentic village ambience, brass thali service, spacious family seating and warm hospitality.`,
       },
       { property: "og:title", content: `The Dining Experience | ${restaurant.name}` },
       {
         property: "og:description",
         content: `Ambience, traditional serving and family dining at ${restaurant.name}, ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/dining-experience" },
+      { property: "og:url", content: absoluteUrl("/dining-experience") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/dining-experience" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/dining-experience") }],
     scripts: [
       {
         type: "application/ld+json",
@@ -36,37 +37,37 @@ export const Route = createFileRoute("/dining-experience")({
 const chapters = [
   {
     eyebrow: "The Room",
-    title: "Sandstone, Brass and Lamplight",
-    body: "Carved jharokha arches frame the room. Brass lanterns cast a low, warm light, block-print cushions soften the seating, and the floor is inlaid with a single mandala at its centre. Nothing shouts; everything belongs.",
+    title: "Earthy Village Ambience & Warmth",
+    body: "Traditional village-inspired decor and thoughtful lighting set the room. Comfortable family seating softens the experience, creating an authentic and welcoming rural haven where nothing shouts and everything belongs.",
     src: interior,
-    alt: "Restaurant interior with carved sandstone jharokha arches, maroon velvet seating and brass lanterns",
+    alt: "Maati Mahal interior dining hall with traditional lighting and seating",
     width: 1600,
     height: 1104,
   },
   {
     eyebrow: "The Service",
-    title: "Thalis Served the Old Way",
-    body: "Your thali is laid out in the order it is meant to be eaten — dal and baati at the centre, sabzi and kadhi to the side, chutneys at the rim, sweets last. Refills arrive quietly, before you have to ask.",
+    title: "Thalis Served the Traditional Way",
+    body: "Your thali is laid out in the authentic order — curries, dal, hot breads, and cooling accompaniments. Refills arrive warmly and generously, honoring the sacred spirit of Atithi Devo Bhavah.",
     src: thali,
-    alt: "Rajasthani vegetarian thali laid out in brass katoris with dal, baati, churma and breads",
+    alt: "Grand Tilkahru vegetarian thali feast served at Maati Mahal",
     width: 1600,
     height: 1104,
   },
   {
-    eyebrow: "The Table",
-    title: "Built for Families",
-    body: "Long tables for grandparents and grandchildren, high chairs without being asked, unhurried second helpings, and space for a birthday cake beside the ghevar.",
-    src: family,
-    alt: "Rajasthani family of three generations dining together over brass thalis",
+    eyebrow: "The Space",
+    title: "Built for Family Celebrations",
+    body: "Spacious seating designed for large family gatherings, grandparent-grandchild lunches, highway travelers, and festive celebrations with ample parking and open lawn space.",
+    src: diningArea,
+    alt: "Maati Mahal spacious dining and celebration lawn area",
     width: 1408,
     height: 1008,
   },
   {
-    eyebrow: "The Evenings",
-    title: "Folk Music and Ghoomar",
-    body: "On selected weekend evenings, a sarangi player and a ghoomar dancer perform in the courtyard — quietly enough that conversation continues, close enough that children stand up to watch.",
-    src: culture,
-    alt: "Rajasthani folk dancer performing ghoomar beside brass lamps in a courtyard",
+    eyebrow: "The Culture",
+    title: "Earthen Flavours & Kulhad Tradition",
+    body: "Every sip of thick churned lassi and hot brewed tea is served in natural clay kulhads, keeping the genuine village tradition alive with every sip.",
+    src: hospitality,
+    alt: "Traditional Matke Wali Lassi served fresh in kulhad",
     width: 1008,
     height: 1008,
   },

@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ActionLink, PageHero, Section, SectionHeading } from "@/components/ui-kit";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { fullAddress, restaurant } from "@/data/restaurant";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
@@ -18,9 +18,10 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: `Find us in ${restaurant.city}: ${fullAddress}. Call, message or get directions.`,
       },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: absoluteUrl("/contact") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/contact") }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema("Contact", "/contact")) },
     ],

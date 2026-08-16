@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { Field, FormStatus, Select, TextArea, TextInput } from "./Field";
 import { ActionButton } from "../ui-kit";
 import { eventTypes } from "@/data/restaurant";
-import { clean, limitText, optionalEmail, requireName, requirePhone, type Errors } from "@/lib/validation";
+import { limitText, optionalEmail, requireName, requirePhone, type Errors } from "@/lib/validation";
 
 const initial = {
   name: "",
@@ -43,22 +42,17 @@ export function EventForm() {
       return;
     }
 
-    setStatus("loading");
-    const { error } = await supabase.from("event_enquiries").insert({
-      name: values.name.trim(),
-      phone: values.phone.trim(),
-      email: clean(values.email),
-      event_type: values.eventType,
-      event_date: values.eventDate || null,
-      guests: values.guests ? Number(values.guests) : null,
-      message: clean(values.message),
-    });
+    const messageText = `*New Catering & Event Enquiry*
 
-    if (error) {
-      setStatus("error");
-      setMessage("We could not send your enquiry just now. Please try again or call us directly.");
-      return;
-    }
+*Name:* ${values.name.trim()}
+*Phone:* ${values.phone.trim()}
+${values.email ? `*Email:* ${values.email.trim()}\n` : ""}*Event Type:* ${values.eventType}
+${values.eventDate ? `*Event Date:* ${values.eventDate}\n` : ""}${values.guests ? `*Estimated Guests:* ${values.guests}\n` : ""}${values.message ? `*Message:* ${values.message.trim()}\n` : ""}`;
+
+    const encodedMessage = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/918960107779?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+
     setStatus("success");
     setMessage("Thank you — your event enquiry has reached us. Our team will be in touch soon.");
     setValues(initial);

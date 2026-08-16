@@ -1,85 +1,38 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import interior from "@/assets/rajasthani-restaurant-interior-jharokha-arches.jpg";
-import chef from "@/assets/rajasthani-chef-traditional-cooking.jpg";
-import family from "@/assets/rajasthani-family-dining-celebration.jpg";
-import catering from "@/assets/rajasthani-catering-event-setup.jpg";
-import hero1 from "@/assets/hero1.png";
-import hero2 from "@/assets/hero2.png";
-import signboard from "@/assets/image.png";
+import hero1 from "@/assets/hero1.webp";
+import hero2 from "@/assets/hero2.webp";
+import signboard from "@/assets/image.webp";
 import { PageHero, Section } from "@/components/ui-kit";
 import { galleryImages, type GalleryCategory, type GalleryImage } from "@/data/menu";
 import { restaurant } from "@/data/restaurant";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/gallery")({
   component: Gallery,
   head: () => ({
     meta: [
-      { title: `Gallery | ${restaurant.name} Rajasthani Veg Restaurant Photos` },
+      { title: `Gallery | ${restaurant.name} Pure Veg Restaurant Photos` },
       {
         name: "description",
-        content: `Photos of food, interiors, culture and celebrations at ${restaurant.name}, ${restaurant.city} — traditional Rajasthani thalis and haveli-inspired dining rooms.`,
+        content: `Authentic photos of delicious pure veg food, dining ambience, village culture and events at ${restaurant.name}, ${restaurant.city}.`,
       },
       { property: "og:title", content: `Gallery | ${restaurant.name}` },
       {
         property: "og:description",
         content: `Food, interiors and celebrations at ${restaurant.name}, ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/gallery" },
+      { property: "og:url", content: absoluteUrl("/gallery") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/gallery" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/gallery") }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema("Gallery", "/gallery")) },
     ],
   }),
 });
 
-const allImages: GalleryImage[] = [
-  ...galleryImages,
-  {
-    src: interior,
-    alt: "Restaurant interior with carved sandstone jharokha arches and brass lanterns",
-    caption: "Carved arches in the main dining room",
-    category: "Restaurant",
-  },
-  {
-    src: chef,
-    alt: "Rajasthani cook preparing baati over a clay chulha with brass utensils",
-    caption: "Baati over the clay chulha",
-    category: "Restaurant",
-  },
-  {
-    src: hero1,
-    alt: "Padmini Rasoi exterior and ambiance",
-    caption: "Our beautiful exterior",
-    category: "Restaurant",
-  },
-  {
-    src: hero2,
-    alt: "Padmini Rasoi dining area and experience",
-    caption: "A place for every occasion",
-    category: "Restaurant",
-  },
-  {
-    src: signboard,
-    alt: "Padmini Rasoi facilities",
-    caption: "More than a meal",
-    category: "Restaurant",
-  },
-  {
-    src: family,
-    alt: "Rajasthani family dining together over brass thalis with a folk musician nearby",
-    caption: "A family celebration in progress",
-    category: "Events",
-  },
-  {
-    src: catering,
-    alt: "Rajasthani wedding catering buffet with brass vessels and marigold decorations",
-    caption: "Traditional catering setup for weddings",
-    category: "Events",
-  },
-];
+const allImages: GalleryImage[] = galleryImages;
 
 const filters: ("All" | GalleryCategory)[] = ["All", "Food", "Restaurant", "Culture", "Events"];
 

@@ -4,7 +4,7 @@ import { ActionLink, PageHero, Section } from "@/components/ui-kit";
 import { MenuRow } from "@/components/DishCard";
 import { menu, menuCategories } from "@/data/menu";
 import { restaurant } from "@/data/restaurant";
-import { breadcrumbSchema, menuSchema } from "@/lib/schema";
+import { breadcrumbSchema, menuSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/menu/")({
   component: MenuPage,
@@ -20,9 +20,10 @@ export const Route = createFileRoute("/menu/")({
         property: "og:description",
         content: `Rajasthani specials, thalis and Jain-friendly dishes at ${restaurant.name}, ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/menu" },
+      { property: "og:url", content: absoluteUrl("/menu") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/menu" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/menu") }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(menuSchema()) },
       { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema("Menu", "/menu")) },

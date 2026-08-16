@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { Field, FormStatus, TextArea, TextInput } from "./Field";
 import { ActionButton } from "../ui-kit";
-import { clean, limitText, optionalEmail, requireName, requirePhone, type Errors } from "@/lib/validation";
+import { limitText, optionalEmail, requireName, requirePhone, type Errors } from "@/lib/validation";
 
 const initial = { name: "", phone: "", email: "", subject: "", message: "" };
 
@@ -31,20 +30,16 @@ export function ContactForm() {
       return;
     }
 
-    setStatus("loading");
-    const { error } = await supabase.from("contact_messages").insert({
-      name: values.name.trim(),
-      phone: values.phone.trim(),
-      email: clean(values.email),
-      subject: clean(values.subject),
-      message: values.message.trim(),
-    });
+    const messageText = `*New Contact Message*
 
-    if (error) {
-      setStatus("error");
-      setMessage("We could not send your message just now. Please try again or call the restaurant.");
-      return;
-    }
+*Name:* ${values.name.trim()}
+*Phone:* ${values.phone.trim()}
+${values.email ? `*Email:* ${values.email.trim()}\n` : ""}${values.subject ? `*Subject:* ${values.subject.trim()}\n` : ""}*Message:* ${values.message.trim()}`;
+
+    const encodedMessage = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/918960107779?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+
     setStatus("success");
     setMessage("Thank you for writing to us — we will reply as soon as we can.");
     setValues(initial);

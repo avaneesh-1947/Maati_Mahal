@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Section, SectionHeading } from "@/components/ui-kit";
 import { ReservationForm } from "@/components/forms/ReservationForm";
 import { fullAddress, restaurant } from "@/data/restaurant";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/reservations")({
   component: Reservations,
@@ -18,9 +18,10 @@ export const Route = createFileRoute("/reservations")({
         property: "og:description",
         content: `Reserve a table for family dining at ${restaurant.name}, ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/reservations" },
+      { property: "og:url", content: absoluteUrl("/reservations") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/reservations" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/reservations") }],
     scripts: [
       {
         type: "application/ld+json",

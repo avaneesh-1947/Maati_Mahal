@@ -1,28 +1,29 @@
 import { createFileRoute } from "@tanstack/react-router";
-import catering from "@/assets/rajasthani-catering-event-setup.jpg";
+import catering from "@/assets/hero2.webp";
 import { ArchImage, PageHero, Section, SectionHeading } from "@/components/ui-kit";
 import { FeatureCard } from "@/components/DishCard";
 import { EventForm } from "@/components/forms/EventForm";
 import { eventServices, restaurant } from "@/data/restaurant";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/catering-events")({
   component: CateringEvents,
   head: () => ({
     meta: [
-      { title: `Catering & Events | Pure Veg Rajasthani Catering in ${restaurant.city}` },
+      { title: `Catering & Events | Pure Veg Catering in ${restaurant.city}` },
       {
         name: "description",
-        content: `Pure vegetarian Rajasthani catering in ${restaurant.city} for weddings, family gatherings, corporate events and kitty parties. Send an enquiry to ${restaurant.name}.`,
+        content: `Pure vegetarian traditional catering in ${restaurant.city} for weddings, marriage lawns, family gatherings, corporate events and parties. Send an enquiry to ${restaurant.name}.`,
       },
       { property: "og:title", content: `Catering & Events | ${restaurant.name}` },
       {
         property: "og:description",
-        content: `Traditional pure-veg catering and group bookings in ${restaurant.city}.`,
+        content: `Traditional pure-veg catering and event bookings in ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/catering-events" },
+      { property: "og:url", content: absoluteUrl("/catering-events") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/catering-events" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/catering-events") }],
     scripts: [
       {
         type: "application/ld+json",
@@ -38,15 +39,15 @@ function CateringEvents() {
       <PageHero
         breadcrumb="Catering & Events"
         eyebrow="Celebrations"
-        title="Traditional Catering for Your Occasion"
-        intro="From an intimate family lunch to a wedding feast — pure vegetarian menus, brass service and Rajasthani warmth."
+        title="Traditional Catering & Lawn Events"
+        intro="From an intimate family gathering to grand marriage feasts — pure vegetarian menus, spacious celebration lawns, and warm hospitality."
       />
 
       <Section>
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-14">
           <ArchImage
             src={catering}
-            alt="Rajasthani wedding catering buffet with brass serving vessels and marigold decorations in a haveli courtyard"
+            alt="Maati Mahal spacious event lawns and catering celebration venue"
             width={1408}
             height={1008}
             className="aspect-4/3 w-full"

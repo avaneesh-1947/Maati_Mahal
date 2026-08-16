@@ -13,7 +13,7 @@ export const restaurant = {
     "Maati Mahal began as a family kitchen where recipes travelled from one generation to the next — written down by hand, tasted by memory. Rooted in village culinary traditions, our kitchen celebrates timeless vegetarian recipes prepared with stone-ground spices, slow-simmered dals and pure ghee.",
   phone: "6390278657, 8960107779",
   phoneHref: "+916390278657",
-  email: "hello@maatimahal.example",
+  email: "hello@maatimahal.com",
   whatsapp: "+916390278657",
   addressLine: "Varanasi - lucknow Highway, NH56",
   landmark: "",
@@ -25,9 +25,12 @@ export const restaurant = {
   mapEmbedUrl:
     "https://www.google.com/maps?q=Singramau+Uttar+Pradesh&output=embed",
   directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Singramau+Uttar+Pradesh",
-  instagram: "https://instagram.com/",
-  facebook: "https://facebook.com/",
+  instagram: "https://www.instagram.com/mati.mahal1?igsh=YTd2ZGdqaTQ4aXk0",
+  facebook: "https://www.facebook.com/share/18dYpspP1t/?mibextid=wwXIfr",
   googleReviewUrl: "https://www.google.com/maps",
+  siteUrl: "https://maatimahal.com",
+  /** TODO: Add actual Google Business Profile URL once created */
+  googleBusinessUrl: "",
   priceRange: "₹₹",
   cuisine: ["Village Inspired", "North Indian", "Vegetarian"],
   hours: [
@@ -36,6 +39,28 @@ export const restaurant = {
   /** Schema.org openingHoursSpecification source of truth */
   hoursSpec: [
     { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "08:00", closes: "23:30" },
+  ],
+  /** Nearby landmarks for local SEO signals */
+  nearbyLandmarks: [
+    "NH56 Varanasi–Lucknow Highway",
+    "Singramau",
+  ],
+  /** On-site facilities for entity completeness */
+  facilities: [
+    "Pure Vegetarian",
+    "Multi Cuisine Food",
+    "Breakfast Options",
+    "Banquet Hall",
+    "Marriage Lawn",
+    "Rest Rooms",
+  ],
+  /** Signature dishes for structured data */
+  signatureDishNames: [
+    "Bati Chokha",
+    "Tilkahru Thali",
+    "Matka Daal",
+    "Dal Baati Churma",
+    "Gatte Ki Sabzi",
   ],
 } as const;
 

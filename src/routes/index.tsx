@@ -1,14 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroThali from "@/assets/veg-thali.jpg";
-import interior from "@/assets/rajasthani-restaurant-interior-jharokha-arches.jpg";
-import chef from "@/assets/rajasthani-chef-traditional-cooking.jpg";
-import family from "@/assets/rajasthani-family-dining-celebration.jpg";
-import culture from "@/assets/rajasthani-folk-culture-performance.jpg";
-import sweets from "@/assets/rajasthani-sweets-ghevar-malpua.jpg";
-import heroMobile from "@/assets/hero1.png";
-import exteriorExp from "@/assets/hero2.png";
-import signboard from "@/assets/image.png";
-import atithi from "@/assets/atithidevobhavah-removebg-preview.png";
+import { absoluteUrl } from "@/lib/schema";
+import heroThali from "@/assets/tilkahru_thali.webp";
+import interior from "@/assets/interior1.webp";
+import batiChokha from "@/assets/bati_chokha_sadi_thali.webp";
+import matkaDaal from "@/assets/matka_daal.webp";
+import lassi from "@/assets/matke_wali_lassi.webp";
+import paneerButter from "@/assets/paneer_butter_masala.webp";
+import heroMobile from "@/assets/hero1.webp";
+import exteriorExp from "@/assets/hero2.webp";
+import signboard from "@/assets/image.webp";
+import atithi from "@/assets/atithidevobhavah-removebg-preview.webp";
 import { ActionLink, DecorativeDivider, Section, SectionHeading } from "@/components/ui-kit";
 import { DishCard } from "@/components/DishCard";
 import { menuCategories, signatureDishes } from "@/data/menu";
@@ -33,9 +34,10 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: `Traditional village thalis, Jain-friendly options and warm family dining in ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: absoluteUrl("/") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/") }],
   }),
 });
 
@@ -151,7 +153,7 @@ function Home() {
             <div className="overflow-hidden rounded-xl border border-gold/10">
               <img
                 src={heroMobile}
-                alt="Padmini Rasoi restaurant exterior"
+                alt={`${restaurant.name} restaurant exterior`}
                 loading="lazy"
                 decoding="async"
                 className="w-full h-auto object-cover aspect-video sm:aspect-auto hover:scale-105 transition-transform duration-700"
@@ -252,7 +254,7 @@ function Home() {
             <div className="overflow-hidden rounded-xl border border-gold/10">
               <img
                 src={exteriorExp}
-                alt="Padmini Rasoi dining experience and exterior"
+                alt={`${restaurant.name} dining experience and exterior`}
                 loading="lazy"
                 decoding="async"
                 className="aspect-4/3 w-full object-cover hover:scale-105 transition-transform duration-700"
@@ -292,7 +294,7 @@ function Home() {
             <div className="overflow-hidden rounded-xl border border-gold/10">
               <img
                 src={signboard}
-                alt="Padmini Rasoi facilities signboard: Pure Veg, Breakfast, Multi Cuisine, Rest Room, Banquet, Marriage Lawn"
+                alt={`${restaurant.name} facilities signboard: Pure Veg, Breakfast, Multi Cuisine, Rest Room, Banquet, Marriage Lawn`}
                 loading="lazy"
                 decoding="async"
                 className="aspect-4/5 w-full object-cover md:aspect-[3/4] hover:scale-105 transition-transform duration-700"
@@ -322,14 +324,14 @@ function Home() {
           8. GALLERY PREVIEW — editorial grid
           ═══════════════════════════════════════════ */}
       <Section>
-        <SectionHeading eyebrow="Gallery" title="A Glimpse of Padmini Rasoi" />
+        <SectionHeading eyebrow="Gallery" title={`A Glimpse of ${restaurant.name}`} />
         <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3">
           {[
-            { src: interior, alt: "Carved sandstone arches and maroon seating in the dining room", span: "md:col-span-2" },
-            { src: chef, alt: "Rajasthani cook preparing baati over a traditional clay chulha", span: "" },
-            { src: family, alt: "Rajasthani family enjoying a vegetarian thali dinner together", span: "" },
-            { src: culture, alt: "Rajasthani folk dancer performing ghoomar in a lamp-lit courtyard", span: "" },
-            { src: sweets, alt: "Ghevar and malpua Rajasthani sweets with saffron and pistachio", span: "" },
+            { src: interior, alt: "Maati Mahal authentic village themed interior dining hall", span: "md:col-span-2" },
+            { src: batiChokha, alt: "Traditional Bati Chokha Thali at Maati Mahal", span: "" },
+            { src: matkaDaal, alt: "Authentic Matka Daal prepared in clay pot", span: "" },
+            { src: lassi, alt: "Chilled Matke Wali Lassi served in traditional kulhad", span: "" },
+            { src: paneerButter, alt: "Rich Paneer Butter Masala curry", span: "" },
           ].map((image) => (
             <div
               key={image.alt}

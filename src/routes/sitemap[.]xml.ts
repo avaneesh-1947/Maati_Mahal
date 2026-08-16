@@ -1,36 +1,53 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { restaurant } from "@/data/restaurant";
+import { menu } from "@/data/menu";
 
-// TODO: replace with your project URL once a project name or custom domain is set.
-const BASE_URL = "";
+const BASE_URL = restaurant.siteUrl.replace(/\/$/, "");
 
 interface SitemapEntry {
   path: string;
   changefreq?: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
   priority?: string;
+  lastmod?: string;
 }
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        const today = new Date().toISOString().split("T")[0]!;
+
         const entries: SitemapEntry[] = [
-          { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/menu", changefreq: "weekly", priority: "0.9" },
-          { path: "/reservations", changefreq: "monthly", priority: "0.9" },
-          { path: "/about", changefreq: "monthly", priority: "0.8" },
-          { path: "/dining-experience", changefreq: "monthly", priority: "0.8" },
-          { path: "/gallery", changefreq: "monthly", priority: "0.7" },
-          { path: "/catering-events", changefreq: "monthly", priority: "0.8" },
-          { path: "/feedback", changefreq: "monthly", priority: "0.6" },
-          { path: "/contact", changefreq: "monthly", priority: "0.8" },
-          { path: "/privacy-policy", changefreq: "yearly", priority: "0.3" },
+          { path: "/", changefreq: "weekly", priority: "1.0", lastmod: today },
+          { path: "/menu", changefreq: "weekly", priority: "0.9", lastmod: today },
+          { path: "/reservations", changefreq: "monthly", priority: "0.9", lastmod: today },
+          { path: "/about", changefreq: "monthly", priority: "0.8", lastmod: today },
+          { path: "/dining-experience", changefreq: "monthly", priority: "0.8", lastmod: today },
+          { path: "/gallery", changefreq: "monthly", priority: "0.7", lastmod: today },
+          { path: "/catering-events", changefreq: "monthly", priority: "0.8", lastmod: today },
+          { path: "/feedback", changefreq: "monthly", priority: "0.6", lastmod: today },
+          { path: "/contact", changefreq: "monthly", priority: "0.8", lastmod: today },
+          { path: "/privacy-policy", changefreq: "yearly", priority: "0.3", lastmod: today },
         ];
+
+        // Add dish pages that have meaningful content (story field)
+        for (const dish of menu) {
+          if (dish.story) {
+            entries.push({
+              path: `/menu/${dish.id}`,
+              changefreq: "monthly",
+              priority: "0.6",
+              lastmod: today,
+            });
+          }
+        }
 
         const urls = entries.map((e) =>
           [
             `  <url>`,
             `    <loc>${BASE_URL}${e.path}</loc>`,
+            e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>` : null,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`,

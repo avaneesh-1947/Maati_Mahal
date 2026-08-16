@@ -1,1 +1,0 @@
-var e=`/assets/rajasthani-restaurant-interior-jharokha-arches-Cowm2ucc.jpg`,t=`/assets/rajasthani-family-dining-celebration-QJpxwvjn.jpg`;export{e as n,t};

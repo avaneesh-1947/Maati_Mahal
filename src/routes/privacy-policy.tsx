@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Section } from "@/components/ui-kit";
 import { fullAddress, restaurant } from "@/data/restaurant";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/privacy-policy")({
   component: PrivacyPolicy,
@@ -16,9 +17,13 @@ export const Route = createFileRoute("/privacy-policy")({
         property: "og:description",
         content: `Our approach to your personal information at ${restaurant.name}, ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/privacy-policy" },
+      { property: "og:url", content: absoluteUrl("/privacy-policy") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/privacy-policy" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/privacy-policy") }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema("Privacy Policy", "/privacy-policy")) },
+    ],
   }),
 });
 

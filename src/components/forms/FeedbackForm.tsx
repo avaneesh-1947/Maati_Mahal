@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { Field, FormStatus, RatingInput, Select, TextArea, TextInput } from "./Field";
 import { ActionButton } from "../ui-kit";
 import { feedbackTypes } from "@/data/restaurant";
-import { clean, limitText, type Errors } from "@/lib/validation";
+import { limitText, type Errors } from "@/lib/validation";
 
 const initialText = {
   name: "",
@@ -61,30 +60,29 @@ export function FeedbackForm() {
       return;
     }
 
-    setStatus("loading");
-    const { error } = await supabase.from("feedback").insert({
-      name,
-      contact: clean(values.contact),
-      visit_date: values.visitDate || null,
-      feedback_type: values.feedbackType,
-      rating_overall: ratings.overall as number,
-      rating_food: ratings.food,
-      rating_service: ratings.service,
-      rating_cleanliness: ratings.cleanliness,
-      rating_ambience: ratings.ambience,
-      rating_value: ratings.value,
-      favourite_dish: clean(values.favouriteDish),
-      enjoyed_most: clean(values.enjoyedMost),
-      comments: clean(values.comments),
-      would_recommend: values.recommend === "" ? null : values.recommend === "yes",
-      contact_requested: values.contactRequested,
-    });
+    const ratingsSummary = [
+      ratings.overall ? `*Overall Experience:* ${ratings.overall}/5` : null,
+      ratings.food ? `*Food:* ${ratings.food}/5` : null,
+      ratings.service ? `*Service:* ${ratings.service}/5` : null,
+      ratings.cleanliness ? `*Cleanliness:* ${ratings.cleanliness}/5` : null,
+      ratings.ambience ? `*Ambience:* ${ratings.ambience}/5` : null,
+      ratings.value ? `*Value for Money:* ${ratings.value}/5` : null,
+    ].filter(Boolean).join("\n");
 
-    if (error) {
-      setStatus("error");
-      setMessage("We could not send your feedback just now. Please try again in a moment.");
-      return;
-    }
+    const messageText = `*Guest Feedback*
+
+*Name:* ${name}
+${values.contact ? `*Contact:* ${values.contact.trim()}\n` : ""}${values.visitDate ? `*Visit Date:* ${values.visitDate}\n` : ""}*Feedback Type:* ${values.feedbackType}
+
+*Ratings:*
+${ratingsSummary}
+
+${values.favouriteDish ? `*Favourite Dish:* ${values.favouriteDish.trim()}\n` : ""}${values.recommend ? `*Would Recommend:* ${values.recommend === "yes" ? "Yes" : "No"}\n` : ""}${values.enjoyedMost ? `*Enjoyed Most:* ${values.enjoyedMost.trim()}\n` : ""}${values.comments ? `*Comments:* ${values.comments.trim()}\n` : ""}${values.contactRequested ? "*Customer requested a callback regarding this feedback.*" : ""}`;
+
+    const encodedMessage = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/918960107779?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+
     setStatus("success");
     setMessage("Thank you for sharing your experience — every word reaches our team.");
     setValues(initialText);

@@ -1,1 +1,0 @@
-var e=`/assets/rajasthani-catering-event-setup-B4SB7kCV.jpg`;export{e as t};

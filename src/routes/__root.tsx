@@ -14,7 +14,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ActionLink } from "@/components/ui-kit";
 import { restaurant } from "@/data/restaurant";
-import { restaurantSchema } from "@/lib/schema";
+import { restaurantSchema, websiteSchema, absoluteUrl } from "@/lib/schema";
 import { ReservationPrompt } from "@/components/ReservationPrompt";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
@@ -90,6 +90,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#6E1F2A" },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -103,6 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(restaurantSchema) },
+      { type: "application/ld+json", children: JSON.stringify(websiteSchema) },
     ],
   }),
   shellComponent: RootShell,
@@ -137,10 +139,10 @@ function RootComponent() {
         Skip to content
       </a>
       <Navbar />
-      <div id="main">
+      <main id="main">
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
-      </div>
+      </main>
       <ReservationPrompt />
       <WhatsAppButton />
       <Footer />

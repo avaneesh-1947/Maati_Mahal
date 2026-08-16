@@ -1,7 +1,10 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { menu } from "@/data/menu";
-import { Section, DecorativeDivider } from "@/components/ui-kit";
+import { restaurant } from "@/data/restaurant";
+import { Section, DecorativeDivider, Breadcrumb } from "@/components/ui-kit";
+import { DishCard } from "@/components/DishCard";
 import { ArrowLeft } from "lucide-react";
+import { dishSchema, dishBreadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/menu_/$dishId")({
   loader: async ({ params }) => {
@@ -9,9 +12,40 @@ export const Route = createFileRoute("/menu_/$dishId")({
     if (!dish) {
       throw notFound();
     }
-    return { dish };
+    // Get related dishes from the same category, excluding the current dish
+    const relatedDishes = menu
+      .filter((d) => d.category === dish.category && d.id !== dish.id)
+      .slice(0, 3);
+    return { dish, relatedDishes };
   },
   component: DishPage,
+  head: ({ loaderData }) => {
+    if (!loaderData) return {};
+    const { dish } = loaderData;
+    const title = `${dish.name} | ${restaurant.name}, ${restaurant.city}`;
+    const description = dish.story
+      ? `${dish.description} ${dish.story.slice(0, 100)}...`
+      : `${dish.description} Served at ${restaurant.name}, a pure vegetarian restaurant in ${restaurant.city}.`;
+    const dishPath = `/menu/${dish.id}`;
+
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: `${dish.name} | ${restaurant.name}` },
+        { property: "og:description", content: dish.description },
+        { property: "og:url", content: absoluteUrl(dishPath) },
+        { property: "og:type", content: "article" },
+        { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: absoluteUrl(dishPath) }],
+      scripts: [
+        { type: "application/ld+json", children: JSON.stringify(dishSchema(dish)) },
+        { type: "application/ld+json", children: JSON.stringify(dishBreadcrumbSchema(dish.name, dishPath)) },
+      ],
+    };
+  },
   notFoundComponent: () => {
     return (
       <div className="flex min-h-[50vh] flex-col items-center justify-center p-8 text-center">
@@ -26,18 +60,27 @@ export const Route = createFileRoute("/menu_/$dishId")({
 });
 
 function DishPage() {
-  const { dish } = Route.useLoaderData();
+  const { dish, relatedDishes } = Route.useLoaderData();
 
   return (
     <main className="min-h-screen bg-background pt-16 sm:pt-24 pb-16">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <Link 
-          to="/" 
-          className="inline-flex items-center text-sm font-semibold tracking-wide text-terracotta hover:text-primary transition-colors mb-4 sm:mb-8"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
-        </Link>
+        {/* Breadcrumb navigation */}
+        <nav aria-label="Breadcrumb" className="text-xs text-muted-foreground mb-4 sm:mb-8">
+          <ol className="flex items-center gap-2">
+            <li>
+              <Link to="/" className="hover:text-primary">Home</Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li>
+              <Link to="/menu" className="hover:text-primary">Menu</Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" className="font-semibold text-primary">
+              {dish.name}
+            </li>
+          </ol>
+        </nav>
         
         <Section className="py-2 sm:py-8 md:py-12">
           <div className={`grid gap-6 sm:gap-12 lg:gap-20 items-center ${dish.image ? "md:grid-cols-2" : "md:grid-cols-1 max-w-3xl mx-auto"}`}>
@@ -81,7 +124,7 @@ function DishPage() {
                   </p>
                 ) : (
                   <p className="mt-6 text-base leading-loose text-muted-foreground">
-                    Experience the authentic taste of Rajasthan with our meticulously prepared {dish.name}. 
+                    Experience the authentic taste of village-inspired cuisine with our meticulously prepared {dish.name}. 
                     Every ingredient is sourced with care and crafted following traditional recipes that have been passed down through generations. 
                     Whether you are dining in or taking it away, this dish promises a warm, comforting embrace of village-style culinary heritage.
                   </p>
@@ -95,7 +138,7 @@ function DishPage() {
                 <div className="aspect-[4/3] md:aspect-square w-full relative group">
                   <img
                     src={dish.image}
-                    alt={dish.imageAlt || dish.name}
+                    alt={dish.imageAlt || `${dish.name} served at ${restaurant.name}`}
                     className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
@@ -105,6 +148,28 @@ function DishPage() {
             
           </div>
         </Section>
+
+        {/* Related Dishes Section */}
+        {relatedDishes.length > 0 && (
+          <Section className="border-t border-border/50">
+            <h2 className="font-display text-2xl text-primary sm:text-3xl">
+              More from {dish.category}
+            </h2>
+            <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+              {relatedDishes.map((related) => (
+                <DishCard key={related.id} dish={related} />
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link
+                to="/menu"
+                className="inline-flex min-h-11 items-center rounded-md border border-border px-6 text-sm font-semibold text-primary transition-colors hover:bg-secondary"
+              >
+                View Full Menu
+              </Link>
+            </div>
+          </Section>
+        )}
       </div>
     </main>
   );

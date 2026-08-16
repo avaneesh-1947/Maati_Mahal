@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import exteriorAbout from "@/assets/hero1.png";
-import interior from "@/assets/rajasthani-restaurant-interior-jharokha-arches.jpg";
-import family from "@/assets/rajasthani-family-dining-celebration.jpg";
+import exteriorAbout from "@/assets/hero1.webp";
+import diningAbout from "@/assets/hero2.webp";
+import interior from "@/assets/interior1.webp";
 import { ActionLink, ArchImage, PageHero, Section, SectionHeading } from "@/components/ui-kit";
 import { FeatureCard } from "@/components/DishCard";
 import { milestones, restaurant, values } from "@/data/restaurant";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/about")({
   component: About,
@@ -21,10 +21,11 @@ export const Route = createFileRoute("/about")({
         property: "og:description",
         content: `Heritage, philosophy and the family behind ${restaurant.name}, ${restaurant.city}.`,
       },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: absoluteUrl("/about") },
       { property: "og:type", content: "article" },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/about") }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema("About", "/about")) },
     ],
@@ -48,7 +49,7 @@ function About() {
           </div>
           <ArchImage
             src={exteriorAbout}
-            alt="Padmini Rasoi exterior"
+            alt={`${restaurant.name} exterior`}
             width={1200}
             height={1408}
             className="aspect-4/5 w-full md:aspect-[4/5]"
@@ -82,8 +83,8 @@ function About() {
       <Section>
         <div className="grid items-center gap-10 md:grid-cols-[1fr_1.1fr] md:gap-14">
           <ArchImage
-            src={family}
-            alt="Family celebrating together over Rajasthani vegetarian thalis at a long table"
+            src={diningAbout}
+            alt="Maati Mahal authentic village themed interior and family dining atmosphere"
             width={1408}
             height={1008}
             className="aspect-4/5 w-full"

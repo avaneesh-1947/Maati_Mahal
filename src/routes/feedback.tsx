@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Section, SectionHeading } from "@/components/ui-kit";
 import { FeedbackForm } from "@/components/forms/FeedbackForm";
 import { restaurant } from "@/data/restaurant";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, absoluteUrl } from "@/lib/schema";
 
 export const Route = createFileRoute("/feedback")({
   component: Feedback,
@@ -18,9 +18,10 @@ export const Route = createFileRoute("/feedback")({
         property: "og:description",
         content: `Share compliments, suggestions or concerns with the team at ${restaurant.name}.`,
       },
-      { property: "og:url", content: "/feedback" },
+      { property: "og:url", content: absoluteUrl("/feedback") },
+      { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
-    links: [{ rel: "canonical", href: "/feedback" }],
+    links: [{ rel: "canonical", href: absoluteUrl("/feedback") }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(breadcrumbSchema("Feedback", "/feedback")) },
     ],

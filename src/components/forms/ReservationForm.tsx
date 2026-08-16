@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { Field, FormStatus, Select, TextArea, TextInput } from "./Field";
 import { ActionButton } from "../ui-kit";
 import { occasions, timeSlots } from "@/data/restaurant";
 import {
-  clean,
   limitText,
   optionalEmail,
   requireName,
@@ -61,26 +59,9 @@ ${values.email ? `*Email:* ${values.email.trim()}\n` : ""}*Guests:* ${guests}
 ${values.occasion ? `*Occasion:* ${values.occasion.trim()}\n` : ""}${values.request ? `*Special Request:* ${values.request.trim()}\n` : ""}`;
 
     const encodedMessage = encodeURIComponent(messageText);
-    const whatsappUrl = `https://wa.me/919794293788?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/918960107779?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
 
-    setStatus("loading");
-    const { error } = await supabase.from("reservations").insert({
-      name: values.name.trim(),
-      phone: values.phone.trim(),
-      email: clean(values.email),
-      reservation_date: values.date,
-      reservation_time: values.time,
-      guests,
-      occasion: clean(values.occasion),
-      special_request: clean(values.request),
-    });
-
-    if (error) {
-      setStatus("error");
-      setMessage("We could not send your request just now. Please try again or call the restaurant.");
-      return;
-    }
     setStatus("success");
     setMessage(
       "Thank you — your table request has reached us. Our team will call you shortly to confirm.",

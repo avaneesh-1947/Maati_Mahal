@@ -2,9 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { navLinks, restaurant } from "@/data/restaurant";
 import { DecorativeDivider } from "./ui-kit";
-import logo from "@/assets/logo.jpeg";
-import finalLogo from "@/assets/finalLogo.png";
-import vegSymbol from "@/assets/vegsymbol.jpg";
+import logo from "@/assets/logo.webp";
+import finalLogo from "@/assets/finalLogo.webp";
+import vegSymbol from "@/assets/vegsymbol.webp";
 
 export function  Navbar() {
   const [open, setOpen] = useState(false);
