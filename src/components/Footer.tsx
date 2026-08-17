@@ -46,7 +46,7 @@ export function Footer() {
           <div>
             <h3 className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">Quick Links</h3>
             <nav aria-label="Footer" className="mt-4">
-              <ul className="space-y-2 text-sm text-primary-foreground/80">
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-primary-foreground/80">
                 {navLinks.map((link) => (
                   <li key={link.to}>
                     <Link to={link.to} className="link-underline hover:text-primary-foreground transition-colors">

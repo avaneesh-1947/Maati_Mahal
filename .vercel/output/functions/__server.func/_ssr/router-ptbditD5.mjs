@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { L as notFound, _ as Link, f as createRouter, g as createRootRouteWithContext, h as createFileRoute, l as Scripts, m as lazyRouteComponent, p as Outlet, u as HeadContent, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-k1QkPi5D.js
+//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-CGYMcXGI.js
 /**
 * Centralised restaurant configuration.
 * Replace these values with the client's confirmed details — they are used across
@@ -14,10 +14,10 @@ var restaurant = {
 	shortDescription: "Pure vegetarian village inspired kitchen serving traditional thalis, timeless recipes and warm hospitality.",
 	story: "Maati Mahal began as a family kitchen where recipes travelled from one generation to the next — written down by hand, tasted by memory. Rooted in village culinary traditions, our kitchen celebrates timeless vegetarian recipes prepared with stone-ground spices, slow-simmered dals and pure ghee.",
 	phone: "6390278657, 8960107779",
-	phoneHref: "+916390278657",
+	phoneHref: "+918960107779",
 	email: "hello@maatimahal.com",
-	whatsapp: "+916390278657",
-	addressLine: "Varanasi - lucknow Highway, NH56",
+	whatsapp: "+918960107779",
+	addressLine: "Varanasi - Lucknow Highway, NH56",
 	landmark: "",
 	city: "Singramau",
 	state: "Uttar Pradesh",
@@ -654,7 +654,7 @@ var galleryImages = [
 	}
 ];
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CfKJcX5S.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-ptbditD5.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -667,7 +667,7 @@ var __exportAll = (all, no_symbols) => {
 	if (!no_symbols) __defProp(target, Symbol.toStringTag, { value: "Module" });
 	return target;
 };
-var styles_default = "/assets/styles-WaRg0U-E.css";
+var styles_default = "/assets/styles-BIH0g_bL.css";
 function SectionHeading({ eyebrow, title, intro, align = "center", as: As = "h2" }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl",
@@ -1051,7 +1051,7 @@ function Footer() {
 						"aria-label": "Footer",
 						className: "mt-4",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-							className: "space-y-2 text-sm text-primary-foreground/80",
+							className: "grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-primary-foreground/80",
 							children: navLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: link.to,
 								className: "link-underline hover:text-primary-foreground transition-colors",
@@ -1367,7 +1367,7 @@ function ReservationPrompt() {
 }
 function WhatsAppButton() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-		href: `https://wa.me/916390278657`,
+		href: `https://wa.me/918960107779`,
 		target: "_blank",
 		rel: "noopener noreferrer",
 		className: "fixed bottom-6 right-6 z-[100] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2",
@@ -1557,7 +1557,7 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$10 = () => import("./routes-CDaqOn6G.mjs");
+var $$splitComponentImporter$10 = () => import("./routes-CthL8-np.mjs");
 var Route$11 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$10, "component"),
 	head: () => ({
@@ -1590,7 +1590,7 @@ var Route$11 = createFileRoute("/")({
 		}]
 	})
 });
-var $$splitComponentImporter$9 = () => import("./about-BIcDXOru.mjs");
+var $$splitComponentImporter$9 = () => import("./about-C6jo9B5w.mjs");
 var Route$10 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$9, "component"),
 	head: () => ({
@@ -1631,7 +1631,7 @@ var Route$10 = createFileRoute("/about")({
 		}]
 	})
 });
-var $$splitComponentImporter$8 = () => import("./catering-events-CZbLm1wP.mjs");
+var $$splitComponentImporter$8 = () => import("./catering-events-Bk3CsqOV.mjs");
 var Route$9 = createFileRoute("/catering-events")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component"),
 	head: () => ({
@@ -1668,7 +1668,7 @@ var Route$9 = createFileRoute("/catering-events")({
 		}]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./contact-Bb1Y5CKZ.mjs");
+var $$splitComponentImporter$7 = () => import("./contact-CSLyYNen.mjs");
 var Route$8 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component"),
 	head: () => ({
@@ -1705,7 +1705,7 @@ var Route$8 = createFileRoute("/contact")({
 		}]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./dining-experience-BwFJfxSC.mjs");
+var $$splitComponentImporter$6 = () => import("./dining-experience-sV1G4mmz.mjs");
 var Route$7 = createFileRoute("/dining-experience")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({
@@ -1742,7 +1742,7 @@ var Route$7 = createFileRoute("/dining-experience")({
 		}]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./feedback-Bzx8n7j7.mjs");
+var $$splitComponentImporter$5 = () => import("./feedback-Ctd4wClf.mjs");
 var Route$6 = createFileRoute("/feedback")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({
@@ -1779,7 +1779,7 @@ var Route$6 = createFileRoute("/feedback")({
 		}]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./gallery-VieaDFDL.mjs");
+var $$splitComponentImporter$4 = () => import("./gallery-CtuKkQ2u.mjs");
 var Route$5 = createFileRoute("/gallery")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({
@@ -1816,7 +1816,7 @@ var Route$5 = createFileRoute("/gallery")({
 		}]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./privacy-policy-tnXzF4qu.mjs");
+var $$splitComponentImporter$3 = () => import("./privacy-policy-BbNUpWW7.mjs");
 var Route$4 = createFileRoute("/privacy-policy")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({
@@ -1853,7 +1853,7 @@ var Route$4 = createFileRoute("/privacy-policy")({
 		}]
 	})
 });
-var $$splitComponentImporter$2 = () => import("./reservations-yDMIUy9V.mjs");
+var $$splitComponentImporter$2 = () => import("./reservations-Bb5RTrtZ.mjs");
 var Route$3 = createFileRoute("/reservations")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({
@@ -1979,7 +1979,7 @@ var Route$2 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 		"Cache-Control": "public, max-age=3600"
 	} });
 } } } });
-var $$splitComponentImporter$1 = () => import("./menu.index-CRTcIbx1.mjs");
+var $$splitComponentImporter$1 = () => import("./menu.index-27PLsAdK.mjs");
 var Route$1 = createFileRoute("/menu/")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({
@@ -2020,7 +2020,7 @@ var Route$1 = createFileRoute("/menu/")({
 	})
 });
 var $$splitNotFoundComponentImporter = () => import("./menu_._dishId-x-9kBCVc.mjs");
-var $$splitComponentImporter = () => import("./menu_._dishId-JPiWpzty.mjs");
+var $$splitComponentImporter = () => import("./menu_._dishId-jWIv0pdn.mjs");
 var Route = createFileRoute("/menu_/$dishId")({
 	loader: async ({ params }) => {
 		const dish = menu.find((d) => d.id === params.dishId);

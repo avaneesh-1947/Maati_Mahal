@@ -1,5 +1,5 @@
 export function WhatsAppButton() {
-  const phoneNumber = '6390278657';
+  const phoneNumber = '8960107779';
   const whatsappUrl = `https://wa.me/91${phoneNumber}`;
 
   return (

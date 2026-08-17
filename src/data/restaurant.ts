@@ -12,10 +12,10 @@ export const restaurant = {
   story:
     "Maati Mahal began as a family kitchen where recipes travelled from one generation to the next — written down by hand, tasted by memory. Rooted in village culinary traditions, our kitchen celebrates timeless vegetarian recipes prepared with stone-ground spices, slow-simmered dals and pure ghee.",
   phone: "6390278657, 8960107779",
-  phoneHref: "+916390278657",
+  phoneHref: "+918960107779",
   email: "hello@maatimahal.com",
-  whatsapp: "+916390278657",
-  addressLine: "Varanasi - lucknow Highway, NH56",
+  whatsapp: "+918960107779",
+  addressLine: "Varanasi - Lucknow Highway, NH56",
   landmark: "",
   city: "Singramau",
   state: "Uttar Pradesh",
