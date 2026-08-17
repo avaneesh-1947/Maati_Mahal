@@ -14,7 +14,7 @@ export const Route = createFileRoute("/about")({
       { title: `About ${restaurant.name} | Marwari Vegetarian Kitchen in ${restaurant.city}` },
       {
         name: "description",
-        content: `The story behind ${restaurant.name} — a pure vegetarian Marwari kitchen in ${restaurant.city} preserving Rajasthani recipes, stone-ground spices and traditional hospitality.`,
+        content: `The story behind ${restaurant.name} — a pure vegetarian kitchen in ${restaurant.city} preserving Maatimahal recipes, stone-ground spices and traditional hospitality.`,
       },
       { property: "og:title", content: `Our Story | ${restaurant.name}` },
       {

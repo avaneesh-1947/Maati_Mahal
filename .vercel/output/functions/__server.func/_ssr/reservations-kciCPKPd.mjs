@@ -1,8 +1,8 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { A as restaurant, D as fullAddress, c as Section, j as timeSlots, k as occasions, l as SectionHeading, r as ActionButton, s as PageHero } from "./router-ptbditD5.mjs";
+import { A as timeSlots, E as fullAddress, O as occasions, c as Section, k as restaurant, l as SectionHeading, r as ActionButton, s as PageHero } from "./router-B53ahYd2.mjs";
 import { a as TextArea, c as optionalEmail, i as Select, l as requireName, n as FormStatus, o as TextInput, s as limitText, t as Field, u as requirePhone } from "./validation-C97rv48X.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/reservations-Bb5RTrtZ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/reservations-kciCPKPd.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var initial = {
@@ -187,7 +187,7 @@ ${values.occasion ? `*Occasion:* ${values.occasion.trim()}\n` : ""}${values.requ
 				label: "Special Request",
 				htmlFor: "r-request",
 				error: errors["request"],
-				hint: "Jain preparation, high chair, seating preference, wheelchair access.",
+				hint: "High chair, seating preference, wheelchair access.",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TextArea, {
 					id: "r-request",
 					name: "request",
@@ -237,7 +237,7 @@ function Reservations() {
 					className: "mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Large groups of 12 or more are best booked a day in advance." }),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Jain preparations are available across most of the menu — mention it in your request." }),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "We can accommodate most special requests — mention them in your booking notes." }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Tables are held for 20 minutes past the reserved time." }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "We are a fully vegetarian kitchen; outside food and alcohol are not served." })
 					]

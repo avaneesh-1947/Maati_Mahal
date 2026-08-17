@@ -79,7 +79,7 @@ function DiningExperience() {
       <PageHero
         breadcrumb="Dining Experience"
         eyebrow="The Experience"
-        title="An Evening in a Rajasthani Haveli"
+        title="An Evening at Maatimahal"
         intro="Warm light, brass service and a room built for long meals with people you love."
       />
 

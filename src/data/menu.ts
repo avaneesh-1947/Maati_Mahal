@@ -26,12 +26,13 @@ import desiChhasImg from "@/assets/desi_chhas.webp";
 import kadhiImg from "@/assets/kadhi.webp";
 import kalonjiImg from "@/assets/kalonji.webp";
 
+
 // Atmosphere & Restaurant Real Photos
 import hero1 from "@/assets/hero1.webp";
 import hero2 from "@/assets/hero2.webp";
 import interior1 from "@/assets/interior1.webp";
 import img1960 from "@/assets/IMG_1960.webp";
-import signboard from "@/assets/image.webp";
+import signboard from "@/assets/galary.webp";
 
 export type SpiceLevel = "Mild" | "Medium" | "Fiery";
 
@@ -42,7 +43,6 @@ export interface Dish {
   story?: string;
   price: number;
   category: string;
-  jain?: boolean;
   bestseller?: boolean;
   spice?: SpiceLevel;
   image?: string;
@@ -50,14 +50,13 @@ export interface Dish {
 }
 
 export const menuCategories = [
-  "Rajasthani Specials",
+  "Maatimahal Specials",
   "Thalis",
   "Starters",
   "Main Course",
   "Breads",
   "Desserts",
   "Beverages",
-  "Jain Specials",
 ] as const;
 
 export const menu: Dish[] = [
@@ -67,7 +66,7 @@ export const menu: Dish[] = [
     description: "Traditional roasted wheat baati served with spiced mashed vegetables.",
     story: "Bati Chokha is the soulful comfort food of the village. Our baatis are hand-rolled and roasted slowly over cow dung cakes to impart that signature rustic, smoky flavour. We serve it alongside a fiery, perfectly mashed 'chokha' made from fire-roasted brinjals, tomatoes, and potatoes mixed with pungent mustard oil and fresh green chillies. Every bite is a nostalgic journey to the vibrant village courtyards of the heartland.",
     price: 250,
-    category: "Rajasthani Specials",
+    category: "Maatimahal Specials",
     bestseller: true,
     image: batiChokhaImg,
     imageAlt: "Authentic Bati Chokha Thali at Maati Mahal",
@@ -121,7 +120,7 @@ export const menu: Dish[] = [
     description: "Signature spiced yoghurt and traditional mixed pickle preparation.",
     story: "Our vibrant homemade pickles and spiced yoghurt preparations get their striking crimson hue from premium chillies, balanced perfectly with tartness and aromatic spices. A bold, tantalizing accompaniment that cuts through the richness of our gravies.",
     price: 100,
-    category: "Rajasthani Specials",
+    category: "Maatimahal Specials",
     image: mixedAcharImg,
     imageAlt: "Traditional Mixed Achar and Village Accompaniments",
   },
@@ -152,7 +151,6 @@ export const menu: Dish[] = [
     price: 260,
     category: "Main Course",
     bestseller: true,
-    jain: true,
     spice: "Mild",
     image: paneerButterMasalaImg,
     imageAlt: "Rich Paneer Butter Masala with fresh cream",
@@ -189,15 +187,14 @@ export const menu: Dish[] = [
     imageAlt: "Mushroom Do Pyaaza in rich masala gravy",
   },
   {
-    id: "rajasthani-kadhi",
-    name: "Rajasthani Kadhi Pakoda",
+    id: "maatimahal-kadhi",
+    name: "Maatimahal Kadhi Pakoda",
     description: "Sour yoghurt kadhi with soft gram-flour pakodas and mustard red chilli tempering.",
     price: 180,
     category: "Main Course",
-    jain: true,
     spice: "Medium",
     image: kadhiImg,
-    imageAlt: "Traditional Rajasthani Kadhi with pakodas",
+    imageAlt: "Traditional Maatimahal Kadhi with pakodas",
   },
   {
     id: "paneer-chilli-dry",
@@ -279,7 +276,6 @@ export const menu: Dish[] = [
     description: "Nutritious gram flour and wheat roti infused with ajwain, onions and fresh herbs.",
     price: 50,
     category: "Breads",
-    jain: true,
     image: missiRotiImg,
     imageAlt: "Traditional Missi Roti with herbs and ajwain",
   },
@@ -318,7 +314,6 @@ export const menu: Dish[] = [
     description: "Cooling churned buttermilk seasoned with roasted cumin, rock salt, and mint.",
     price: 40,
     category: "Beverages",
-    jain: true,
     image: desiChhasImg,
     imageAlt: "Refreshing Desi Masala Chhas in glass",
   },
@@ -328,7 +323,6 @@ export const menu: Dish[] = [
     description: "Sliced crisp cucumbers, juicy tomatoes, onions, carrots, and fresh lemon wedges.",
     price: 60,
     category: "Starters",
-    jain: true,
     image: greenSaladImg,
     imageAlt: "Fresh crisp Garden Green Salad",
   },

@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { S as hero2_default, a as ArchImage, b as tilkahru_thali_default, c as Section, i as ActionLink, l as SectionHeading, s as PageHero, x as interior1_default, y as matke_wali_lassi_default } from "./router-ptbditD5.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/dining-experience-sV1G4mmz.js
+import { a as ArchImage, b as interior1_default, c as Section, i as ActionLink, l as SectionHeading, s as PageHero, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-B53ahYd2.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/dining-experience-CN97R-yO.js
 var import_jsx_runtime = require_jsx_runtime();
 var chapters = [
 	{
@@ -45,7 +45,7 @@ function DiningExperience() {
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageHero, {
 			breadcrumb: "Dining Experience",
 			eyebrow: "The Experience",
-			title: "An Evening in a Rajasthani Haveli",
+			title: "An Evening at Maatimahal",
 			intro: "Warm light, brass service and a room built for long meals with people you love."
 		}),
 		chapters.map((chapter, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {

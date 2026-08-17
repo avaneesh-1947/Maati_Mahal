@@ -1,8 +1,8 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { A as restaurant, c as Section, n as Route, o as DecorativeDivider } from "./router-ptbditD5.mjs";
-import { t as DishCard } from "./DishCard-BscAX-PZ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/menu_._dishId-jWIv0pdn.js
+import { c as Section, k as restaurant, n as Route, o as DecorativeDivider } from "./router-B53ahYd2.mjs";
+import { t as DishCard } from "./DishCard-Bz1mu-KG.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/menu_._dishId-hKFVAK2N.js
 var import_jsx_runtime = require_jsx_runtime();
 function DishPage() {
 	const { dish, relatedDishes } = Route.useLoaderData();
@@ -61,20 +61,13 @@ function DishPage() {
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 										className: "mt-6 flex flex-wrap gap-3",
-										children: [
-											dish.bestseller && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "inline-flex items-center rounded-full bg-terracotta/10 px-3 py-1 text-xs font-semibold tracking-wider text-terracotta uppercase",
-												children: "Bestseller"
-											}),
-											dish.jain && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "inline-flex items-center rounded-full bg-emerald-600/10 px-3 py-1 text-xs font-semibold tracking-wider text-emerald-700 uppercase",
-												children: "Jain Available"
-											}),
-											dish.spice && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "inline-flex items-center rounded-full bg-orange-600/10 px-3 py-1 text-xs font-semibold tracking-wider text-orange-700 uppercase",
-												children: dish.spice
-											})
-										]
+										children: [dish.bestseller && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "inline-flex items-center rounded-full bg-terracotta/10 px-3 py-1 text-xs font-semibold tracking-wider text-terracotta uppercase",
+											children: "Bestseller"
+										}), dish.spice && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "inline-flex items-center rounded-full bg-orange-600/10 px-3 py-1 text-xs font-semibold tracking-wider text-orange-700 uppercase",
+											children: dish.spice
+										})]
 									})
 								] }),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(DecorativeDivider, {}),

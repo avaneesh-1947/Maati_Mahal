@@ -1,27 +1,21 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { A as restaurant, c as Section, g as menuCategories, h as menu, i as ActionLink, s as PageHero } from "./router-ptbditD5.mjs";
-import { r as MenuRow } from "./DishCard-BscAX-PZ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/menu.index-27PLsAdK.js
+import { c as Section, h as menuCategories, i as ActionLink, k as restaurant, m as menu, s as PageHero } from "./router-B53ahYd2.mjs";
+import { r as MenuRow } from "./DishCard-Bz1mu-KG.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/menu.index-dnCSGDKu.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function MenuPage() {
 	const [query, setQuery] = (0, import_react.useState)("");
 	const [category, setCategory] = (0, import_react.useState)("All");
-	const [jainOnly, setJainOnly] = (0, import_react.useState)(false);
 	const results = (0, import_react.useMemo)(() => {
 		const q = query.trim().toLowerCase();
 		return menu.filter((dish) => {
 			if (category !== "All" && dish.category !== category) return false;
-			if (jainOnly && !dish.jain) return false;
 			if (!q) return true;
 			return dish.name.toLowerCase().includes(q) || dish.description.toLowerCase().includes(q) || dish.category.toLowerCase().includes(q);
 		});
-	}, [
-		query,
-		category,
-		jainOnly
-	]);
+	}, [query, category]);
 	const grouped = (0, import_react.useMemo)(() => menuCategories.map((c) => ({
 		category: c,
 		dishes: results.filter((d) => d.category === c)
@@ -31,14 +25,14 @@ function MenuPage() {
 			breadcrumb: "Menu",
 			eyebrow: "Pure Vegetarian Menu",
 			title: "Every Dish, Cooked to Order",
-			intro: "Rajasthani specials, generous thalis and Jain preparations made in separate vessels. Prices are in Indian Rupees and include no service charge."
+			intro: "Maatimahal specials, generous thalis and classic vegetarian dishes served with warm hospitality. Prices are in Indian Rupees and include no service charge."
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, { children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "flex flex-col gap-5",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "flex flex-col gap-1.5",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
 							htmlFor: "menu-search",
@@ -52,15 +46,7 @@ function MenuPage() {
 							placeholder: "Try “baati”, “thali” or “kachori”",
 							className: "min-h-11 w-full rounded-md border border-input bg-card px-3.5 text-base"
 						})]
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("label", {
-						className: "flex min-h-11 items-center gap-3 text-sm font-medium text-primary",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-							type: "checkbox",
-							checked: jainOnly,
-							onChange: (e) => setJainOnly(e.target.checked),
-							className: "size-5 accent-[var(--primary)]"
-						}), "Jain options only"]
-					})]
+					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 					className: "sr-only",
 					children: "Menu categories"
@@ -102,7 +88,6 @@ function MenuPage() {
 						onClick: () => {
 							setQuery("");
 							setCategory("All");
-							setJainOnly(false);
 						},
 						className: "mt-6 inline-flex min-h-11 items-center rounded-md bg-primary px-6 text-sm font-semibold text-primary-foreground",
 						children: "Clear filters"
@@ -129,7 +114,7 @@ function MenuPage() {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mx-auto mt-4 max-w-xl text-sm text-primary-foreground/80",
-					children: "Reserve a table, or call us for Jain and festival requirements."
+					children: "Reserve a table, or call us for family dining and festive gatherings."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "mt-8 flex flex-wrap justify-center gap-3",

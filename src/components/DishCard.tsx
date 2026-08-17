@@ -21,7 +21,6 @@ export function DishCard({ dish }: { dish: Dish }) {
       <div className="flex flex-1 flex-col p-2 sm:p-5">
         <div className="flex flex-wrap items-center gap-1 sm:gap-2">
           <Tag tone="green" className="text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1">Pure Veg</Tag>
-          {dish.jain ? <Tag tone="gold" className="text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1">Jain Available</Tag> : null}
           {dish.bestseller ? <Tag tone="terracotta" className="text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1">Bestseller</Tag> : null}
         </div>
         <h3 className="mt-1 sm:mt-3 font-display text-sm sm:text-xl text-primary transition-colors group-hover:text-terracotta line-clamp-1 sm:line-clamp-none">{dish.name}</h3>
@@ -40,7 +39,6 @@ export function MenuRow({ dish }: { dish: Dish }) {
           <span className="text-forest text-xs font-semibold" aria-label="Pure vegetarian">
             ● Pure Veg
           </span>
-          {dish.jain ? <Tag tone="gold">Jain</Tag> : null}
           {dish.bestseller ? <Tag tone="terracotta">Bestseller</Tag> : null}
           {dish.spice ? <span className="text-xs text-muted-foreground">Spice: {dish.spice}</span> : null}
         </div>

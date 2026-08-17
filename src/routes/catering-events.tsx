@@ -56,7 +56,7 @@ function CateringEvents() {
             align="left"
             eyebrow="How We Cater"
             title="Cooked Fresh, Served Warm"
-            intro="We cook on site wherever possible, keep Jain preparations in separate vessels, and serve in brass. Menus are built around your guest count, timings and the season."
+            intro="We cook on site wherever possible and serve in brass. Menus are built around your guest count, timings and the season."
           />
         </div>
       </Section>

@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { u as Tag } from "./router-ptbditD5.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/DishCard-BscAX-PZ.js
+import { u as Tag } from "./router-B53ahYd2.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/DishCard-Bz1mu-KG.js
 var import_jsx_runtime = require_jsx_runtime();
 function DishCard({ dish }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
@@ -24,23 +24,15 @@ function DishCard({ dish }) {
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "flex flex-wrap items-center gap-1 sm:gap-2",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tag, {
-							tone: "green",
-							className: "text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1",
-							children: "Pure Veg"
-						}),
-						dish.jain ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tag, {
-							tone: "gold",
-							className: "text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1",
-							children: "Jain Available"
-						}) : null,
-						dish.bestseller ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tag, {
-							tone: "terracotta",
-							className: "text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1",
-							children: "Bestseller"
-						}) : null
-					]
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tag, {
+						tone: "green",
+						className: "text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1",
+						children: "Pure Veg"
+					}), dish.bestseller ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tag, {
+						tone: "terracotta",
+						className: "text-[9px] sm:text-xs px-1 py-0.5 sm:px-2.5 sm:py-1",
+						children: "Bestseller"
+					}) : null]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 					className: "mt-1 sm:mt-3 font-display text-sm sm:text-xl text-primary transition-colors group-hover:text-terracotta line-clamp-1 sm:line-clamp-none",
@@ -73,10 +65,6 @@ function MenuRow({ dish }) {
 						"aria-label": "Pure vegetarian",
 						children: "● Pure Veg"
 					}),
-					dish.jain ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tag, {
-						tone: "gold",
-						children: "Jain"
-					}) : null,
 					dish.bestseller ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Tag, {
 						tone: "terracotta",
 						children: "Bestseller"

@@ -1,9 +1,10 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { A as restaurant, C as hero1_default, M as trustHighlights, S as hero2_default, _ as paneer_butter_masala_default, b as tilkahru_thali_default, c as Section, d as bati_chokha_sadi_thali_default, g as menuCategories, i as ActionLink, l as SectionHeading, m as matka_daal_default, o as DecorativeDivider, p as image_default, v as signatureDishes, x as interior1_default, y as matke_wali_lassi_default } from "./router-ptbditD5.mjs";
-import { t as DishCard } from "./DishCard-BscAX-PZ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CthL8-np.js
+import { S as hero1_default, _ as signatureDishes, b as interior1_default, c as Section, d as bati_chokha_sadi_thali_default, g as paneer_butter_masala_default, h as menuCategories, i as ActionLink, j as trustHighlights, k as restaurant, l as SectionHeading, o as DecorativeDivider, p as matka_daal_default, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-B53ahYd2.mjs";
+import { t as DishCard } from "./DishCard-Bz1mu-KG.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DV3Ni-IA.js
 var import_jsx_runtime = require_jsx_runtime();
+var image_default = "/assets/image-DHsKrgNv.webp";
 var atithidevobhavah_removebg_preview_default = "/assets/atithidevobhavah-removebg-preview-BJ3EqXY9.webp";
 function Home() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [
@@ -12,7 +13,7 @@ function Home() {
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 					src: tilkahru_thali_default,
-					alt: "Traditional Rajasthani vegetarian thali served in brass plates with dal baati churma, gatte and bajra roti",
+					alt: "Traditional Maatimahal vegetarian thali served in brass plates with dal baati churma, gatte and bajra roti",
 					fetchPriority: "high",
 					loading: "eager",
 					decoding: "sync",
@@ -370,7 +371,7 @@ function Home() {
 					{
 						src: interior1_default,
 						alt: "Maati Mahal authentic village themed interior dining hall",
-						span: "md:col-span-2"
+						span: "col-span-2 md:col-span-2"
 					},
 					{
 						src: bati_chokha_sadi_thali_default,

@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content: `Traditional village thalis, Jain-friendly options and warm family dining in ${restaurant.city}.`,
+        content: `Traditional village thalis, family dining and warm hospitality in ${restaurant.city}.`,
       },
       { property: "og:url", content: absoluteUrl("/") },
       { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
@@ -51,7 +51,7 @@ function Home() {
         {/* Background image */}
         <img
           src={heroThali}
-          alt="Traditional Rajasthani vegetarian thali served in brass plates with dal baati churma, gatte and bajra roti"
+          alt="Traditional Maatimahal vegetarian thali served in brass plates with dal baati churma, gatte and bajra roti"
           fetchPriority="high"
           loading="eager"
           decoding="sync"
@@ -327,7 +327,7 @@ function Home() {
         <SectionHeading eyebrow="Gallery" title={`A Glimpse of ${restaurant.name}`} />
         <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3">
           {[
-            { src: interior, alt: "Maati Mahal authentic village themed interior dining hall", span: "md:col-span-2" },
+            { src: interior, alt: "Maati Mahal authentic village themed interior dining hall", span: "col-span-2 md:col-span-2" },
             { src: batiChokha, alt: "Traditional Bati Chokha Thali at Maati Mahal", span: "" },
             { src: matkaDaal, alt: "Authentic Matka Daal prepared in clay pot", span: "" },
             { src: lassi, alt: "Chilled Matke Wali Lassi served in traditional kulhad", span: "" },

@@ -163,7 +163,7 @@ ${values.occasion ? `*Occasion:* ${values.occasion.trim()}\n` : ""}${values.requ
         </Field>
       </div>
 
-      <Field label="Special Request" htmlFor="r-request" error={errors["request"]} hint="Jain preparation, high chair, seating preference, wheelchair access.">
+      <Field label="Special Request" htmlFor="r-request" error={errors["request"]} hint="High chair, seating preference, wheelchair access.">
         <TextArea
           id="r-request"
           name="request"

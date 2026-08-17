@@ -92,7 +92,7 @@ ${values.eventDate ? `*Event Date:* ${values.eventDate}\n` : ""}${values.guests 
         </Field>
       </div>
 
-      <Field label="Message" htmlFor="e-message" error={errors["message"]} hint="Menu preferences, Jain requirements, venue and timing details.">
+      <Field label="Message" htmlFor="e-message" error={errors["message"]} hint="Menu preferences, venue and timing details.">
         <TextArea id="e-message" maxLength={1500} value={values.message} onChange={set("message")} aria-invalid={Boolean(errors["message"])} />
       </Field>
 

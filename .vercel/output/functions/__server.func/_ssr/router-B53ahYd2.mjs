@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { L as notFound, _ as Link, f as createRouter, g as createRootRouteWithContext, h as createFileRoute, l as Scripts, m as lazyRouteComponent, p as Outlet, u as HeadContent, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-CGYMcXGI.js
+//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-Dmh5w-hW.js
 /**
 * Centralised restaurant configuration.
 * Replace these values with the client's confirmed details — they are used across
@@ -118,7 +118,7 @@ var trustHighlights = [
 	"100% Pure Vegetarian",
 	"Authentic Recipes",
 	"Family Dining",
-	"Jain Options"
+	"Freshly Cooked"
 ];
 var values = [
 	{
@@ -233,7 +233,7 @@ var interior1_default = "/assets/interior1-D0QpsoAZ.webp";
 var tilkahru_thali_default = "/assets/tilkahru_thali-DN30kOvd.webp";
 var matke_wali_lassi_default = "/assets/matke_wali_lassi-DFAHCx1i.webp";
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/menu-Bv-JTuOv.js
+//#region node_modules/.nitro/vite/services/ssr/assets/menu-uwdSJIXZ.js
 var bati_chokha_sadi_thali_default = "/assets/bati_chokha_sadi_thali-D0lmDW4e.webp";
 var matka_daal_default = "/assets/matka_daal-6ANM3Xd6.webp";
 var sawen_ki_kheer_default = "/assets/sawen_ki_kheer-CNPYQEJG.webp";
@@ -260,16 +260,15 @@ var desi_chhas_default = "/assets/desi_chhas-BWTDuPA_.webp";
 var kadhi_default = "/assets/kadhi-q05d6JFE.webp";
 var kalonji_default = "/assets/kalonji-ieRW2xYr.webp";
 var IMG_1960_default = "/assets/IMG_1960-CYQ3GAU-.webp";
-var image_default = "/assets/image-DHsKrgNv.webp";
+var galary_default = "/assets/galary-CqzVK9cE.webp";
 var menuCategories = [
-	"Rajasthani Specials",
+	"Maatimahal Specials",
 	"Thalis",
 	"Starters",
 	"Main Course",
 	"Breads",
 	"Desserts",
-	"Beverages",
-	"Jain Specials"
+	"Beverages"
 ];
 var menu = [
 	{
@@ -278,7 +277,7 @@ var menu = [
 		description: "Traditional roasted wheat baati served with spiced mashed vegetables.",
 		story: "Bati Chokha is the soulful comfort food of the village. Our baatis are hand-rolled and roasted slowly over cow dung cakes to impart that signature rustic, smoky flavour. We serve it alongside a fiery, perfectly mashed 'chokha' made from fire-roasted brinjals, tomatoes, and potatoes mixed with pungent mustard oil and fresh green chillies. Every bite is a nostalgic journey to the vibrant village courtyards of the heartland.",
 		price: 250,
-		category: "Rajasthani Specials",
+		category: "Maatimahal Specials",
 		bestseller: true,
 		image: bati_chokha_sadi_thali_default,
 		imageAlt: "Authentic Bati Chokha Thali at Maati Mahal"
@@ -332,7 +331,7 @@ var menu = [
 		description: "Signature spiced yoghurt and traditional mixed pickle preparation.",
 		story: "Our vibrant homemade pickles and spiced yoghurt preparations get their striking crimson hue from premium chillies, balanced perfectly with tartness and aromatic spices. A bold, tantalizing accompaniment that cuts through the richness of our gravies.",
 		price: 100,
-		category: "Rajasthani Specials",
+		category: "Maatimahal Specials",
 		image: mixed_achar_default,
 		imageAlt: "Traditional Mixed Achar and Village Accompaniments"
 	},
@@ -363,7 +362,6 @@ var menu = [
 		price: 260,
 		category: "Main Course",
 		bestseller: true,
-		jain: true,
 		spice: "Mild",
 		image: paneer_butter_masala_default,
 		imageAlt: "Rich Paneer Butter Masala with fresh cream"
@@ -400,15 +398,14 @@ var menu = [
 		imageAlt: "Mushroom Do Pyaaza in rich masala gravy"
 	},
 	{
-		id: "rajasthani-kadhi",
-		name: "Rajasthani Kadhi Pakoda",
+		id: "maatimahal-kadhi",
+		name: "Maatimahal Kadhi Pakoda",
 		description: "Sour yoghurt kadhi with soft gram-flour pakodas and mustard red chilli tempering.",
 		price: 180,
 		category: "Main Course",
-		jain: true,
 		spice: "Medium",
 		image: kadhi_default,
-		imageAlt: "Traditional Rajasthani Kadhi with pakodas"
+		imageAlt: "Traditional Maatimahal Kadhi with pakodas"
 	},
 	{
 		id: "paneer-chilli-dry",
@@ -490,7 +487,6 @@ var menu = [
 		description: "Nutritious gram flour and wheat roti infused with ajwain, onions and fresh herbs.",
 		price: 50,
 		category: "Breads",
-		jain: true,
 		image: missi_roti_default,
 		imageAlt: "Traditional Missi Roti with herbs and ajwain"
 	},
@@ -529,7 +525,6 @@ var menu = [
 		description: "Cooling churned buttermilk seasoned with roasted cumin, rock salt, and mint.",
 		price: 40,
 		category: "Beverages",
-		jain: true,
 		image: desi_chhas_default,
 		imageAlt: "Refreshing Desi Masala Chhas in glass"
 	},
@@ -539,7 +534,6 @@ var menu = [
 		description: "Sliced crisp cucumbers, juicy tomatoes, onions, carrots, and fresh lemon wedges.",
 		price: 60,
 		category: "Starters",
-		jain: true,
 		image: green_salad_default,
 		imageAlt: "Fresh crisp Garden Green Salad"
 	}
@@ -647,14 +641,14 @@ var galleryImages = [
 		category: "Food"
 	},
 	{
-		src: image_default,
+		src: galary_default,
 		alt: "Maati Mahal multi-facility signboard",
 		caption: "Complete facilities: Pure Veg, Banquet, Marriage Lawn & Rest Rooms",
 		category: "Events"
 	}
 ];
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-ptbditD5.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-B53ahYd2.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -667,7 +661,7 @@ var __exportAll = (all, no_symbols) => {
 	if (!no_symbols) __defProp(target, Symbol.toStringTag, { value: "Module" });
 	return target;
 };
-var styles_default = "/assets/styles-BIH0g_bL.css";
+var styles_default = "/assets/styles-1DrLCnVh.css";
 function SectionHeading({ eyebrow, title, intro, align = "center", as: As = "h2" }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl",
@@ -1237,7 +1231,7 @@ var dishSchema = (dish) => ({
 	description: dish.description,
 	url: absoluteUrl(`/menu/${dish.id}`),
 	...dish.image ? { image: dish.image } : {},
-	suitableForDiet: dish.jain ? ["https://schema.org/VegetarianDiet"] : ["https://schema.org/VegetarianDiet"],
+	suitableForDiet: ["https://schema.org/VegetarianDiet"],
 	offers: {
 		"@type": "Offer",
 		price: dish.price,
@@ -1557,7 +1551,7 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$10 = () => import("./routes-CthL8-np.mjs");
+var $$splitComponentImporter$10 = () => import("./routes-DV3Ni-IA.mjs");
 var Route$11 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$10, "component"),
 	head: () => ({
@@ -1573,7 +1567,7 @@ var Route$11 = createFileRoute("/")({
 			},
 			{
 				property: "og:description",
-				content: `Traditional village thalis, Jain-friendly options and warm family dining in ${restaurant.city}.`
+				content: `Traditional village thalis, family dining and warm hospitality in ${restaurant.city}.`
 			},
 			{
 				property: "og:url",
@@ -1590,7 +1584,7 @@ var Route$11 = createFileRoute("/")({
 		}]
 	})
 });
-var $$splitComponentImporter$9 = () => import("./about-C6jo9B5w.mjs");
+var $$splitComponentImporter$9 = () => import("./about-BJHQcaV_.mjs");
 var Route$10 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$9, "component"),
 	head: () => ({
@@ -1598,7 +1592,7 @@ var Route$10 = createFileRoute("/about")({
 			{ title: `About ${restaurant.name} | Marwari Vegetarian Kitchen in ${restaurant.city}` },
 			{
 				name: "description",
-				content: `The story behind ${restaurant.name} — a pure vegetarian Marwari kitchen in ${restaurant.city} preserving Rajasthani recipes, stone-ground spices and traditional hospitality.`
+				content: `The story behind ${restaurant.name} — a pure vegetarian kitchen in ${restaurant.city} preserving Maatimahal recipes, stone-ground spices and traditional hospitality.`
 			},
 			{
 				property: "og:title",
@@ -1631,7 +1625,7 @@ var Route$10 = createFileRoute("/about")({
 		}]
 	})
 });
-var $$splitComponentImporter$8 = () => import("./catering-events-Bk3CsqOV.mjs");
+var $$splitComponentImporter$8 = () => import("./catering-events-IQZrOR7O.mjs");
 var Route$9 = createFileRoute("/catering-events")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component"),
 	head: () => ({
@@ -1668,7 +1662,7 @@ var Route$9 = createFileRoute("/catering-events")({
 		}]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./contact-CSLyYNen.mjs");
+var $$splitComponentImporter$7 = () => import("./contact-DzOzhNo3.mjs");
 var Route$8 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component"),
 	head: () => ({
@@ -1676,7 +1670,7 @@ var Route$8 = createFileRoute("/contact")({
 			{ title: `Contact & Location | ${restaurant.name}, ${restaurant.city}` },
 			{
 				name: "description",
-				content: `Address, phone, WhatsApp and opening hours for ${restaurant.name} — a pure veg Rajasthani restaurant in ${restaurant.city}, near ${restaurant.landmark}.`
+				content: `Address, phone, WhatsApp and opening hours for ${restaurant.name} — a pure veg Maatimahal restaurant in ${restaurant.city}, near ${restaurant.landmark}.`
 			},
 			{
 				property: "og:title",
@@ -1705,7 +1699,7 @@ var Route$8 = createFileRoute("/contact")({
 		}]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./dining-experience-sV1G4mmz.mjs");
+var $$splitComponentImporter$6 = () => import("./dining-experience-CN97R-yO.mjs");
 var Route$7 = createFileRoute("/dining-experience")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({
@@ -1742,7 +1736,7 @@ var Route$7 = createFileRoute("/dining-experience")({
 		}]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./feedback-Ctd4wClf.mjs");
+var $$splitComponentImporter$5 = () => import("./feedback-CkFSCSG5.mjs");
 var Route$6 = createFileRoute("/feedback")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({
@@ -1779,7 +1773,7 @@ var Route$6 = createFileRoute("/feedback")({
 		}]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./gallery-CtuKkQ2u.mjs");
+var $$splitComponentImporter$4 = () => import("./gallery-CDczYqgG.mjs");
 var Route$5 = createFileRoute("/gallery")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({
@@ -1816,7 +1810,7 @@ var Route$5 = createFileRoute("/gallery")({
 		}]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./privacy-policy-BbNUpWW7.mjs");
+var $$splitComponentImporter$3 = () => import("./privacy-policy-BGN93ro-.mjs");
 var Route$4 = createFileRoute("/privacy-policy")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({
@@ -1853,7 +1847,7 @@ var Route$4 = createFileRoute("/privacy-policy")({
 		}]
 	})
 });
-var $$splitComponentImporter$2 = () => import("./reservations-Bb5RTrtZ.mjs");
+var $$splitComponentImporter$2 = () => import("./reservations-kciCPKPd.mjs");
 var Route$3 = createFileRoute("/reservations")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({
@@ -1861,7 +1855,7 @@ var Route$3 = createFileRoute("/reservations")({
 			{ title: `Reserve a Table | ${restaurant.name}, ${restaurant.city}` },
 			{
 				name: "description",
-				content: `Request a table at ${restaurant.name}, an authentic pure vegetarian Rajasthani restaurant in ${restaurant.city}. Share your date, time and guest count and our team will confirm.`
+				content: `Request a table at ${restaurant.name}, an authentic pure vegetarian restaurant in ${restaurant.city}. Share your date, time and guest count and our team will confirm.`
 			},
 			{
 				property: "og:title",
@@ -1979,15 +1973,15 @@ var Route$2 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 		"Cache-Control": "public, max-age=3600"
 	} });
 } } } });
-var $$splitComponentImporter$1 = () => import("./menu.index-27PLsAdK.mjs");
+var $$splitComponentImporter$1 = () => import("./menu.index-dnCSGDKu.mjs");
 var Route$1 = createFileRoute("/menu/")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({
 		meta: [
-			{ title: `Menu | Rajasthani Thali & Pure Veg Dishes in ${restaurant.city}` },
+			{ title: `Menu | Maatimahal Thali & Pure Veg Dishes in ${restaurant.city}` },
 			{
 				name: "description",
-				content: `Browse the complete pure vegetarian menu at ${restaurant.name}, ${restaurant.city} — Rajasthani specials, thalis, Jain preparations, breads, desserts and beverages with prices.`
+				content: `Browse the complete pure vegetarian menu at ${restaurant.name}, ${restaurant.city} — Maatimahal specials, thalis, breads, desserts and beverages with prices.`
 			},
 			{
 				property: "og:title",
@@ -1995,7 +1989,7 @@ var Route$1 = createFileRoute("/menu/")({
 			},
 			{
 				property: "og:description",
-				content: `Rajasthani specials, thalis and Jain-friendly dishes at ${restaurant.name}, ${restaurant.city}.`
+				content: `Maatimahal specials, thalis and classic vegetarian dishes at ${restaurant.name}, ${restaurant.city}.`
 			},
 			{
 				property: "og:url",
@@ -2020,7 +2014,7 @@ var Route$1 = createFileRoute("/menu/")({
 	})
 });
 var $$splitNotFoundComponentImporter = () => import("./menu_._dishId-x-9kBCVc.mjs");
-var $$splitComponentImporter = () => import("./menu_._dishId-jWIv0pdn.mjs");
+var $$splitComponentImporter = () => import("./menu_._dishId-hKFVAK2N.mjs");
 var Route = createFileRoute("/menu_/$dishId")({
 	loader: async ({ params }) => {
 		const dish = menu.find((d) => d.id === params.dishId);
@@ -2169,4 +2163,4 @@ var getRouter = () => {
 	});
 };
 //#endregion
-export { restaurant as A, hero1_default as C, fullAddress as D, feedbackTypes as E, trustHighlights as M, values as N, milestones as O, hero2_default as S, eventTypes as T, paneer_butter_masala_default as _, ArchImage as a, tilkahru_thali_default as b, Section as c, bati_chokha_sadi_thali_default as d, galleryImages as f, menuCategories as g, menu as h, ActionLink as i, timeSlots as j, occasions as k, SectionHeading as l, matka_daal_default as m, Route as n, DecorativeDivider as o, image_default as p, ActionButton as r, PageHero as s, router_exports as t, Tag as u, signatureDishes as v, eventServices as w, interior1_default as x, matke_wali_lassi_default as y };
+export { timeSlots as A, eventServices as C, milestones as D, fullAddress as E, values as M, occasions as O, hero1_default as S, feedbackTypes as T, signatureDishes as _, ArchImage as a, interior1_default as b, Section as c, bati_chokha_sadi_thali_default as d, galleryImages as f, paneer_butter_masala_default as g, menuCategories as h, ActionLink as i, trustHighlights as j, restaurant as k, SectionHeading as l, menu as m, Route as n, DecorativeDivider as o, matka_daal_default as p, ActionButton as r, PageHero as s, router_exports as t, Tag as u, matke_wali_lassi_default as v, eventTypes as w, hero2_default as x, tilkahru_thali_default as y };

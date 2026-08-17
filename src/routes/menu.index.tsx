@@ -10,15 +10,15 @@ export const Route = createFileRoute("/menu/")({
   component: MenuPage,
   head: () => ({
     meta: [
-      { title: `Menu | Rajasthani Thali & Pure Veg Dishes in ${restaurant.city}` },
+      { title: `Menu | Maatimahal Thali & Pure Veg Dishes in ${restaurant.city}` },
       {
         name: "description",
-        content: `Browse the complete pure vegetarian menu at ${restaurant.name}, ${restaurant.city} — Rajasthani specials, thalis, Jain preparations, breads, desserts and beverages with prices.`,
+        content: `Browse the complete pure vegetarian menu at ${restaurant.name}, ${restaurant.city} — Maatimahal specials, thalis, breads, desserts and beverages with prices.`,
       },
       { property: "og:title", content: `Menu | ${restaurant.name}` },
       {
         property: "og:description",
-        content: `Rajasthani specials, thalis and Jain-friendly dishes at ${restaurant.name}, ${restaurant.city}.`,
+        content: `Maatimahal specials, thalis and classic vegetarian dishes at ${restaurant.name}, ${restaurant.city}.`,
       },
       { property: "og:url", content: absoluteUrl("/menu") },
       { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
@@ -34,13 +34,11 @@ export const Route = createFileRoute("/menu/")({
 function MenuPage() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<string>("All");
-  const [jainOnly, setJainOnly] = useState(false);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return menu.filter((dish) => {
       if (category !== "All" && dish.category !== category) return false;
-      if (jainOnly && !dish.jain) return false;
       if (!q) return true;
       return (
         dish.name.toLowerCase().includes(q) ||
@@ -48,7 +46,7 @@ function MenuPage() {
         dish.category.toLowerCase().includes(q)
       );
     });
-  }, [query, category, jainOnly]);
+  }, [query, category]);
 
   const grouped = useMemo(
     () =>
@@ -64,7 +62,7 @@ function MenuPage() {
         breadcrumb="Menu"
         eyebrow="Pure Vegetarian Menu"
         title="Every Dish, Cooked to Order"
-        intro="Rajasthani specials, generous thalis and Jain preparations made in separate vessels. Prices are in Indian Rupees and include no service charge."
+        intro="Maatimahal specials, generous thalis and classic vegetarian dishes served with warm hospitality. Prices are in Indian Rupees and include no service charge."
       />
 
       <Section>
@@ -83,15 +81,6 @@ function MenuPage() {
                 className="min-h-11 w-full rounded-md border border-input bg-card px-3.5 text-base"
               />
             </div>
-            <label className="flex min-h-11 items-center gap-3 text-sm font-medium text-primary">
-              <input
-                type="checkbox"
-                checked={jainOnly}
-                onChange={(e) => setJainOnly(e.target.checked)}
-                className="size-5 accent-[var(--primary)]"
-              />
-              Jain options only
-            </label>
           </div>
 
           <div>
@@ -132,7 +121,6 @@ function MenuPage() {
               onClick={() => {
                 setQuery("");
                 setCategory("All");
-                setJainOnly(false);
               }}
               className="mt-6 inline-flex min-h-11 items-center rounded-md bg-primary px-6 text-sm font-semibold text-primary-foreground"
             >
@@ -163,7 +151,7 @@ function MenuPage() {
       <Section className="surface-royal text-center">
         <h2 className="font-display text-3xl sm:text-4xl">Tasted Something You Like?</h2>
         <p className="mx-auto mt-4 max-w-xl text-sm text-primary-foreground/80">
-          Reserve a table, or call us for Jain and festival requirements.
+          Reserve a table, or call us for family dining and festive gatherings.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <ActionLink to="/reservations" variant="gold">

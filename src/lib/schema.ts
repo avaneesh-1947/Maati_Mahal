@@ -104,9 +104,7 @@ export const dishSchema = (dish: Dish) => ({
   description: dish.description,
   url: absoluteUrl(`/menu/${dish.id}`),
   ...(dish.image ? { image: dish.image } : {}),
-  suitableForDiet: dish.jain
-    ? ["https://schema.org/VegetarianDiet"]
-    : ["https://schema.org/VegetarianDiet"],
+  suitableForDiet: ["https://schema.org/VegetarianDiet"],
   offers: {
     "@type": "Offer",
     price: dish.price,

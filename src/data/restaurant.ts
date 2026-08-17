@@ -81,7 +81,7 @@ export const trustHighlights = [
   "100% Pure Vegetarian",
   "Authentic Recipes",
   "Family Dining",
-  "Jain Options",
+  "Freshly Cooked",
 ] as const;
 
 export const whyChooseUs = [
@@ -98,8 +98,8 @@ export const whyChooseUs = [
     body: "Stone-ground masalas, seasonal vegetables and pure ghee sourced from trusted dairies.",
   },
   {
-    title: "Jain-Friendly Options",
-    body: "A wide selection prepared without onion and garlic, cooked in separate vessels.",
+    title: "Fresh, Honest Ingredients",
+    body: "Stone-ground masalas, seasonal vegetables and pure ghee sourced from trusted dairies.",
   },
   {
     title: "Made for Families",

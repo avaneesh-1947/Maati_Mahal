@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       { title: `Contact & Location | ${restaurant.name}, ${restaurant.city}` },
       {
         name: "description",
-        content: `Address, phone, WhatsApp and opening hours for ${restaurant.name} — a pure veg Rajasthani restaurant in ${restaurant.city}, near ${restaurant.landmark}.`,
+        content: `Address, phone, WhatsApp and opening hours for ${restaurant.name} — a pure veg Maatimahal restaurant in ${restaurant.city}, near ${restaurant.landmark}.`,
       },
       { property: "og:title", content: `Contact ${restaurant.name}` },
       {
@@ -37,7 +37,7 @@ function Contact() {
         breadcrumb="Contact"
         eyebrow="Contact"
         title={`Find Us in ${restaurant.city}`}
-        intro={`${restaurant.landmark}. Call ahead for large groups, Jain menus or festival timings.`}
+        intro={`${restaurant.landmark}. Call ahead for large groups and festival timings.`}
       />
 
       <Section>

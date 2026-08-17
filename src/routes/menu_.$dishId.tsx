@@ -99,11 +99,6 @@ function DishPage() {
                       Bestseller
                     </span>
                   )}
-                  {dish.jain && (
-                    <span className="inline-flex items-center rounded-full bg-emerald-600/10 px-3 py-1 text-xs font-semibold tracking-wider text-emerald-700 uppercase">
-                      Jain Available
-                    </span>
-                  )}
                   {dish.spice && (
                     <span className="inline-flex items-center rounded-full bg-orange-600/10 px-3 py-1 text-xs font-semibold tracking-wider text-orange-700 uppercase">
                       {dish.spice}

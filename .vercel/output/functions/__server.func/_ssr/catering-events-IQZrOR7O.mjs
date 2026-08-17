@@ -1,9 +1,9 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { A as restaurant, S as hero2_default, T as eventTypes, a as ArchImage, c as Section, l as SectionHeading, r as ActionButton, s as PageHero, w as eventServices } from "./router-ptbditD5.mjs";
-import { n as FeatureCard } from "./DishCard-BscAX-PZ.mjs";
+import { C as eventServices, a as ArchImage, c as Section, k as restaurant, l as SectionHeading, r as ActionButton, s as PageHero, w as eventTypes, x as hero2_default } from "./router-B53ahYd2.mjs";
+import { n as FeatureCard } from "./DishCard-Bz1mu-KG.mjs";
 import { a as TextArea, c as optionalEmail, i as Select, l as requireName, n as FormStatus, o as TextInput, s as limitText, t as Field, u as requirePhone } from "./validation-C97rv48X.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/catering-events-Bk3CsqOV.js
+//#region node_modules/.nitro/vite/services/ssr/assets/catering-events-IQZrOR7O.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var initial = {
@@ -156,7 +156,7 @@ ${values.eventDate ? `*Event Date:* ${values.eventDate}\n` : ""}${values.guests 
 				label: "Message",
 				htmlFor: "e-message",
 				error: errors["message"],
-				hint: "Menu preferences, Jain requirements, venue and timing details.",
+				hint: "Menu preferences, venue and timing details.",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TextArea, {
 					id: "e-message",
 					maxLength: 1500,
@@ -194,7 +194,7 @@ function CateringEvents() {
 				align: "left",
 				eyebrow: "How We Cater",
 				title: "Cooked Fresh, Served Warm",
-				intro: "We cook on site wherever possible, keep Jain preparations in separate vessels, and serve in brass. Menus are built around your guest count, timings and the season."
+				intro: "We cook on site wherever possible and serve in brass. Menus are built around your guest count, timings and the season."
 			})]
 		}) }),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {

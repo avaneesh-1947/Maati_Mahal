@@ -11,7 +11,7 @@ export const Route = createFileRoute("/reservations")({
       { title: `Reserve a Table | ${restaurant.name}, ${restaurant.city}` },
       {
         name: "description",
-        content: `Request a table at ${restaurant.name}, an authentic pure vegetarian Rajasthani restaurant in ${restaurant.city}. Share your date, time and guest count and our team will confirm.`,
+        content: `Request a table at ${restaurant.name}, an authentic pure vegetarian restaurant in ${restaurant.city}. Share your date, time and guest count and our team will confirm.`,
       },
       { property: "og:title", content: `Table Reservations | ${restaurant.name}` },
       {
@@ -59,7 +59,7 @@ function Reservations() {
             <h2 className="font-display text-2xl text-primary">Good to Know</h2>
             <ul className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground">
               <li>Large groups of 12 or more are best booked a day in advance.</li>
-              <li>Jain preparations are available across most of the menu — mention it in your request.</li>
+              <li>We can accommodate most special requests — mention them in your booking notes.</li>
               <li>Tables are held for 20 minutes past the reserved time.</li>
               <li>We are a fully vegetarian kitchen; outside food and alcohol are not served.</li>
             </ul>
