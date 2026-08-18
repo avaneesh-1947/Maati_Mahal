@@ -151,9 +151,11 @@ export function ActionButton({
 export function Tag({
   children,
   tone = "gold",
+  className = "",
 }: {
   children: ReactNode;
   tone?: "gold" | "green" | "terracotta";
+  className?: string;
 }) {
   const tones = {
     gold: "bg-gold/15 text-primary",
@@ -162,7 +164,7 @@ export function Tag({
   } as const;
   return (
     <span
-      className={`inline-flex items-center rounded-sm px-2 py-0.5 text-[0.7rem] font-semibold uppercase tracking-wider ${tones[tone]}`}
+      className={`inline-flex items-center rounded-sm px-2 py-0.5 text-[0.7rem] font-semibold uppercase tracking-wider ${tones[tone]} ${className}`}
     >
       {children}
     </span>

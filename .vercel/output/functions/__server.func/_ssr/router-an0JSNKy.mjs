@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { L as notFound, _ as Link, f as createRouter, g as createRootRouteWithContext, h as createFileRoute, l as Scripts, m as lazyRouteComponent, p as Outlet, u as HeadContent, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-Dmh5w-hW.js
+//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-qifylrIm.js
 /**
 * Centralised restaurant configuration.
 * Replace these values with the client's confirmed details — they are used across
@@ -13,33 +13,47 @@ var restaurant = {
 	tagline: "A Taste Rooted in the Village",
 	shortDescription: "Pure vegetarian village inspired kitchen serving traditional thalis, timeless recipes and warm hospitality.",
 	story: "Maati Mahal began as a family kitchen where recipes travelled from one generation to the next — written down by hand, tasted by memory. Rooted in village culinary traditions, our kitchen celebrates timeless vegetarian recipes prepared with stone-ground spices, slow-simmered dals and pure ghee.",
+	alternateNames: [
+		"Mati Mahal",
+		"Maati Mehal",
+		"Mati Mehal",
+		"Maati Mahal Family Restaurant",
+		"Mati Mahal Family Restaurant",
+		"Maati Mahal Restaurant",
+		"Mati Mahal Restaurant",
+		"Maati Mahal Singramau",
+		"Mati Mahal Singramau"
+	],
 	phone: "6390278657, 8960107779",
 	phoneHref: "+918960107779",
 	email: "hello@maatimahal.com",
 	whatsapp: "+918960107779",
-	addressLine: "Varanasi - Lucknow Highway, NH56",
-	landmark: "",
+	addressLine: "Varanasi - Lucknow Highway, NH56, Sasrhapur",
+	landmark: "Near Singramau, NH56",
 	city: "Singramau",
+	district: "Jaunpur",
 	state: "Uttar Pradesh",
 	pin: "222175",
 	country: "IN",
+	plusCode: "WCR7+54",
 	geo: {
 		latitude: 25.9667,
 		longitude: 82.2667
 	},
-	mapEmbedUrl: "https://www.google.com/maps?q=Singramau+Uttar+Pradesh&output=embed",
-	directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Singramau+Uttar+Pradesh",
+	mapEmbedUrl: "https://www.google.com/maps?q=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175&output=embed",
+	directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175",
 	instagram: "https://www.instagram.com/mati.mahal1?igsh=YTd2ZGdqaTQ4aXk0",
 	facebook: "https://www.facebook.com/share/18dYpspP1t/?mibextid=wwXIfr",
-	googleReviewUrl: "https://www.google.com/maps",
+	googleReviewUrl: "https://www.google.com/maps/search/?api=1&query=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175",
 	siteUrl: "https://maatimahal.com",
-	/** TODO: Add actual Google Business Profile URL once created */
-	googleBusinessUrl: "",
+	/** Google Business search & maps URL */
+	googleBusinessUrl: "https://www.google.com/maps/search/?api=1&query=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175",
 	priceRange: "₹₹",
 	cuisine: [
 		"Village Inspired",
 		"North Indian",
-		"Vegetarian"
+		"Vegetarian",
+		"Traditional Thalis"
 	],
 	hours: [{
 		days: "Monday – Sunday",
@@ -60,7 +74,14 @@ var restaurant = {
 		closes: "23:30"
 	}],
 	/** Nearby landmarks for local SEO signals */
-	nearbyLandmarks: ["NH56 Varanasi–Lucknow Highway", "Singramau"],
+	nearbyLandmarks: [
+		"WCR7+54, Sasrhapur",
+		"NH56 Varanasi–Lucknow Highway",
+		"Singramau",
+		"Badlapur",
+		"Jaunpur",
+		"Sultanpur"
+	],
 	/** On-site facilities for entity completeness */
 	facilities: [
 		"Pure Vegetarian",
@@ -68,18 +89,24 @@ var restaurant = {
 		"Breakfast Options",
 		"Banquet Hall",
 		"Marriage Lawn",
-		"Rest Rooms"
+		"Rest Rooms",
+		"Ample Vehicle Parking"
 	],
 	/** Signature dishes for structured data */
 	signatureDishNames: [
 		"Bati Chokha",
 		"Tilkahru Thali",
+		"Unlimited Thali",
 		"Matka Daal",
-		"Dal Baati Churma",
-		"Gatte Ki Sabzi"
+		"Matke Wali Lassi",
+		"Paneer Butter Masala",
+		"Daal Makhani",
+		"Amritsari Stuffed Kulcha",
+		"Kulhad Wali Chai",
+		"Sawan Kheer"
 	]
 };
-var fullAddress = `${restaurant.city}, ${restaurant.addressLine}, ${restaurant.pin}`;
+var fullAddress = `Mati Mahal, WCR7+54, Sasrhapur, ${restaurant.city}, ${restaurant.state} ${restaurant.pin}`;
 var navLinks = [
 	{
 		to: "/",
@@ -119,6 +146,40 @@ var trustHighlights = [
 	"Authentic Recipes",
 	"Family Dining",
 	"Freshly Cooked"
+];
+var brandFaqs = [
+	{
+		question: "What is Maati Mahal and what type of food does it serve?",
+		answer: "Maati Mahal (also known as Mati Mahal) is an authentic pure vegetarian, village-inspired family restaurant located on the Varanasi–Lucknow Highway (NH56) in Singramau (Sasrhapur, UP). We serve traditional North Indian thalis, wood-fired Bati Chokha, slow-cooked Matka Daal, clay-oven breads, and cooling kulhad drinks in a warm, village-themed setting."
+	},
+	{
+		question: "Is Maati Mahal also searched as Mati Mahal or Maati Mehal?",
+		answer: "Yes, guests frequently spell our name as Mati Mahal or Maati Mehal. Maati Mahal (माटी महल) is the official brand name of our pure vegetarian family restaurant located near Singramau on NH56."
+	},
+	{
+		question: "Where is Maati Mahal located on the highway?",
+		answer: "Maati Mahal is located at WCR7+54, Sasrhapur, Singramau, Uttar Pradesh 222175 on the Varanasi – Lucknow Highway (NH56). We are easily accessible for highway travellers, family groups, and local visitors between Varanasi, Jaunpur, Badlapur, and Sultanpur."
+	},
+	{
+		question: "Is Maati Mahal a 100% pure vegetarian restaurant?",
+		answer: "Yes, Maati Mahal is strictly 100% pure vegetarian. We have a dedicated vegetarian kitchen with no meat or alcohol served, ensuring complete purity and peace of mind for family and pilgrimage dining."
+	},
+	{
+		question: "What are the most popular signature dishes at Maati Mahal?",
+		answer: "Our most celebrated dishes include traditional wood-roasted Bati Chokha, the Grand Tilkahru Unlimited Thali, slow-simmered earthen pot Matka Daal, Paneer Butter Masala, overnight-cooked Daal Makhani, Amritsari Stuffed Kulcha, festive Sawan Kheer, and fresh Matke Wali Lassi served in clay kulhads."
+	},
+	{
+		question: "What are the opening hours of Maati Mahal?",
+		answer: "Maati Mahal is open daily from Monday to Sunday from 8:00 AM to 11:30 PM, serving breakfast, lunch, highway tea/snacks, and dinner."
+	},
+	{
+		question: "Does Maati Mahal have facilities for banquets, weddings, and large family gatherings?",
+		answer: "Yes, Maati Mahal features an air-conditioned banquet hall, a spacious marriage celebration lawn, ample vehicle parking, clean restrooms, and custom catering menus for weddings, birthdays, kitty parties, and corporate events."
+	},
+	{
+		question: "How can I make a table reservation or book an event?",
+		answer: "You can reserve a table directly online through our website's reservation page, send an enquiry on our catering page, message us on WhatsApp at +91 8960107779, or call our team at 6390278657 / 8960107779."
+	}
 ];
 var values = [
 	{
@@ -648,7 +709,7 @@ var galleryImages = [
 	}
 ];
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-B53ahYd2.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-an0JSNKy.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -661,7 +722,7 @@ var __exportAll = (all, no_symbols) => {
 	if (!no_symbols) __defProp(target, Symbol.toStringTag, { value: "Module" });
 	return target;
 };
-var styles_default = "/assets/styles-1DrLCnVh.css";
+var styles_default = "/assets/styles-2_bzfTN6.css";
 function SectionHeading({ eyebrow, title, intro, align = "center", as: As = "h2" }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl",
@@ -772,13 +833,13 @@ function ActionButton({ variant = "primary", children, className = "", ...props 
 		children
 	});
 }
-function Tag({ children, tone = "gold" }) {
+function Tag({ children, tone = "gold", className = "" }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 		className: `inline-flex items-center rounded-sm px-2 py-0.5 text-[0.7rem] font-semibold uppercase tracking-wider ${{
 			gold: "bg-gold/15 text-primary",
 			green: "bg-forest/12 text-forest",
 			terracotta: "bg-terracotta/12 text-terracotta"
-		}[tone]}`,
+		}[tone]} ${className}`,
 		children
 	});
 }
@@ -1142,14 +1203,18 @@ var restaurantSchema = {
 	"@type": ["Restaurant", "FoodEstablishment"],
 	"@id": absoluteUrl("/#restaurant"),
 	name: restaurant.name,
+	alternateName: [...restaurant.alternateNames],
 	description: restaurant.shortDescription,
-	telephone: restaurant.phone,
+	telephone: restaurant.phoneHref,
 	email: restaurant.email,
 	servesCuisine: [...restaurant.cuisine],
 	priceRange: restaurant.priceRange,
+	currenciesAccepted: "INR",
+	paymentAccepted: "Cash, UPI, Credit Card, Debit Card",
 	hasMenu: absoluteUrl("/menu"),
 	url: absoluteUrl("/"),
 	image: absoluteUrl("/favicon.jpeg"),
+	hasMap: restaurant.directionsUrl,
 	address: {
 		"@type": "PostalAddress",
 		streetAddress: restaurant.addressLine,
@@ -1163,17 +1228,35 @@ var restaurantSchema = {
 		latitude: restaurant.geo.latitude,
 		longitude: restaurant.geo.longitude
 	},
+	areaServed: [
+		{
+			"@type": "AdministrativeArea",
+			name: "Singramau"
+		},
+		{
+			"@type": "AdministrativeArea",
+			name: "Sasrhapur"
+		},
+		{
+			"@type": "AdministrativeArea",
+			name: "Jaunpur"
+		},
+		{
+			"@type": "AdministrativeArea",
+			name: "Badlapur"
+		},
+		{
+			"@type": "Place",
+			name: "NH56 Varanasi-Lucknow Highway"
+		}
+	],
 	openingHoursSpecification: restaurant.hoursSpec.map((spec) => ({
 		"@type": "OpeningHoursSpecification",
 		dayOfWeek: [...spec.days],
 		opens: spec.opens,
 		closes: spec.closes
 	})),
-	sameAs: [
-		restaurant.instagram,
-		restaurant.facebook,
-		...restaurant.googleBusinessUrl ? [restaurant.googleBusinessUrl] : []
-	],
+	sameAs: [restaurant.instagram, restaurant.facebook],
 	acceptsReservations: "https://schema.org/True",
 	potentialAction: {
 		"@type": "ReserveAction",
@@ -1187,6 +1270,19 @@ var restaurantSchema = {
 		}
 	}
 };
+/** FAQPage structured data for Google Rich Snippets & People Also Ask */
+var faqSchema = (faqs) => ({
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	mainEntity: faqs.map((faq) => ({
+		"@type": "Question",
+		name: faq.question,
+		acceptedAnswer: {
+			"@type": "Answer",
+			text: faq.answer
+		}
+	}))
+});
 /** WebSite schema — helps Google understand the site entity */
 var websiteSchema = {
 	"@context": "https://schema.org",
@@ -1457,10 +1553,10 @@ var Route$12 = createRootRouteWithContext()({
 				name: "viewport",
 				content: "width=device-width, initial-scale=1"
 			},
-			{ title: `${restaurant.name} | Authentic Village Inspired Vegetarian Restaurant in ${restaurant.city}` },
+			{ title: `${restaurant.name} | Pure Vegetarian Family Restaurant in ${restaurant.city}` },
 			{
 				name: "description",
-				content: `Experience authentic village inspired vegetarian cuisine at ${restaurant.name} in ${restaurant.city}. Traditional thalis, family dining and warm hospitality.`
+				content: `Experience authentic village-inspired pure vegetarian dining at ${restaurant.name} on NH56 Varanasi–Lucknow Highway in ${restaurant.city}. Traditional thalis, Bati Chokha, family dining and events.`
 			},
 			{
 				property: "og:site_name",
@@ -1479,12 +1575,40 @@ var Route$12 = createRootRouteWithContext()({
 				content: "summary_large_image"
 			},
 			{
+				name: "twitter:title",
+				content: `${restaurant.name} | Family Restaurant in ${restaurant.city}`
+			},
+			{
+				name: "twitter:description",
+				content: `Authentic village-inspired pure vegetarian cuisine, traditional thalis & Bati Chokha on NH56 in ${restaurant.city}.`
+			},
+			{
+				name: "twitter:image",
+				content: absoluteUrl("/favicon.jpeg")
+			},
+			{
 				name: "theme-color",
 				content: "#6E1F2A"
 			},
 			{
 				property: "og:image",
 				content: absoluteUrl("/favicon.jpeg")
+			},
+			{
+				name: "geo.region",
+				content: "IN-UP"
+			},
+			{
+				name: "geo.placename",
+				content: `${restaurant.city}, ${restaurant.state}`
+			},
+			{
+				name: "geo.position",
+				content: `${restaurant.geo.latitude};${restaurant.geo.longitude}`
+			},
+			{
+				name: "ICBM",
+				content: `${restaurant.geo.latitude}, ${restaurant.geo.longitude}`
 			}
 		],
 		links: [
@@ -1551,23 +1675,23 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$10 = () => import("./routes-DV3Ni-IA.mjs");
+var $$splitComponentImporter$10 = () => import("./routes-DMgzdq4n.mjs");
 var Route$11 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$10, "component"),
 	head: () => ({
 		meta: [
-			{ title: `${restaurant.name} | Authentic Village Inspired Vegetarian Restaurant in ${restaurant.city}` },
+			{ title: `${restaurant.name} | Pure Vegetarian Family Restaurant in ${restaurant.city}, NH56` },
 			{
 				name: "description",
-				content: `Experience authentic village inspired vegetarian cuisine at ${restaurant.name} in ${restaurant.city}. Explore traditional thalis, family dining, warm hospitality and timeless village flavours.`
+				content: `Welcome to ${restaurant.name} (also searched as Mati Mahal) — authentic pure vegetarian village-inspired restaurant in ${restaurant.city} on the Varanasi–Lucknow Highway (NH56). Traditional thalis, Bati Chokha & family dining.`
 			},
 			{
 				property: "og:title",
-				content: `${restaurant.name} | Pure Veg Village Inspired Restaurant in ${restaurant.city}`
+				content: `${restaurant.name} | Pure Veg Family Restaurant in ${restaurant.city}, NH56`
 			},
 			{
 				property: "og:description",
-				content: `Traditional village thalis, family dining and warm hospitality in ${restaurant.city}.`
+				content: `Traditional village thalis, authentic Bati Chokha, family dining, banquet hall and warm hospitality in ${restaurant.city} on NH56 Varanasi–Lucknow Highway.`
 			},
 			{
 				property: "og:url",
@@ -1581,26 +1705,30 @@ var Route$11 = createFileRoute("/")({
 		links: [{
 			rel: "canonical",
 			href: absoluteUrl("/")
+		}],
+		scripts: [{
+			type: "application/ld+json",
+			children: JSON.stringify(faqSchema(brandFaqs))
 		}]
 	})
 });
-var $$splitComponentImporter$9 = () => import("./about-BJHQcaV_.mjs");
+var $$splitComponentImporter$9 = () => import("./about-M5B_lNRX.mjs");
 var Route$10 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$9, "component"),
 	head: () => ({
 		meta: [
-			{ title: `About ${restaurant.name} | Marwari Vegetarian Kitchen in ${restaurant.city}` },
+			{ title: `About ${restaurant.name} | Village Inspired Vegetarian Restaurant in ${restaurant.city}` },
 			{
 				name: "description",
-				content: `The story behind ${restaurant.name} — a pure vegetarian kitchen in ${restaurant.city} preserving Maatimahal recipes, stone-ground spices and traditional hospitality.`
+				content: `The story behind ${restaurant.name} (also searched as Mati Mahal) — an authentic pure vegetarian kitchen in ${restaurant.city} on NH56, preserving traditional village recipes, stone-ground spices and warm hospitality.`
 			},
 			{
 				property: "og:title",
-				content: `Our Story | ${restaurant.name}`
+				content: `Our Story | ${restaurant.name} (${restaurant.city})`
 			},
 			{
 				property: "og:description",
-				content: `Heritage, philosophy and the family behind ${restaurant.name}, ${restaurant.city}.`
+				content: `Heritage, culinary philosophy, and the family behind ${restaurant.name} in ${restaurant.city} on the Varanasi–Lucknow Highway.`
 			},
 			{
 				property: "og:url",
@@ -1625,7 +1753,7 @@ var Route$10 = createFileRoute("/about")({
 		}]
 	})
 });
-var $$splitComponentImporter$8 = () => import("./catering-events-IQZrOR7O.mjs");
+var $$splitComponentImporter$8 = () => import("./catering-events-BqwOmkpu.mjs");
 var Route$9 = createFileRoute("/catering-events")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component"),
 	head: () => ({
@@ -1662,7 +1790,7 @@ var Route$9 = createFileRoute("/catering-events")({
 		}]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./contact-DzOzhNo3.mjs");
+var $$splitComponentImporter$7 = () => import("./contact-CymDyohI.mjs");
 var Route$8 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component"),
 	head: () => ({
@@ -1670,15 +1798,15 @@ var Route$8 = createFileRoute("/contact")({
 			{ title: `Contact & Location | ${restaurant.name}, ${restaurant.city}` },
 			{
 				name: "description",
-				content: `Address, phone, WhatsApp and opening hours for ${restaurant.name} — a pure veg Maatimahal restaurant in ${restaurant.city}, near ${restaurant.landmark}.`
+				content: `Contact ${restaurant.name} (also searched as Mati Mahal) in ${restaurant.city} on NH56 Varanasi–Lucknow Highway. Address, map directions, WhatsApp, phone and opening hours.`
 			},
 			{
 				property: "og:title",
-				content: `Contact ${restaurant.name}`
+				content: `Contact ${restaurant.name} (${restaurant.city})`
 			},
 			{
 				property: "og:description",
-				content: `Find us in ${restaurant.city}: ${fullAddress}. Call, message or get directions.`
+				content: `Find us in ${restaurant.city}: ${fullAddress}. Call, message or get driving directions on NH56.`
 			},
 			{
 				property: "og:url",
@@ -1699,7 +1827,7 @@ var Route$8 = createFileRoute("/contact")({
 		}]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./dining-experience-CN97R-yO.mjs");
+var $$splitComponentImporter$6 = () => import("./dining-experience-C_6at0Jh.mjs");
 var Route$7 = createFileRoute("/dining-experience")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({
@@ -1736,7 +1864,7 @@ var Route$7 = createFileRoute("/dining-experience")({
 		}]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./feedback-CkFSCSG5.mjs");
+var $$splitComponentImporter$5 = () => import("./feedback-BFxGH6lW.mjs");
 var Route$6 = createFileRoute("/feedback")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({
@@ -1773,7 +1901,7 @@ var Route$6 = createFileRoute("/feedback")({
 		}]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./gallery-CDczYqgG.mjs");
+var $$splitComponentImporter$4 = () => import("./gallery-YUPFphQn.mjs");
 var Route$5 = createFileRoute("/gallery")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({
@@ -1810,7 +1938,7 @@ var Route$5 = createFileRoute("/gallery")({
 		}]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./privacy-policy-BGN93ro-.mjs");
+var $$splitComponentImporter$3 = () => import("./privacy-policy-dodMgmNf.mjs");
 var Route$4 = createFileRoute("/privacy-policy")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({
@@ -1847,7 +1975,7 @@ var Route$4 = createFileRoute("/privacy-policy")({
 		}]
 	})
 });
-var $$splitComponentImporter$2 = () => import("./reservations-kciCPKPd.mjs");
+var $$splitComponentImporter$2 = () => import("./reservations-DJnlYYQZ.mjs");
 var Route$3 = createFileRoute("/reservations")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({
@@ -1949,10 +2077,10 @@ var Route$2 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 			lastmod: today
 		}
 	];
-	for (const dish of menu) if (dish.story) entries.push({
+	for (const dish of menu) entries.push({
 		path: `/menu/${dish.id}`,
 		changefreq: "monthly",
-		priority: "0.6",
+		priority: dish.bestseller ? "0.7" : "0.6",
 		lastmod: today
 	});
 	const xml = [
@@ -1973,7 +2101,7 @@ var Route$2 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 		"Cache-Control": "public, max-age=3600"
 	} });
 } } } });
-var $$splitComponentImporter$1 = () => import("./menu.index-dnCSGDKu.mjs");
+var $$splitComponentImporter$1 = () => import("./menu.index-bywIgjta.mjs");
 var Route$1 = createFileRoute("/menu/")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({
@@ -2014,7 +2142,7 @@ var Route$1 = createFileRoute("/menu/")({
 	})
 });
 var $$splitNotFoundComponentImporter = () => import("./menu_._dishId-x-9kBCVc.mjs");
-var $$splitComponentImporter = () => import("./menu_._dishId-hKFVAK2N.mjs");
+var $$splitComponentImporter = () => import("./menu_._dishId-CgZoDJ93.mjs");
 var Route = createFileRoute("/menu_/$dishId")({
 	loader: async ({ params }) => {
 		const dish = menu.find((d) => d.id === params.dishId);
@@ -2163,4 +2291,4 @@ var getRouter = () => {
 	});
 };
 //#endregion
-export { timeSlots as A, eventServices as C, milestones as D, fullAddress as E, values as M, occasions as O, hero1_default as S, feedbackTypes as T, signatureDishes as _, ArchImage as a, interior1_default as b, Section as c, bati_chokha_sadi_thali_default as d, galleryImages as f, paneer_butter_masala_default as g, menuCategories as h, ActionLink as i, trustHighlights as j, restaurant as k, SectionHeading as l, menu as m, Route as n, DecorativeDivider as o, matka_daal_default as p, ActionButton as r, PageHero as s, router_exports as t, Tag as u, matke_wali_lassi_default as v, eventTypes as w, hero2_default as x, tilkahru_thali_default as y };
+export { restaurant as A, brandFaqs as C, fullAddress as D, feedbackTypes as E, trustHighlights as M, values as N, milestones as O, hero1_default as S, eventTypes as T, signatureDishes as _, ArchImage as a, interior1_default as b, Section as c, bati_chokha_sadi_thali_default as d, galleryImages as f, paneer_butter_masala_default as g, menuCategories as h, ActionLink as i, timeSlots as j, occasions as k, SectionHeading as l, menu as m, Route as n, DecorativeDivider as o, matka_daal_default as p, ActionButton as r, PageHero as s, router_exports as t, Tag as u, matke_wali_lassi_default as v, eventServices as w, hero2_default as x, tilkahru_thali_default as y };

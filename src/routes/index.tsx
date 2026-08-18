@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { absoluteUrl } from "@/lib/schema";
+import { absoluteUrl, faqSchema } from "@/lib/schema";
 import heroThali from "@/assets/tilkahru_thali.webp";
 import interior from "@/assets/interior1.webp";
 import batiChokha from "@/assets/bati_chokha_sadi_thali.webp";
@@ -13,31 +13,34 @@ import atithi from "@/assets/atithidevobhavah-removebg-preview.webp";
 import { ActionLink, DecorativeDivider, Section, SectionHeading } from "@/components/ui-kit";
 import { DishCard } from "@/components/DishCard";
 import { menuCategories, signatureDishes } from "@/data/menu";
-import { fullAddress, restaurant, trustHighlights } from "@/data/restaurant";
+import { brandFaqs, fullAddress, restaurant, trustHighlights } from "@/data/restaurant";
 
 export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
       {
-        title: `${restaurant.name} | Authentic Village Inspired Vegetarian Restaurant in ${restaurant.city}`,
+        title: `${restaurant.name} | Pure Vegetarian Family Restaurant in ${restaurant.city}, NH56`,
       },
       {
         name: "description",
-        content: `Experience authentic village inspired vegetarian cuisine at ${restaurant.name} in ${restaurant.city}. Explore traditional thalis, family dining, warm hospitality and timeless village flavours.`,
+        content: `Welcome to ${restaurant.name} (also searched as Mati Mahal) — authentic pure vegetarian village-inspired restaurant in ${restaurant.city} on the Varanasi–Lucknow Highway (NH56). Traditional thalis, Bati Chokha & family dining.`,
       },
       {
         property: "og:title",
-        content: `${restaurant.name} | Pure Veg Village Inspired Restaurant in ${restaurant.city}`,
+        content: `${restaurant.name} | Pure Veg Family Restaurant in ${restaurant.city}, NH56`,
       },
       {
         property: "og:description",
-        content: `Traditional village thalis, family dining and warm hospitality in ${restaurant.city}.`,
+        content: `Traditional village thalis, authentic Bati Chokha, family dining, banquet hall and warm hospitality in ${restaurant.city} on NH56 Varanasi–Lucknow Highway.`,
       },
       { property: "og:url", content: absoluteUrl("/") },
       { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/") }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(faqSchema(brandFaqs)) },
+    ],
   }),
 });
 
@@ -68,19 +71,19 @@ function Home() {
                 Authentic · Pure Vegetarian · VILLAGE INSPIRED
               </p>
               <h1
-                className="mt-3 font-display text-[42px] leading-[1.1] text-white sm:mt-4 sm:text-[64px] lg:text-[76px]"
+                className="mt-3 font-display text-[38px] leading-[1.12] text-white sm:mt-4 sm:text-[54px] lg:text-[66px]"
                 style={{ textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}
               >
-                A Taste Rooted in   <br className="sm:hidden" />the Village
+                Maati Mahal Family Restaurant in {restaurant.city}
               </h1>
 
               <div className="mt-5 sm:mt-6">
-                <h2
+                <p
                   className="text-[26px] leading-tight text-[#F3D085] sm:text-[34px]"
                   style={{ fontFamily: '"Yatra One", serif', textShadow: '0 4px 16px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.8)' }}
                 >
                   गाँव की माटी, गाँव का स्वाद
-                </h2>
+                </p>
                 <p
                   className="mt-1 text-lg text-white sm:mt-2 sm:text-[22px]"
                   style={{ fontFamily: '"Yatra One", serif', textShadow: '0 4px 12px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.8)' }}
@@ -93,13 +96,13 @@ function Home() {
 
               {/* Desktop Description */}
               <p className="mt-5 hidden max-w-[620px] text-[17px] leading-[1.6] text-white sm:block lg:text-[19px]">
-                Experience timeless vegetarian recipes, traditional flavours and warm village
-                hospitality — served in brass, cooked with patience, in the heart of {restaurant.city}.
+                Experience timeless vegetarian recipes, traditional thalis and warm village
+                hospitality — served in brass, cooked with patience, on the Varanasi–Lucknow Highway (NH56) in {restaurant.city}.
               </p>
 
               {/* Mobile Description */}
               <p className="mt-5 max-w-[320px] text-[16px] leading-[1.6] text-white sm:hidden">
-                Traditional village flavours, pure vegetarian recipes, and warm family hospitality.
+                Traditional village flavours, pure vegetarian recipes, and warm family dining in {restaurant.city} on NH56.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3 sm:mt-8">
@@ -371,6 +374,36 @@ function Home() {
         </div>
       </Section>
 
+
+      {/* ═══════════════════════════════════════════
+          10. FREQUENTLY ASKED QUESTIONS & BRAND FAQ
+          ═══════════════════════════════════════════ */}
+      <Section className="surface-sandstone" id="faq">
+        <SectionHeading
+          eyebrow="Help & Info"
+          title={`Frequently Asked Questions About ${restaurant.name}`}
+          intro={`Common questions regarding pure vegetarian dining, traditional thalis, highway location, timings, and family celebrations at ${restaurant.name} (also searched as Mati Mahal) in ${restaurant.city}.`}
+        />
+        <div className="mx-auto mt-12 max-w-4xl divide-y divide-border/80 rounded-2xl border border-border/80 bg-card p-6 shadow-sm sm:p-10">
+          {brandFaqs.map((faq, index) => (
+            <details
+              key={faq.question}
+              className="group py-5 first:pt-0 last:pb-0"
+              open={index === 0}
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-primary transition-colors hover:text-terracotta sm:text-xl">
+                <span>{faq.question}</span>
+                <span className="shrink-0 text-gold transition-transform duration-300 group-open:rotate-180">
+                  ▼
+                </span>
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                {faq.answer}
+              </p>
+            </details>
+          ))}
+        </div>
+      </Section>
 
       {/* ═══════════════════════════════════════════
           11. RESERVATION CTA

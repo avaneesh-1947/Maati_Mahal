@@ -14,14 +14,18 @@ export const restaurantSchema = {
   "@type": ["Restaurant", "FoodEstablishment"],
   "@id": absoluteUrl("/#restaurant"),
   name: restaurant.name,
+  alternateName: [...restaurant.alternateNames],
   description: restaurant.shortDescription,
-  telephone: restaurant.phone,
+  telephone: restaurant.phoneHref,
   email: restaurant.email,
   servesCuisine: [...restaurant.cuisine],
   priceRange: restaurant.priceRange,
+  currenciesAccepted: "INR",
+  paymentAccepted: "Cash, UPI, Credit Card, Debit Card",
   hasMenu: absoluteUrl("/menu"),
   url: absoluteUrl("/"),
   image: absoluteUrl("/favicon.jpeg"),
+  hasMap: restaurant.directionsUrl,
   address: {
     "@type": "PostalAddress",
     streetAddress: restaurant.addressLine,
@@ -35,6 +39,13 @@ export const restaurantSchema = {
     latitude: restaurant.geo.latitude,
     longitude: restaurant.geo.longitude,
   },
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Singramau" },
+    { "@type": "AdministrativeArea", name: "Sasrhapur" },
+    { "@type": "AdministrativeArea", name: "Jaunpur" },
+    { "@type": "AdministrativeArea", name: "Badlapur" },
+    { "@type": "Place", name: "NH56 Varanasi-Lucknow Highway" },
+  ],
   openingHoursSpecification: restaurant.hoursSpec.map((spec) => ({
     "@type": "OpeningHoursSpecification",
     dayOfWeek: [...spec.days],
@@ -44,7 +55,6 @@ export const restaurantSchema = {
   sameAs: [
     restaurant.instagram,
     restaurant.facebook,
-    ...(restaurant.googleBusinessUrl ? [restaurant.googleBusinessUrl] : []),
   ],
   acceptsReservations: "https://schema.org/True",
   potentialAction: {
@@ -59,6 +69,20 @@ export const restaurantSchema = {
     },
   },
 } as const;
+
+/** FAQPage structured data for Google Rich Snippets & People Also Ask */
+export const faqSchema = (faqs: readonly { question: string; answer: string }[]) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+});
 
 /** WebSite schema — helps Google understand the site entity */
 export const websiteSchema = {

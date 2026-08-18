@@ -31,16 +31,14 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/privacy-policy", changefreq: "yearly", priority: "0.3", lastmod: today },
         ];
 
-        // Add dish pages that have meaningful content (story field)
+        // Add all dish pages to sitemap
         for (const dish of menu) {
-          if (dish.story) {
-            entries.push({
-              path: `/menu/${dish.id}`,
-              changefreq: "monthly",
-              priority: "0.6",
-              lastmod: today,
-            });
-          }
+          entries.push({
+            path: `/menu/${dish.id}`,
+            changefreq: "monthly",
+            priority: dish.bestseller ? "0.7" : "0.6",
+            lastmod: today,
+          });
         }
 
         const urls = entries.map((e) =>

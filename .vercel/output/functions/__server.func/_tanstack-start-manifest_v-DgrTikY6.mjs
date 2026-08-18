@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-BYVJARWp.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-DgrTikY6.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/__root.tsx",
@@ -16,75 +16,75 @@ var tsrStartManifest = () => ({ routes: {
 			"/menu_/$dishId",
 			"/menu/"
 		],
-		preloads: ["/assets/index-C4XbznM3.js"],
+		preloads: ["/assets/index-DTfp1zZA.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-C4XbznM3.js"
+			src: "/assets/index-DTfp1zZA.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/index.tsx",
 		children: void 0,
-		preloads: ["/assets/routes-DlD3XatQ.js", "/assets/DishCard-sVJQ356o.js"]
+		preloads: ["/assets/routes-IbWpNFBZ.js", "/assets/DishCard-MQKTWNBm.js"]
 	},
 	"/about": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/about.tsx",
 		children: void 0,
-		preloads: ["/assets/about-C4AcMCAO.js", "/assets/DishCard-sVJQ356o.js"]
+		preloads: ["/assets/about-CpFp7use.js", "/assets/DishCard-MQKTWNBm.js"]
 	},
 	"/catering-events": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/catering-events.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/catering-events-BlkXzbON.js",
-			"/assets/DishCard-sVJQ356o.js",
-			"/assets/validation-SvE01PIG.js"
+			"/assets/catering-events-Bc7MfwCu.js",
+			"/assets/DishCard-MQKTWNBm.js",
+			"/assets/validation-B877FWr0.js"
 		]
 	},
 	"/contact": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/contact.tsx",
 		children: void 0,
-		preloads: ["/assets/contact-Q3mFqd3G.js", "/assets/validation-SvE01PIG.js"]
+		preloads: ["/assets/contact-BE6FmzxG.js", "/assets/validation-B877FWr0.js"]
 	},
 	"/dining-experience": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/dining-experience.tsx",
 		children: void 0,
-		preloads: ["/assets/dining-experience-7eH3eIRs.js"]
+		preloads: ["/assets/dining-experience-BANtS000.js"]
 	},
 	"/feedback": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/feedback.tsx",
 		children: void 0,
-		preloads: ["/assets/feedback-BJCAwMqH.js", "/assets/validation-SvE01PIG.js"]
+		preloads: ["/assets/feedback-1TyThqDe.js", "/assets/validation-B877FWr0.js"]
 	},
 	"/gallery": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/gallery.tsx",
 		children: void 0,
-		preloads: ["/assets/gallery-CuTscV4X.js"]
+		preloads: ["/assets/gallery-vZ89qD4x.js"]
 	},
 	"/privacy-policy": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/privacy-policy.tsx",
 		children: void 0,
-		preloads: ["/assets/privacy-policy-D1UNeRDw.js"]
+		preloads: ["/assets/privacy-policy-C65hlTX9.js"]
 	},
 	"/reservations": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/reservations.tsx",
 		children: void 0,
-		preloads: ["/assets/reservations-CiX4vEz3.js", "/assets/validation-SvE01PIG.js"]
+		preloads: ["/assets/reservations-BMj46lml.js", "/assets/validation-B877FWr0.js"]
 	},
 	"/menu_/$dishId": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/menu_.$dishId.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/menu_._dishId-9IxzlHRd.js",
-			"/assets/DishCard-sVJQ356o.js",
-			"/assets/menu_._dishId-ijqcnGuT.js"
+			"/assets/menu_._dishId-B2QnOoDc.js",
+			"/assets/menu_._dishId-D1y0BVe4.js",
+			"/assets/DishCard-MQKTWNBm.js"
 		]
 	},
 	"/menu/": {
 		filePath: "C:/Users/Awneesh/OneDrive/Desktop/Needy/MatiMahal/src/routes/menu.index.tsx",
 		children: void 0,
-		preloads: ["/assets/menu.index-DFi7Plsa.js", "/assets/DishCard-sVJQ356o.js"]
+		preloads: ["/assets/menu.index-3r-HSAbP.js", "/assets/DishCard-MQKTWNBm.js"]
 	}
 } });
 //#endregion

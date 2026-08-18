@@ -1,15 +1,15 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { D as milestones, M as values, S as hero1_default, a as ArchImage, b as interior1_default, c as Section, i as ActionLink, k as restaurant, l as SectionHeading, s as PageHero, x as hero2_default } from "./router-B53ahYd2.mjs";
-import { n as FeatureCard } from "./DishCard-Bz1mu-KG.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-BJHQcaV_.js
+import { A as restaurant, N as values, O as milestones, S as hero1_default, a as ArchImage, b as interior1_default, c as Section, i as ActionLink, l as SectionHeading, s as PageHero, x as hero2_default } from "./router-an0JSNKy.mjs";
+import { n as FeatureCard } from "./DishCard-CDRSkufx.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-M5B_lNRX.js
 var import_jsx_runtime = require_jsx_runtime();
 function About() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageHero, {
 			breadcrumb: "About",
 			eyebrow: "Our Story",
-			title: "Rooted in Rajasthan, Cooked with Care",
-			intro: "A family kitchen that grew into a dining room, without letting go of the recipes it started with."
+			title: "Rooted in the Village, Cooked with Care",
+			intro: "A family kitchen that grew into a highway dining destination, without letting go of the timeless village recipes it started with."
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "grid items-start gap-10 md:grid-cols-2 md:gap-14",
@@ -19,13 +19,13 @@ function About() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
 						align: "left",
 						eyebrow: "Heritage",
-						title: "A Register of Recipes",
+						title: "A Register of Village Recipes",
 						intro: restaurant.story
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArchImage, {
 					src: hero1_default,
-					alt: `${restaurant.name} exterior`,
+					alt: `${restaurant.name} exterior in ${restaurant.city}`,
 					width: 1200,
 					height: 1408,
 					className: "aspect-4/5 w-full md:aspect-[4/5]"
@@ -36,17 +36,17 @@ function About() {
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
 							align: "left",
 							eyebrow: "Heritage",
-							title: "A Register of Recipes",
+							title: "A Register of Village Recipes",
 							intro: restaurant.story
 						})
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-6 text-sm leading-relaxed text-muted-foreground md:mt-0",
-						children: "Rajasthan's kitchens were shaped by its land — little water, long summers, and a genius for making lasting food from millet, lentils, dried berries and dairy. Ker sangri came from the desert. Baati came from the fire. Churma came from the wish to end every meal sweetly."
+						children: "Village kitchens were shaped by patience, pure ingredients, and a deep respect for the land. Whole grains, freshly ground spices, slow-simmered lentils in earthen matkas, and baatis roasted over authentic fire. Maati Mahal (often searched as Mati Mahal or Maati Mehal) was born from the desire to bring this soulful, unhurried dining experience to families and highway travellers."
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-4 text-sm leading-relaxed text-muted-foreground",
-						children: "We cook that same way: masalas ground in-house, dals tempered in ghee, breads patted by hand and finished on the griddle to order."
+						children: "We cook that same timeless way today: masalas ground in-house, dals tempered with pure desi ghee, breads hand-crafted to order, and thalis served with boundless warmth."
 					})
 				] })
 			]
@@ -75,20 +75,20 @@ function About() {
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
 					align: "left",
-					eyebrow: "Founder & Chef",
+					eyebrow: "Founder & Kitchen",
 					title: "Cooked by People Who Grew Up With It",
-					intro: "Our head cook learned these dishes at home, standing beside his mother at a wood-fired chulha in Nagaur."
+					intro: "Our culinary craft was passed down across generations, perfected over wood-fired chulhas in traditional village households."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-6 text-sm leading-relaxed text-muted-foreground",
-					children: "He still tastes every dal before service and still insists the churma be crushed by hand. Around him is a small team trained the same way — by watching, tasting and repeating."
+					children: "Every dal is tasted before service, every baati is cooked to smoky perfection, and our signature Tilkahru Thali is prepared to honor every diner. Around us is a dedicated team trained the traditional way — with respect for purity, freshness, and authentic flavours."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 					className: "mt-4 text-sm leading-relaxed text-muted-foreground",
 					children: [
-						"Our hospitality follows one old rule: ",
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "padharo sa" }),
-						". Water and chai arrive before the menu, nobody is rushed, and no one leaves hungry."
+						"Our hospitality follows one sacred rule: ",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("em", { children: "Atithi Devo Bhavah" }),
+						". Fresh water and masala chai welcome you, nobody is rushed, and no one leaves unsatisfied."
 					]
 				})
 			] })]

@@ -11,12 +11,12 @@ export const Route = createFileRoute("/contact")({
       { title: `Contact & Location | ${restaurant.name}, ${restaurant.city}` },
       {
         name: "description",
-        content: `Address, phone, WhatsApp and opening hours for ${restaurant.name} — a pure veg Maatimahal restaurant in ${restaurant.city}, near ${restaurant.landmark}.`,
+        content: `Contact ${restaurant.name} (also searched as Mati Mahal) in ${restaurant.city} on NH56 Varanasi–Lucknow Highway. Address, map directions, WhatsApp, phone and opening hours.`,
       },
-      { property: "og:title", content: `Contact ${restaurant.name}` },
+      { property: "og:title", content: `Contact ${restaurant.name} (${restaurant.city})` },
       {
         property: "og:description",
-        content: `Find us in ${restaurant.city}: ${fullAddress}. Call, message or get directions.`,
+        content: `Find us in ${restaurant.city}: ${fullAddress}. Call, message or get driving directions on NH56.`,
       },
       { property: "og:url", content: absoluteUrl("/contact") },
       { property: "og:image", content: absoluteUrl("/favicon.jpeg") },
@@ -35,9 +35,9 @@ function Contact() {
     <main>
       <PageHero
         breadcrumb="Contact"
-        eyebrow="Contact"
+        eyebrow="Contact & Location"
         title={`Find Us in ${restaurant.city}`}
-        intro={`${restaurant.landmark}. Call ahead for large groups and festival timings.`}
+        intro={`Located on the Varanasi–Lucknow Highway (NH56) at ${restaurant.landmark}. Ample parking and clean facilities for highway travellers and families.`}
       />
 
       <Section>

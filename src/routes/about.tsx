@@ -11,15 +11,15 @@ export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({
     meta: [
-      { title: `About ${restaurant.name} | Marwari Vegetarian Kitchen in ${restaurant.city}` },
+      { title: `About ${restaurant.name} | Village Inspired Vegetarian Restaurant in ${restaurant.city}` },
       {
         name: "description",
-        content: `The story behind ${restaurant.name} — a pure vegetarian kitchen in ${restaurant.city} preserving Maatimahal recipes, stone-ground spices and traditional hospitality.`,
+        content: `The story behind ${restaurant.name} (also searched as Mati Mahal) — an authentic pure vegetarian kitchen in ${restaurant.city} on NH56, preserving traditional village recipes, stone-ground spices and warm hospitality.`,
       },
-      { property: "og:title", content: `Our Story | ${restaurant.name}` },
+      { property: "og:title", content: `Our Story | ${restaurant.name} (${restaurant.city})` },
       {
         property: "og:description",
-        content: `Heritage, philosophy and the family behind ${restaurant.name}, ${restaurant.city}.`,
+        content: `Heritage, culinary philosophy, and the family behind ${restaurant.name} in ${restaurant.city} on the Varanasi–Lucknow Highway.`,
       },
       { property: "og:url", content: absoluteUrl("/about") },
       { property: "og:type", content: "article" },
@@ -38,34 +38,35 @@ function About() {
       <PageHero
         breadcrumb="About"
         eyebrow="Our Story"
-        title="Rooted in Rajasthan, Cooked with Care"
-        intro="A family kitchen that grew into a dining room, without letting go of the recipes it started with."
+        title="Rooted in the Village, Cooked with Care"
+        intro="A family kitchen that grew into a highway dining destination, without letting go of the timeless village recipes it started with."
       />
 
       <Section>
         <div className="grid items-start gap-10 md:grid-cols-2 md:gap-14">
           <div className="md:hidden">
-            <SectionHeading align="left" eyebrow="Heritage" title="A Register of Recipes" intro={restaurant.story} />
+            <SectionHeading align="left" eyebrow="Heritage" title="A Register of Village Recipes" intro={restaurant.story} />
           </div>
           <ArchImage
             src={exteriorAbout}
-            alt={`${restaurant.name} exterior`}
+            alt={`${restaurant.name} exterior in ${restaurant.city}`}
             width={1200}
             height={1408}
             className="aspect-4/5 w-full md:aspect-[4/5]"
           />
           <div>
             <div className="hidden md:block">
-              <SectionHeading align="left" eyebrow="Heritage" title="A Register of Recipes" intro={restaurant.story} />
+              <SectionHeading align="left" eyebrow="Heritage" title="A Register of Village Recipes" intro={restaurant.story} />
             </div>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:mt-0">
-              Rajasthan's kitchens were shaped by its land — little water, long summers, and a genius for making
-              lasting food from millet, lentils, dried berries and dairy. Ker sangri came from the desert.
-              Baati came from the fire. Churma came from the wish to end every meal sweetly.
+              Village kitchens were shaped by patience, pure ingredients, and a deep respect for the land.
+              Whole grains, freshly ground spices, slow-simmered lentils in earthen matkas, and baatis roasted
+              over authentic fire. Maati Mahal (often searched as Mati Mahal or Maati Mehal) was born from the desire
+              to bring this soulful, unhurried dining experience to families and highway travellers.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              We cook that same way: masalas ground in-house, dals tempered in ghee, breads patted by hand and
-              finished on the griddle to order.
+              We cook that same timeless way today: masalas ground in-house, dals tempered with pure desi ghee,
+              breads hand-crafted to order, and thalis served with boundless warmth.
             </p>
           </div>
         </div>
@@ -92,17 +93,18 @@ function About() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Founder & Chef"
+              eyebrow="Founder & Kitchen"
               title="Cooked by People Who Grew Up With It"
-              intro="Our head cook learned these dishes at home, standing beside his mother at a wood-fired chulha in Nagaur."
+              intro="Our culinary craft was passed down across generations, perfected over wood-fired chulhas in traditional village households."
             />
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-              He still tastes every dal before service and still insists the churma be crushed by hand. Around
-              him is a small team trained the same way — by watching, tasting and repeating.
+              Every dal is tasted before service, every baati is cooked to smoky perfection, and our signature
+              Tilkahru Thali is prepared to honor every diner. Around us is a dedicated team trained the traditional
+              way — with respect for purity, freshness, and authentic flavours.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Our hospitality follows one old rule: <em>padharo sa</em>. Water and chai arrive before the menu,
-              nobody is rushed, and no one leaves hungry.
+              Our hospitality follows one sacred rule: <em>Atithi Devo Bhavah</em>. Fresh water and masala chai
+              welcome you, nobody is rushed, and no one leaves unsatisfied.
             </p>
           </div>
         </div>

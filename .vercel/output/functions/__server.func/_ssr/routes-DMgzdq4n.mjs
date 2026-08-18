@@ -1,8 +1,8 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { S as hero1_default, _ as signatureDishes, b as interior1_default, c as Section, d as bati_chokha_sadi_thali_default, g as paneer_butter_masala_default, h as menuCategories, i as ActionLink, j as trustHighlights, k as restaurant, l as SectionHeading, o as DecorativeDivider, p as matka_daal_default, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-B53ahYd2.mjs";
-import { t as DishCard } from "./DishCard-Bz1mu-KG.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DV3Ni-IA.js
+import { A as restaurant, C as brandFaqs, M as trustHighlights, S as hero1_default, _ as signatureDishes, b as interior1_default, c as Section, d as bati_chokha_sadi_thali_default, g as paneer_butter_masala_default, h as menuCategories, i as ActionLink, l as SectionHeading, o as DecorativeDivider, p as matka_daal_default, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-an0JSNKy.mjs";
+import { t as DishCard } from "./DishCard-CDRSkufx.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DMgzdq4n.js
 var import_jsx_runtime = require_jsx_runtime();
 var image_default = "/assets/image-DHsKrgNv.webp";
 var atithidevobhavah_removebg_preview_default = "/assets/atithidevobhavah-removebg-preview-BJ3EqXY9.webp";
@@ -32,17 +32,13 @@ function Home() {
 									children: "Authentic · Pure Vegetarian · VILLAGE INSPIRED"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-									className: "mt-3 font-display text-[42px] leading-[1.1] text-white sm:mt-4 sm:text-[64px] lg:text-[76px]",
+									className: "mt-3 font-display text-[38px] leading-[1.12] text-white sm:mt-4 sm:text-[54px] lg:text-[66px]",
 									style: { textShadow: "0 4px 12px rgba(0,0,0,0.5)" },
-									children: [
-										"A Taste Rooted in   ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", { className: "sm:hidden" }),
-										"the Village"
-									]
+									children: ["Maati Mahal Family Restaurant in ", restaurant.city]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "mt-5 sm:mt-6",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-[26px] leading-tight text-[#F3D085] sm:text-[34px]",
 										style: {
 											fontFamily: "\"Yatra One\", serif",
@@ -62,14 +58,18 @@ function Home() {
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 									className: "mt-5 hidden max-w-[620px] text-[17px] leading-[1.6] text-white sm:block lg:text-[19px]",
 									children: [
-										"Experience timeless vegetarian recipes, traditional flavours and warm village hospitality — served in brass, cooked with patience, in the heart of ",
+										"Experience timeless vegetarian recipes, traditional thalis and warm village hospitality — served in brass, cooked with patience, on the Varanasi–Lucknow Highway (NH56) in ",
 										restaurant.city,
 										"."
 									]
 								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 									className: "mt-5 max-w-[320px] text-[16px] leading-[1.6] text-white sm:hidden",
-									children: "Traditional village flavours, pure vegetarian recipes, and warm family hospitality."
+									children: [
+										"Traditional village flavours, pure vegetarian recipes, and warm family dining in ",
+										restaurant.city,
+										" on NH56."
+									]
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 									className: "mt-7 flex flex-wrap gap-3 sm:mt-8",
@@ -427,6 +427,31 @@ function Home() {
 					className: "w-full h-32 sm:h-40 md:h-48 object-contain drop-shadow-md"
 				})
 			})
+		}),
+		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
+			className: "surface-sandstone",
+			id: "faq",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SectionHeading, {
+				eyebrow: "Help & Info",
+				title: `Frequently Asked Questions About ${restaurant.name}`,
+				intro: `Common questions regarding pure vegetarian dining, traditional thalis, highway location, timings, and family celebrations at ${restaurant.name} (also searched as Mati Mahal) in ${restaurant.city}.`
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mx-auto mt-12 max-w-4xl divide-y divide-border/80 rounded-2xl border border-border/80 bg-card p-6 shadow-sm sm:p-10",
+				children: brandFaqs.map((faq, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("details", {
+					className: "group py-5 first:pt-0 last:pb-0",
+					open: index === 0,
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("summary", {
+						className: "flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-semibold text-primary transition-colors hover:text-terracotta sm:text-xl",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: faq.question }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "shrink-0 text-gold transition-transform duration-300 group-open:rotate-180",
+							children: "▼"
+						})]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base",
+						children: faq.answer
+					})]
+				}, faq.question))
+			})]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
 			className: "surface-royal text-center",

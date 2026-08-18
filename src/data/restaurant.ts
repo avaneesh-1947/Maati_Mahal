@@ -11,28 +11,41 @@ export const restaurant = {
     "Pure vegetarian village inspired kitchen serving traditional thalis, timeless recipes and warm hospitality.",
   story:
     "Maati Mahal began as a family kitchen where recipes travelled from one generation to the next — written down by hand, tasted by memory. Rooted in village culinary traditions, our kitchen celebrates timeless vegetarian recipes prepared with stone-ground spices, slow-simmered dals and pure ghee.",
+  alternateNames: [
+    "Mati Mahal",
+    "Maati Mehal",
+    "Mati Mehal",
+    "Maati Mahal Family Restaurant",
+    "Mati Mahal Family Restaurant",
+    "Maati Mahal Restaurant",
+    "Mati Mahal Restaurant",
+    "Maati Mahal Singramau",
+    "Mati Mahal Singramau",
+  ],
   phone: "6390278657, 8960107779",
   phoneHref: "+918960107779",
   email: "hello@maatimahal.com",
   whatsapp: "+918960107779",
-  addressLine: "Varanasi - Lucknow Highway, NH56",
-  landmark: "",
+  addressLine: "Varanasi - Lucknow Highway, NH56, Sasrhapur",
+  landmark: "Near Singramau, NH56",
   city: "Singramau",
+  district: "Jaunpur",
   state: "Uttar Pradesh",
   pin: "222175",
   country: "IN",
+  plusCode: "WCR7+54",
   geo: { latitude: 25.9667, longitude: 82.2667 },
   mapEmbedUrl:
-    "https://www.google.com/maps?q=Singramau+Uttar+Pradesh&output=embed",
-  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Singramau+Uttar+Pradesh",
+    "https://www.google.com/maps?q=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175&output=embed",
+  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175",
   instagram: "https://www.instagram.com/mati.mahal1?igsh=YTd2ZGdqaTQ4aXk0",
   facebook: "https://www.facebook.com/share/18dYpspP1t/?mibextid=wwXIfr",
-  googleReviewUrl: "https://www.google.com/maps",
+  googleReviewUrl: "https://www.google.com/maps/search/?api=1&query=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175",
   siteUrl: "https://maatimahal.com",
-  /** TODO: Add actual Google Business Profile URL once created */
-  googleBusinessUrl: "",
+  /** Google Business search & maps URL */
+  googleBusinessUrl: "https://www.google.com/maps/search/?api=1&query=Mati+Mahal,+WCR7%2B54,+Sasrhapur,+Uttar+Pradesh+222175",
   priceRange: "₹₹",
-  cuisine: ["Village Inspired", "North Indian", "Vegetarian"],
+  cuisine: ["Village Inspired", "North Indian", "Vegetarian", "Traditional Thalis"],
   hours: [
     { days: "Monday – Sunday", time: "8:00 AM – 11:30 PM" },
   ],
@@ -42,8 +55,12 @@ export const restaurant = {
   ],
   /** Nearby landmarks for local SEO signals */
   nearbyLandmarks: [
+    "WCR7+54, Sasrhapur",
     "NH56 Varanasi–Lucknow Highway",
     "Singramau",
+    "Badlapur",
+    "Jaunpur",
+    "Sultanpur",
   ],
   /** On-site facilities for entity completeness */
   facilities: [
@@ -53,18 +70,24 @@ export const restaurant = {
     "Banquet Hall",
     "Marriage Lawn",
     "Rest Rooms",
+    "Ample Vehicle Parking",
   ],
   /** Signature dishes for structured data */
   signatureDishNames: [
     "Bati Chokha",
     "Tilkahru Thali",
+    "Unlimited Thali",
     "Matka Daal",
-    "Dal Baati Churma",
-    "Gatte Ki Sabzi",
+    "Matke Wali Lassi",
+    "Paneer Butter Masala",
+    "Daal Makhani",
+    "Amritsari Stuffed Kulcha",
+    "Kulhad Wali Chai",
+    "Sawan Kheer",
   ],
 } as const;
 
-export const fullAddress = `${restaurant.city}, ${restaurant.addressLine}, ${restaurant.pin}`;
+export const fullAddress = `Mati Mahal, WCR7+54, Sasrhapur, ${restaurant.city}, ${restaurant.state} ${restaurant.pin}`;
 
 export const navLinks = [
   { to: "/", label: "Home" },
@@ -98,8 +121,8 @@ export const whyChooseUs = [
     body: "Stone-ground masalas, seasonal vegetables and pure ghee sourced from trusted dairies.",
   },
   {
-    title: "Fresh, Honest Ingredients",
-    body: "Stone-ground masalas, seasonal vegetables and pure ghee sourced from trusted dairies.",
+    title: "Highway & Family Convenience",
+    body: "Prime location on NH56 Varanasi–Lucknow Highway with spacious parking, clean restrooms, banquet and lawn.",
   },
   {
     title: "Made for Families",
@@ -108,6 +131,41 @@ export const whyChooseUs = [
   {
     title: "Village Hospitality",
     body: "Guests are welcomed with warmth, water and a cup of masala chai.",
+  },
+] as const;
+
+export const brandFaqs = [
+  {
+    question: "What is Maati Mahal and what type of food does it serve?",
+    answer: "Maati Mahal (also known as Mati Mahal) is an authentic pure vegetarian, village-inspired family restaurant located on the Varanasi–Lucknow Highway (NH56) in Singramau (Sasrhapur, UP). We serve traditional North Indian thalis, wood-fired Bati Chokha, slow-cooked Matka Daal, clay-oven breads, and cooling kulhad drinks in a warm, village-themed setting.",
+  },
+  {
+    question: "Is Maati Mahal also searched as Mati Mahal or Maati Mehal?",
+    answer: "Yes, guests frequently spell our name as Mati Mahal or Maati Mehal. Maati Mahal (माटी महल) is the official brand name of our pure vegetarian family restaurant located near Singramau on NH56.",
+  },
+  {
+    question: "Where is Maati Mahal located on the highway?",
+    answer: "Maati Mahal is located at WCR7+54, Sasrhapur, Singramau, Uttar Pradesh 222175 on the Varanasi – Lucknow Highway (NH56). We are easily accessible for highway travellers, family groups, and local visitors between Varanasi, Jaunpur, Badlapur, and Sultanpur.",
+  },
+  {
+    question: "Is Maati Mahal a 100% pure vegetarian restaurant?",
+    answer: "Yes, Maati Mahal is strictly 100% pure vegetarian. We have a dedicated vegetarian kitchen with no meat or alcohol served, ensuring complete purity and peace of mind for family and pilgrimage dining.",
+  },
+  {
+    question: "What are the most popular signature dishes at Maati Mahal?",
+    answer: "Our most celebrated dishes include traditional wood-roasted Bati Chokha, the Grand Tilkahru Unlimited Thali, slow-simmered earthen pot Matka Daal, Paneer Butter Masala, overnight-cooked Daal Makhani, Amritsari Stuffed Kulcha, festive Sawan Kheer, and fresh Matke Wali Lassi served in clay kulhads.",
+  },
+  {
+    question: "What are the opening hours of Maati Mahal?",
+    answer: "Maati Mahal is open daily from Monday to Sunday from 8:00 AM to 11:30 PM, serving breakfast, lunch, highway tea/snacks, and dinner.",
+  },
+  {
+    question: "Does Maati Mahal have facilities for banquets, weddings, and large family gatherings?",
+    answer: "Yes, Maati Mahal features an air-conditioned banquet hall, a spacious marriage celebration lawn, ample vehicle parking, clean restrooms, and custom catering menus for weddings, birthdays, kitty parties, and corporate events.",
+  },
+  {
+    question: "How can I make a table reservation or book an event?",
+    answer: "You can reserve a table directly online through our website's reservation page, send an enquiry on our catering page, message us on WhatsApp at +91 8960107779, or call our team at 6390278657 / 8960107779.",
   },
 ] as const;
 
