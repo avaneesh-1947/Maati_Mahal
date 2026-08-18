@@ -1,8 +1,8 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { A as restaurant, c as Section, n as Route, o as DecorativeDivider } from "./router-D8aqHFLr.mjs";
-import { t as DishCard } from "./DishCard-B6haNB8n.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/menu_._dishId-DcdsyyJj.js
+import { A as restaurant, c as Section, n as Route, o as DecorativeDivider } from "./router-BlamydFo.mjs";
+import { t as DishCard } from "./DishCard-CWg-C_qM.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/menu_._dishId-DanySAeS.js
 var import_jsx_runtime = require_jsx_runtime();
 function DishPage() {
 	const { dish, relatedDishes } = Route.useLoaderData();

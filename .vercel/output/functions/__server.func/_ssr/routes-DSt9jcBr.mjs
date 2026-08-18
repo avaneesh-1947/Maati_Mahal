@@ -1,8 +1,8 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { A as restaurant, C as brandFaqs, M as trustHighlights, S as hero1_default, _ as signatureDishes, b as interior1_default, c as Section, d as bati_chokha_sadi_thali_default, g as paneer_butter_masala_default, h as menuCategories, i as ActionLink, l as SectionHeading, o as DecorativeDivider, p as matka_daal_default, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-D8aqHFLr.mjs";
-import { t as DishCard } from "./DishCard-B6haNB8n.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DjYXMM-O.js
+import { A as restaurant, C as brandFaqs, M as trustHighlights, S as hero1_default, _ as signatureDishes, b as interior1_default, c as Section, d as bati_chokha_sadi_thali_default, g as paneer_butter_masala_default, h as menuCategories, i as ActionLink, l as SectionHeading, o as DecorativeDivider, p as matka_daal_default, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-BlamydFo.mjs";
+import { t as DishCard } from "./DishCard-CWg-C_qM.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DSt9jcBr.js
 var import_jsx_runtime = require_jsx_runtime();
 var image_default = "/assets/image-DHsKrgNv.webp";
 var atithidevobhavah_removebg_preview_default = "/assets/atithidevobhavah-removebg-preview-BJ3EqXY9.webp";

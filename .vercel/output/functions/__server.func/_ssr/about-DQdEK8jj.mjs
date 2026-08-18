@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { A as restaurant, N as values, O as milestones, S as hero1_default, a as ArchImage, b as interior1_default, c as Section, i as ActionLink, l as SectionHeading, s as PageHero, x as hero2_default } from "./router-D8aqHFLr.mjs";
-import { n as FeatureCard } from "./DishCard-B6haNB8n.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-CXjRyCE8.js
+import { A as restaurant, N as values, O as milestones, S as hero1_default, a as ArchImage, b as interior1_default, c as Section, i as ActionLink, l as SectionHeading, s as PageHero, x as hero2_default } from "./router-BlamydFo.mjs";
+import { n as FeatureCard } from "./DishCard-CWg-C_qM.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-DQdEK8jj.js
 var import_jsx_runtime = require_jsx_runtime();
 function About() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [

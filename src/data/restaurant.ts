@@ -24,7 +24,7 @@ export const restaurant = {
   ],
   phone: "6390278657, 8960107779",
   phoneHref: "+918960107779",
-  email: "hello@maatimahal.com",
+  email: "thematimahal@gmail.com",
   whatsapp: "+918960107779",
   addressLine: "Varanasi - Lucknow Highway, NH56, Sasrhapur",
   landmark: "Near Singramau, NH56",

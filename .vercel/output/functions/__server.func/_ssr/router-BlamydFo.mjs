@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { L as notFound, _ as Link, f as createRouter, g as createRootRouteWithContext, h as createFileRoute, l as Scripts, m as lazyRouteComponent, p as Outlet, u as HeadContent, v as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-qifylrIm.js
+//#region node_modules/.nitro/vite/services/ssr/assets/restaurant-C01Fn_oy.js
 /**
 * Centralised restaurant configuration.
 * Replace these values with the client's confirmed details — they are used across
@@ -26,7 +26,7 @@ var restaurant = {
 	],
 	phone: "6390278657, 8960107779",
 	phoneHref: "+918960107779",
-	email: "hello@maatimahal.com",
+	email: "thematimahal@gmail.com",
 	whatsapp: "+918960107779",
 	addressLine: "Varanasi - Lucknow Highway, NH56, Sasrhapur",
 	landmark: "Near Singramau, NH56",
@@ -709,7 +709,7 @@ var galleryImages = [
 	}
 ];
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-D8aqHFLr.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-BlamydFo.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -1683,7 +1683,7 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$10 = () => import("./routes-DjYXMM-O.mjs");
+var $$splitComponentImporter$10 = () => import("./routes-DSt9jcBr.mjs");
 var Route$11 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$10, "component"),
 	head: () => ({
@@ -1691,7 +1691,7 @@ var Route$11 = createFileRoute("/")({
 			{ title: `${restaurant.name} | Pure Vegetarian Family Restaurant in ${restaurant.city}` },
 			{
 				name: "description",
-				content: `Welcome to ${restaurant.name} (also searched as Mati Mahal) — authentic pure vegetarian village-inspired restaurant in ${restaurant.city} on the Varanasi–Lucknow Highway (NH56). Traditional thalis, Bati Chokha & family dining.`
+				content: `${restaurant.name} (Mati Mahal) is a pure veg family restaurant in ${restaurant.city} on NH56. Enjoy authentic village thalis, Bati Chokha, and warm hospitality.`
 			},
 			{
 				property: "og:title",
@@ -1720,7 +1720,7 @@ var Route$11 = createFileRoute("/")({
 		}]
 	})
 });
-var $$splitComponentImporter$9 = () => import("./about-CXjRyCE8.mjs");
+var $$splitComponentImporter$9 = () => import("./about-DQdEK8jj.mjs");
 var Route$10 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$9, "component"),
 	head: () => ({
@@ -1761,7 +1761,7 @@ var Route$10 = createFileRoute("/about")({
 		}]
 	})
 });
-var $$splitComponentImporter$8 = () => import("./catering-events-DKhsd2lX.mjs");
+var $$splitComponentImporter$8 = () => import("./catering-events-j2a3tKcC.mjs");
 var Route$9 = createFileRoute("/catering-events")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component"),
 	head: () => ({
@@ -1798,7 +1798,7 @@ var Route$9 = createFileRoute("/catering-events")({
 		}]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./contact-0RXPf__S.mjs");
+var $$splitComponentImporter$7 = () => import("./contact-CHX83b43.mjs");
 var Route$8 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component"),
 	head: () => ({
@@ -1835,7 +1835,7 @@ var Route$8 = createFileRoute("/contact")({
 		}]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./dining-experience-Bbux8RpQ.mjs");
+var $$splitComponentImporter$6 = () => import("./dining-experience-7hAHZ-D2.mjs");
 var Route$7 = createFileRoute("/dining-experience")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({
@@ -1872,7 +1872,7 @@ var Route$7 = createFileRoute("/dining-experience")({
 		}]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./feedback-DO6SEDol.mjs");
+var $$splitComponentImporter$5 = () => import("./feedback-BufjGEWl.mjs");
 var Route$6 = createFileRoute("/feedback")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({
@@ -1909,7 +1909,7 @@ var Route$6 = createFileRoute("/feedback")({
 		}]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./gallery-C6zzcfl2.mjs");
+var $$splitComponentImporter$4 = () => import("./gallery-CpuZSrkN.mjs");
 var Route$5 = createFileRoute("/gallery")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({
@@ -1946,7 +1946,7 @@ var Route$5 = createFileRoute("/gallery")({
 		}]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./privacy-policy-CpJn-ASS.mjs");
+var $$splitComponentImporter$3 = () => import("./privacy-policy-C4Mth9Ge.mjs");
 var Route$4 = createFileRoute("/privacy-policy")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({
@@ -1983,7 +1983,7 @@ var Route$4 = createFileRoute("/privacy-policy")({
 		}]
 	})
 });
-var $$splitComponentImporter$2 = () => import("./reservations-DIgOqEGl.mjs");
+var $$splitComponentImporter$2 = () => import("./reservations-CpiGZj-G.mjs");
 var Route$3 = createFileRoute("/reservations")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({
@@ -2109,7 +2109,7 @@ var Route$2 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 		"Cache-Control": "public, max-age=3600"
 	} });
 } } } });
-var $$splitComponentImporter$1 = () => import("./menu.index-BES_Jm4P.mjs");
+var $$splitComponentImporter$1 = () => import("./menu.index-CI7tVD4S.mjs");
 var Route$1 = createFileRoute("/menu/")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({
@@ -2150,7 +2150,7 @@ var Route$1 = createFileRoute("/menu/")({
 	})
 });
 var $$splitNotFoundComponentImporter = () => import("./menu_._dishId-x-9kBCVc.mjs");
-var $$splitComponentImporter = () => import("./menu_._dishId-DcdsyyJj.mjs");
+var $$splitComponentImporter = () => import("./menu_._dishId-DanySAeS.mjs");
 var Route = createFileRoute("/menu_/$dishId")({
 	loader: async ({ params }) => {
 		const dish = menu.find((d) => d.id === params.dishId);

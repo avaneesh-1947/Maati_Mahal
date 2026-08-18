@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
       },
       {
         name: "description",
-        content: `Welcome to ${restaurant.name} (also searched as Mati Mahal) — authentic pure vegetarian village-inspired restaurant in ${restaurant.city} on the Varanasi–Lucknow Highway (NH56). Traditional thalis, Bati Chokha & family dining.`,
+        content: `${restaurant.name} (Mati Mahal) is a pure veg family restaurant in ${restaurant.city} on NH56. Enjoy authentic village thalis, Bati Chokha, and warm hospitality.`,
       },
       {
         property: "og:title",

@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { a as ArchImage, b as interior1_default, c as Section, i as ActionLink, l as SectionHeading, s as PageHero, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-D8aqHFLr.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/dining-experience-Bbux8RpQ.js
+import { a as ArchImage, b as interior1_default, c as Section, i as ActionLink, l as SectionHeading, s as PageHero, v as matke_wali_lassi_default, x as hero2_default, y as tilkahru_thali_default } from "./router-BlamydFo.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/dining-experience-7hAHZ-D2.js
 var import_jsx_runtime = require_jsx_runtime();
 var chapters = [
 	{
