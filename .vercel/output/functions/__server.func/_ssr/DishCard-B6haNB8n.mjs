@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { u as Tag } from "./router-an0JSNKy.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/DishCard-CDRSkufx.js
+import { u as Tag } from "./router-D8aqHFLr.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/DishCard-B6haNB8n.js
 var import_jsx_runtime = require_jsx_runtime();
 function DishCard({ dish }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {

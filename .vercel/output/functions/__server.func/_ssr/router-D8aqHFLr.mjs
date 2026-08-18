@@ -709,7 +709,7 @@ var galleryImages = [
 	}
 ];
 //#endregion
-//#region node_modules/.nitro/vite/services/ssr/assets/router-an0JSNKy.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-D8aqHFLr.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -1635,13 +1635,21 @@ var Route$12 = createRootRouteWithContext()({
 				href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Yatra+One&display=swap"
 			}
 		],
-		scripts: [{
-			type: "application/ld+json",
-			children: JSON.stringify(restaurantSchema)
-		}, {
-			type: "application/ld+json",
-			children: JSON.stringify(websiteSchema)
-		}]
+		scripts: [
+			{
+				src: "https://www.googletagmanager.com/gtag/js?id=G-VW1J16NCMR",
+				async: true
+			},
+			{ children: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-VW1J16NCMR');` },
+			{
+				type: "application/ld+json",
+				children: JSON.stringify(restaurantSchema)
+			},
+			{
+				type: "application/ld+json",
+				children: JSON.stringify(websiteSchema)
+			}
+		]
 	}),
 	shellComponent: RootShell,
 	component: RootComponent,
@@ -1675,12 +1683,12 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$10 = () => import("./routes-DMgzdq4n.mjs");
+var $$splitComponentImporter$10 = () => import("./routes-DjYXMM-O.mjs");
 var Route$11 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$10, "component"),
 	head: () => ({
 		meta: [
-			{ title: `${restaurant.name} | Pure Vegetarian Family Restaurant in ${restaurant.city}, NH56` },
+			{ title: `${restaurant.name} | Pure Vegetarian Family Restaurant in ${restaurant.city}` },
 			{
 				name: "description",
 				content: `Welcome to ${restaurant.name} (also searched as Mati Mahal) — authentic pure vegetarian village-inspired restaurant in ${restaurant.city} on the Varanasi–Lucknow Highway (NH56). Traditional thalis, Bati Chokha & family dining.`
@@ -1712,7 +1720,7 @@ var Route$11 = createFileRoute("/")({
 		}]
 	})
 });
-var $$splitComponentImporter$9 = () => import("./about-M5B_lNRX.mjs");
+var $$splitComponentImporter$9 = () => import("./about-CXjRyCE8.mjs");
 var Route$10 = createFileRoute("/about")({
 	component: lazyRouteComponent($$splitComponentImporter$9, "component"),
 	head: () => ({
@@ -1753,7 +1761,7 @@ var Route$10 = createFileRoute("/about")({
 		}]
 	})
 });
-var $$splitComponentImporter$8 = () => import("./catering-events-BqwOmkpu.mjs");
+var $$splitComponentImporter$8 = () => import("./catering-events-DKhsd2lX.mjs");
 var Route$9 = createFileRoute("/catering-events")({
 	component: lazyRouteComponent($$splitComponentImporter$8, "component"),
 	head: () => ({
@@ -1790,7 +1798,7 @@ var Route$9 = createFileRoute("/catering-events")({
 		}]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./contact-CymDyohI.mjs");
+var $$splitComponentImporter$7 = () => import("./contact-0RXPf__S.mjs");
 var Route$8 = createFileRoute("/contact")({
 	component: lazyRouteComponent($$splitComponentImporter$7, "component"),
 	head: () => ({
@@ -1827,7 +1835,7 @@ var Route$8 = createFileRoute("/contact")({
 		}]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./dining-experience-C_6at0Jh.mjs");
+var $$splitComponentImporter$6 = () => import("./dining-experience-Bbux8RpQ.mjs");
 var Route$7 = createFileRoute("/dining-experience")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({
@@ -1864,7 +1872,7 @@ var Route$7 = createFileRoute("/dining-experience")({
 		}]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./feedback-BFxGH6lW.mjs");
+var $$splitComponentImporter$5 = () => import("./feedback-DO6SEDol.mjs");
 var Route$6 = createFileRoute("/feedback")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({
@@ -1901,7 +1909,7 @@ var Route$6 = createFileRoute("/feedback")({
 		}]
 	})
 });
-var $$splitComponentImporter$4 = () => import("./gallery-YUPFphQn.mjs");
+var $$splitComponentImporter$4 = () => import("./gallery-C6zzcfl2.mjs");
 var Route$5 = createFileRoute("/gallery")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({
@@ -1938,7 +1946,7 @@ var Route$5 = createFileRoute("/gallery")({
 		}]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./privacy-policy-dodMgmNf.mjs");
+var $$splitComponentImporter$3 = () => import("./privacy-policy-CpJn-ASS.mjs");
 var Route$4 = createFileRoute("/privacy-policy")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({
@@ -1975,7 +1983,7 @@ var Route$4 = createFileRoute("/privacy-policy")({
 		}]
 	})
 });
-var $$splitComponentImporter$2 = () => import("./reservations-DJnlYYQZ.mjs");
+var $$splitComponentImporter$2 = () => import("./reservations-DIgOqEGl.mjs");
 var Route$3 = createFileRoute("/reservations")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({
@@ -2101,7 +2109,7 @@ var Route$2 = createFileRoute("/sitemap.xml")({ server: { handlers: { GET: async
 		"Cache-Control": "public, max-age=3600"
 	} });
 } } } });
-var $$splitComponentImporter$1 = () => import("./menu.index-bywIgjta.mjs");
+var $$splitComponentImporter$1 = () => import("./menu.index-BES_Jm4P.mjs");
 var Route$1 = createFileRoute("/menu/")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({
@@ -2142,7 +2150,7 @@ var Route$1 = createFileRoute("/menu/")({
 	})
 });
 var $$splitNotFoundComponentImporter = () => import("./menu_._dishId-x-9kBCVc.mjs");
-var $$splitComponentImporter = () => import("./menu_._dishId-CgZoDJ93.mjs");
+var $$splitComponentImporter = () => import("./menu_._dishId-DcdsyyJj.mjs");
 var Route = createFileRoute("/menu_/$dishId")({
 	loader: async ({ params }) => {
 		const dish = menu.find((d) => d.id === params.dishId);

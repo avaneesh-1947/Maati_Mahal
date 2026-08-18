@@ -110,6 +110,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     scripts: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-VW1J16NCMR",
+        async: true,
+      },
+      {
+        children: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-VW1J16NCMR');`,
+      },
       { type: "application/ld+json", children: JSON.stringify(restaurantSchema) },
       { type: "application/ld+json", children: JSON.stringify(websiteSchema) },
     ],
